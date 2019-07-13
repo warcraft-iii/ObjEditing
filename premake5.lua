@@ -15,6 +15,8 @@ workspace 'ObjEditing'
         'Maps',
     }
 
+    staticruntime 'On'
+
     defines { 'WIN32', '_WINDOWS' }
 
     filter 'configurations:Debug'

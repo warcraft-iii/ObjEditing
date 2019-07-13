@@ -98,3 +98,6 @@ end
 function ObjectDefinition:setUnread(id, value)
     return self:setRaw(id, FieldType.Unreal, value)
 end
+
+_G.FieldType = FieldType
+_G.DefinitionType = DefinitionType

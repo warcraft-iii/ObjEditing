@@ -254,3 +254,8 @@ function table.random(t)
     end
     return t[math.random(1, #t)]
 end
+
+_G.ripairs = ripairs
+_G.spairs = spairs
+_G.vipairs = vipairs
+_G.vpairs = vpairs

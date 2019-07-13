@@ -67,7 +67,7 @@ local registered = {}
 ---@param type DefinitionType
 ---@param id string
 ---@param superId string
-function createObject(type, id, superId)
+function createDefinition(type, id, superId)
     if registered[id] then
         error('', 2)
     end

@@ -36,6 +36,8 @@ object = {}
 
 object.meta = { __index = object, __type = object, __name = 'object' }
 
+local object = object
+
 ---getSuper
 ---@return object
 function object:getSuper()
@@ -183,3 +185,10 @@ function class(name, super)
     inherit(cls, super)
     return cls
 end
+
+_G.object = object
+_G.isClass = isClass
+_G.isObject = isObject
+_G.isInheritOf = isInheritOf
+_G.isInstanceOf = isInstanceOf
+_G.class = class

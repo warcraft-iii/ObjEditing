@@ -9,6 +9,8 @@ local template = [[
         %s
     };
     luaL_loadbuffer(L, (const char*)CODE, %s, "@%s");
+    lua_pushvalue(L, env);
+    lua_setupvalue(L, -2, 1);
     lua_call(L, 0, 0);
 }
 ]]
