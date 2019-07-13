@@ -29,12 +29,22 @@ group '3rd'
         language 'C'
 
         files {
+            '3rd/lua/*.h',
             '3rd/lua/*.c',
         }
 
         removefiles {
             '3rd/lua/lua.c',
             '3rd/lua/luac.c',
+        }
+
+        vpaths {
+            ['Header Files/*'] = {
+                '3rd/lua/*.h'
+            },
+            ['Source Files/*'] = {
+                '3rd/lua/*.c',
+            }
         }
 
     project 'Lua'
@@ -45,6 +55,12 @@ group '3rd'
 
         files {
             '3rd/lua/lua.c',
+        }
+
+        vpaths {
+            ['Source Files/*'] = {
+                '3rd/lua/lua.c',
+            }
         }
 
 group ''
@@ -63,6 +79,15 @@ group ''
         removefiles {
             'lua/src/main.lua',
             'lua/base/init.lua',
+        }
+
+        vpaths {
+            ['Source Files/*'] = {
+                'src/*.cpp',
+            },
+            ['Lua Files/*'] = {
+                'lua/**.lua',
+            }
         }
 
         includedirs {

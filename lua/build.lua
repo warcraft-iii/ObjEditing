@@ -21,11 +21,11 @@ do
     local code = string.dump(assert(loadfile(input)))
     local n = 0
     out = code:gsub('.', function(x)
-        local r = string.format('%3s', string.byte(x)) .. ','
+        local r = string.format('0x%02X', string.byte(x)) .. ', '
         n = n + 1
         if n % 16 == 0 then
             n = 0
-            return r .. '\n    '
+            return r .. '\n        '
         else
             return r
         end
