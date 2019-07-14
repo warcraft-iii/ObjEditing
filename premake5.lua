@@ -15,6 +15,7 @@ workspace 'ObjEditing'
         'Maps',
     }
 
+    startproject 'ObjEditing'
     staticruntime 'On'
 
     defines { 'WIN32', '_WINDOWS' }
@@ -73,14 +74,14 @@ group ''
         links { 'LibLua' }
 
         files {
-            'lua/base/*.lua',
-            'lua/src/*.lua',
-            'src/*.cpp',
+            'src/**.cpp',
+            'src/**.lua'
         }
 
         removefiles {
-            'lua/src/main.lua',
-            'lua/base/init.lua',
+            'src/lua/**/main.lua',
+            'src/lua/**/init.lua',
+            'src/lua/test/**',
         }
 
         vpaths {
@@ -88,13 +89,13 @@ group ''
                 'src/*.cpp',
             },
             ['Lua Files/*'] = {
-                'lua/**.lua',
+                'src/lua/**.lua',
             }
         }
 
         includedirs {
             '3rd/lua',
-            '.build/lua'
+            '.build'
         }
 
         filter 'files:**.lua'
@@ -105,12 +106,12 @@ group ''
 -- for lua
 
 function getOutLuaPath(wks, prj, file, cfg)
-    return path.join(prj.location, 'lua', path.getrelative(path.join(_MAIN_SCRIPT_DIR, 'lua'), file.abspath)) .. '.inc'
+    return path.join(prj.location, 'lua', path.getrelative(path.join(_MAIN_SCRIPT_DIR, 'src/lua'), file.abspath)) .. '.inc'
 end
 
 function generateBuildLuaCommand(wks, prj, file, cfg)
     local lua = path.join(cfg.buildtarget.directory, 'Lua.exe')
-    local script = path.join(_MAIN_SCRIPT_DIR, 'lua/build.lua')
+    local script = path.join(_MAIN_SCRIPT_DIR, 'bin/build.lua')
     local out = path.getrelative(prj.location, getOutLuaPath(wks, prj, file, cfg))
 
     return string.format('"%s" "%s" "%s" "%s"', lua, script, file.abspath, out)

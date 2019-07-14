@@ -3,10 +3,10 @@
 -- @Link   : https://dengsir.github.io
 -- @Date   : 7/12/2019, 11:43:43 AM
 
-require('object')
-require('writebuffer')
-require('objectwriter')
-require('objectreader')
+require('core.object')
+require('core.writebuffer')
+require('core.objectwriter')
+require('core.objectreader')
 
 describe('ObjectReadWrite', function(_ENV)
     local data = string.char(0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x68, 0x63, 0x74,

@@ -2,7 +2,8 @@
 -- @Author : Dencer (tdaddon@163.com)
 -- @Link   : https://dengsir.github.io
 -- @Date   : 7/10/2019, 11:19:50 PM
-local ReadBuffer = require('readbuffer')
+
+local ReadBuffer = require('core.readbuffer')
 local describe = require('describe')
 
 describe('ReadBuffer', function(_ENV)

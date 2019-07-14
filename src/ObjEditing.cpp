@@ -2,15 +2,16 @@
 
 static void lua_openobjediting(lua_State* L, int env)
 {
-#include "base/string.lua.inc"
-#include "base/table.lua.inc"
-#include "base/class.lua.inc"
-#include "src/object.lua.inc"
-#include "src/readbuffer.lua.inc"
-#include "src/writebuffer.lua.inc"
-#include "src/objectreader.lua.inc"
-#include "src/objectwriter.lua.inc"
-#include "src/application.lua.inc"
+#include "lua/base/string.lua.inc"
+#include "lua/base/table.lua.inc"
+#include "lua/base/class.lua.inc"
+#include "lua/core/checker.lua.inc"
+#include "lua/core/object.lua.inc"
+#include "lua/core/readbuffer.lua.inc"
+#include "lua/core/writebuffer.lua.inc"
+#include "lua/core/objectreader.lua.inc"
+#include "lua/core/objectwriter.lua.inc"
+#include "lua/application.lua.inc"
 }
 
 int main()

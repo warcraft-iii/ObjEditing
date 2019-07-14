@@ -2,9 +2,9 @@
 -- @Author : Dencer (tdaddon@163.com)
 -- @Link   : https://dengsir.github.io
 -- @Date   : 7/10/2019, 9:18:44 PM
---
-local WriteBuffer = require('writebuffer')
-local describe = require('describe')
+
+local WriteBuffer = require('core.writebuffer')
+local describe = require('test.describe')
 
 describe('WriteBuffer', function(_ENV)
     local buf

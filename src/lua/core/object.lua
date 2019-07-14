@@ -36,15 +36,8 @@ DefinitionType = {
 ---@field def Definition
 ObjectDefinition = class('ObjectDefinition')
 
-function ObjectDefinition:constructor(type, id, superId)
-    self.def = {}
-    self.def.id = id
-    self.def.superId = superId
-    self.def.type = type
-    self.def.fields = {}
-end
-
-function ObjectDefinition:from(def)
+function ObjectDefinition:constructor(defType, id, superId)
+    local def = type(defType) == 'table' and defType or {id = id, superId = superId, type = defType}
     def.fields = def.fields or {}
     self.def = def
 end
@@ -97,6 +90,37 @@ end
 ---@return void
 function ObjectDefinition:setUnread(id, value)
     return self:setRaw(id, FieldType.Unreal, value)
+end
+
+DEFINITIONS = {}
+---@type table<DefinitionType, table<string, Definition>>
+TYPED_DEFINITIONS = {}
+
+local DEFINITIONS = DEFINITIONS
+local TYPED_DEFINITIONS = TYPED_DEFINITIONS
+local CREATED_DEFINITIONS = {}
+
+---@param defType DefinitionType
+---@param id string
+---@param superId string
+function createDefinition(defType, id, superId)
+    if CREATED_DEFINITIONS[id] then
+        error('', 2)
+    end
+
+    local def = DEFINITIONS[id]
+    if def and (def.superId ~= superId or def.type ~= defType) then
+        error('', 2)
+    end
+
+    CREATED_DEFINITIONS[id] = true
+
+    local obj = def and ObjectDefinition:new(def) or ObjectDefinition:new(defType, id, superId)
+
+    DEFINITIONS[id] = def
+    TYPED_DEFINITIONS[defType][id] = def
+
+    return obj
 end
 
 _G.FieldType = FieldType
