@@ -1,3 +1,6 @@
 [submodule "3rd/lua"]
 	path = 3rd/lua
 	url = https://github.com/lua/lua.git
+[submodule "3rd/cmdline"]
+	path = 3rd/cmdline
+	url = https://github.com/ubnt-intrepid/cmdline.git
