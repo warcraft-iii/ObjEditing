@@ -21,51 +21,51 @@ static void lua_openobjediting(lua_State* L, int env)
 
 int main(int argc, const char** argv)
 {
-	cmdline::parser parser;
-	parser.add<std::string>(cmdline_map, 'm', "The origin map directory");
-	parser.add<std::string>(cmdline_src, 's', "The source directory");
-	parser.add<std::string>(cmdline_output, 'o', "The output directory");
+    cmdline::parser parser;
+    parser.add<std::string>(cmdline_map, 'm', "The origin map directory");
+    parser.add<std::string>(cmdline_src, 's', "The source directory");
+    parser.add<std::string>(cmdline_output, 'o', "The output directory");
 
-	if (!parser.parse(argc, argv))
-	{
-		std::cerr << parser.usage();
-		return -1;
-	}
+    if (!parser.parse(argc, argv))
+    {
+        std::cerr << parser.usage();
+        return -1;
+    }
 
-	auto L = luaL_newstate();
-	luaL_openlibs(L);
+    auto L = luaL_newstate();
+    luaL_openlibs(L);
 
-	lua_newtable(L); // _ENV
-	{
-		lua_newtable(L); // args
-		{
-			const char* args[] = {
-				cmdline_map,
-				cmdline_src,
-				cmdline_output,
-			};
+    lua_newtable(L); // _ENV
+    {
+        lua_newtable(L); // args
+        {
+            const char* args[] = {
+                cmdline_map,
+                cmdline_src,
+                cmdline_output,
+            };
 
-			for (auto arg : args)
-			{
-				lua_pushstring(L, parser.get<std::string>(arg).c_str());
-				lua_setfield(L, -2, arg);
-			}
+            for (auto arg : args)
+            {
+                lua_pushstring(L, parser.get<std::string>(arg).c_str());
+                lua_setfield(L, -2, arg);
+            }
 
-			lua_setfield(L, -2, "args");
-		}
+            lua_setfield(L, -2, "args");
+        }
 
-		lua_newtable(L); // meta
-		{
-			lua_pushglobaltable(L);
-			lua_setfield(L, -2, "__index");
-		}
+        lua_newtable(L); // meta
+        {
+            lua_pushglobaltable(L);
+            lua_setfield(L, -2, "__index");
+        }
 
-		lua_setmetatable(L, -2);
-	}
+        lua_setmetatable(L, -2);
+    }
 
-	lua_openobjediting(L, lua_gettop(L));
+    lua_openobjediting(L, lua_gettop(L));
 
-	lua_pop(L, 1);
-	lua_close(L);
-	return 0;
+    lua_pop(L, 1);
+    lua_close(L);
+    return 0;
 }
