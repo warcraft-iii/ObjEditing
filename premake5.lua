@@ -48,7 +48,9 @@ project 'ObjEditing'
     links { 'LibLua' }
 
     files {
-        'src/**.cpp',
+        'src/*.c',
+        'src/*.cpp',
+        'src/*.h',
         'src/**.lua'
     }
 
@@ -61,6 +63,10 @@ project 'ObjEditing'
     vpaths {
         ['Source Files/*'] = {
             'src/*.cpp',
+            'src/*.c',
+        },
+        ['Header Files/*'] = {
+            'src/*.h',
         },
         ['Lua Files/*'] = {
             'src/lua/**.lua',
@@ -72,6 +78,9 @@ project 'ObjEditing'
         '3rd/cmdline',
         '.build'
     }
+
+    filter 'system:Windows'
+        defines { 'PLATFORM_WINDOWS' }
 
     filter 'files:**.lua'
         buildmessage 'Compiling %{file.abspath}'

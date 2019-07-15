@@ -1,5 +1,9 @@
 W3UDefinition = class('W3UDefinition')
 
+function W3UDefinition:constructor(id, superId)
+    self.def = createDefinition(DefinitionType.Unit, id, superId)
+end
+
 function W3UDefinition:setTooltipExtended(data)
     checktype(data, 'string', 'setTooltipExtended', 1)
     self.def:setString('utub', data)
@@ -89,7 +93,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setMovementType(mtype)
     checkenum(mtype, 'MovementType', 'setMovementType', 1)
-    self.def:setString('umvt', mtype.toObjectString())
+    self.def:setString('umvt', mtype)
 end
 
 function UnitOrBuildingOrHeroDefinition:setTurnRate(data)
@@ -279,7 +283,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setRace(data)
     checkenum(data, 'Race', 'setRace', 1)
-    self.def:setString('urac', data.toObjectString())
+    self.def:setString('urac', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setPropulsionWindowdegrees(data)
@@ -539,7 +543,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setArmorType(data)
     checkenum(data, 'ArmorType', 'setArmorType', 1)
-    self.def:setString('udty', data.toObjectString())
+    self.def:setString('udty', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setDefenseBase(data)
@@ -599,7 +603,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2WeaponType(wepType)
     checkenum(wepType, 'WeaponType', 'setAttack2WeaponType', 1)
-    self.def:setString('ua2w', wepType.toObjectString())
+    self.def:setString('ua2w', wepType)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2WeaponSound(data)
@@ -704,7 +708,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2AttackType(data)
     checkenum(data, 'AttackType', 'setAttack2AttackType', 1)
-    self.def:setString('ua2t', data.toObjectString())
+    self.def:setString('ua2t', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2AreaofEffectTargets(data)
@@ -739,12 +743,12 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setAttack1WeaponType(weaponType)
     checkenum(weaponType, 'WeaponType', 'setAttack1WeaponType', 1)
-    self.def:setString('ua1w', weaponType.toObjectString())
+    self.def:setString('ua1w', weaponType)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack1WeaponSound(data)
     checkenum(data, 'WeaponSound', 'setAttack1WeaponSound', 1)
-    self.def:setString('ucs1', data.toString())
+    self.def:setString('ucs1', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack1TargetsAllowed(data)
@@ -844,7 +848,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setAttack1AttackType(data)
     checkenum(data, 'AttackType', 'setAttack1AttackType', 1)
-    self.def:setString('ua1t', data.toObjectString())
+    self.def:setString('ua1t', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack1AreaofEffectTargets(data)
@@ -879,7 +883,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setArmorSoundType(data)
     checkenum(data, 'ArmorSoundType', 'setArmorSoundType', 1)
-    self.def:setString('uarm', data.toString())
+    self.def:setString('uarm', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAnimationWalkSpeed(data)
@@ -1054,7 +1058,6 @@ end
 function HeroDefinition:setRequierementsForTier(tier, data)
     checktype(tier, 'integer', 'setRequierementsForTier', 1)
     checktype(data, 'string', 'setRequierementsForTier', 2)
-
     if tier == 2 then
         self.def:setString('urq1', data)
     elseif tier == 3 then
@@ -1288,5 +1291,4 @@ end
 function BuildingAndHeroDefinition:setAgilityPerLevel(data)
     checktype(data, 'float', 'setAgilityPerLevel', 1)
     self.def:setUnreal('uagp', data)
-
 end

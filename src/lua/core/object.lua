@@ -94,7 +94,10 @@ end
 
 DEFINITIONS = {}
 ---@type table<DefinitionType, table<string, Definition>>
-TYPED_DEFINITIONS = {}
+TYPED_DEFINITIONS = setmetatable({}, {__index = function(t, k)
+    t[k] = {}
+    return t[k]
+end})
 
 local DEFINITIONS = DEFINITIONS
 local TYPED_DEFINITIONS = TYPED_DEFINITIONS
@@ -118,7 +121,7 @@ function createDefinition(defType, id, superId)
     local obj = def and ObjectDefinition:new(def) or ObjectDefinition:new(defType, id, superId)
 
     DEFINITIONS[id] = def
-    TYPED_DEFINITIONS[defType][id] = def
+    TYPED_DEFINITIONS[defType][id] = obj.def
 
     return obj
 end

@@ -6,7 +6,7 @@
 local function itype(value)
     local t = type(value)
     if t == 'number' then
-        return math.type(v)
+        return math.type(value)
     end
     return t
 end
