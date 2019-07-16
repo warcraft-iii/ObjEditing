@@ -608,7 +608,7 @@ end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2WeaponSound(data)
     checkenum(data, 'WeaponSound', 'setAttack2WeaponSound', 1)
-    self.def:setString('ucs2', data.toString())
+    self.def:setString('ucs2', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setAttack2TargetsAllowed(data)

@@ -50,7 +50,6 @@ end
 function Application:execute()
     for _, file in ipairs(args.files) do
         local dir = file:gsub('[%\\%/][^%/%\\]+$', '')
-        print(dir, file)
         os.chdir(dir)
         dofile(file)
     end

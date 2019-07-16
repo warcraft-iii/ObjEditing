@@ -47,9 +47,11 @@ end
 ---@param id string
 ---@param type FieldType
 ---@param value any
+---@param level integer
+---@param column integer
 ---@return void
-function ObjectDefinition:setRaw(id, type, value)
-    self.def.fields[id] = {id = id, type = type, value = value}
+function ObjectDefinition:setRaw(id, type, value, level, column)
+    self.def.fields[id] = {id = id, type = type, value = value, level = level, column = column}
 end
 
 ---setInt
@@ -92,12 +94,91 @@ function ObjectDefinition:setUnread(id, value)
     return self:setRaw(id, FieldType.Unreal, value)
 end
 
+---setLvlInt
+---@param id string
+---@param level integer
+---@param value integer
+function ObjectDefinition:setLvlInt(id, level, value)
+    return self:setRaw(id, FieldType.Int, value, level)
+end
+
+---setLvlString
+---@param id string
+---@param level integer
+---@param value string
+function ObjectDefinition:setLvlString(id, level, value)
+    return self:setRaw(id, FieldType.String, value, level)
+end
+
+---setLvlReal
+---@param id string
+---@param level integer
+---@param value float
+function ObjectDefinition:setLvlReal(id, level, value)
+    return self:setRaw(id, FieldType.Real, value, level)
+end
+
+---setLvlUnreal
+---@param id string
+---@param level integer
+---@param value float
+function ObjectDefinition:setLvlUnreal(id, level, value)
+    return self:setRaw(id, FieldType.Unreal, value, level)
+end
+
+---setLvlDataInt
+---@param id string
+---@param level integer
+---@param column integer
+---@param value string
+function ObjectDefinition:setLvlDataInt(id, level, column, value)
+    return self:setRaw(id, FieldType.Int, level, column)
+end
+
+---setLvlDataString
+---@param id string
+---@param level integer
+---@param column integer
+---@param value integer
+function ObjectDefinition:setLvlDataString(id, level, column, value)
+    return self:setRaw(id, FieldType.String, level, column)
+end
+
+---setLvlDataReal
+---@param id string
+---@param level integer
+---@param column integer
+---@param value float
+function ObjectDefinition:setLvlDataReal(id, level, column, value)
+    return self:setRaw(id, FieldType.Real, level, column)
+end
+
+---setLvlDataUnreal
+---@param id string
+---@param level integer
+---@param column integer
+---@param value float
+function ObjectDefinition:setLvlDataUnreal(id, level, column, value)
+    return self:setRaw(id, FieldType.Unreal, level, column)
+end
+
+---setLvlDataBoolean
+---@param id string
+---@param level integer
+---@param column integer
+---@param value boolean
+function ObjectDefinition:setLvlDataBoolean(id, level, column, value)
+    return self:setLvlDataInt(id, level, column, value and 1 or 0)
+end
+
 DEFINITIONS = {}
 ---@type table<DefinitionType, table<string, Definition>>
-TYPED_DEFINITIONS = setmetatable({}, {__index = function(t, k)
-    t[k] = {}
-    return t[k]
-end})
+TYPED_DEFINITIONS = setmetatable({}, {
+    __index = function(t, k)
+        t[k] = {}
+        return t[k]
+    end,
+})
 
 local DEFINITIONS = DEFINITIONS
 local TYPED_DEFINITIONS = TYPED_DEFINITIONS
