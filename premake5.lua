@@ -51,6 +51,7 @@ project 'ObjEditing'
         'src/*.c',
         'src/*.cpp',
         'src/*.h',
+        'src/*.hpp',
         'src/**.lua'
     }
 
@@ -76,7 +77,8 @@ project 'ObjEditing'
     includedirs {
         '3rd/lua',
         '3rd/cmdline',
-        '.build'
+        '.build',
+        'src'
     }
 
     filter 'system:Windows'
@@ -84,8 +86,13 @@ project 'ObjEditing'
 
     filter 'files:**.lua'
         buildmessage 'Compiling %{file.abspath}'
-        buildcommands { [[%{ generateBuildLuaCommand(wks, prj, file, cfg) }]] }
-        buildoutputs { [[%{ getOutLuaPath(wks, prj, file, cfg) }]] }
+        buildinputs { 'bin/build.lua' }
+        buildcommands { [[%{ generateBuildLuaCommand(_ENV) }]] }
+        buildoutputs {
+            [[%{ getGeneratedSource(_ENV) }]],
+            [[%{ getGeneratedHeader(_ENV) }]],
+        }
+        compilebuildoutputs 'On'
 
 group '3rd'
     project 'LibLua'
@@ -128,14 +135,23 @@ group '3rd'
         }
 
 do -- for lua
-    function getOutLuaPath(wks, prj, file, cfg)
-        return path.join(prj.location, 'lua', path.getrelative(path.join(_MAIN_SCRIPT_DIR, 'src/lua'), file.abspath)) .. '.inc'
+
+    function getGeneratedDir(_ENV)
+        return path.join(prj.location, path.getrelative(path.join(_MAIN_SCRIPT_DIR, 'src'), file.directory))
     end
 
-    function generateBuildLuaCommand(wks, prj, file, cfg)
+    function getGeneratedSource(_ENV)
+        return path.join(getGeneratedDir(_ENV), file.basename .. '.lua.cpp')
+    end
+
+    function getGeneratedHeader(_ENV)
+        return path.join(getGeneratedDir(_ENV), file.basename .. '.lua.h')
+    end
+
+    function generateBuildLuaCommand(_ENV)
         local lua = path.join(cfg.buildtarget.directory, 'Lua.exe')
         local script = path.join(_MAIN_SCRIPT_DIR, 'bin/build.lua')
-        local out = path.getrelative(prj.location, getOutLuaPath(wks, prj, file, cfg))
+        local out = getGeneratedDir(_ENV)
 
         return string.format([["%s" "%s" "%s" "%s"]], lua, script, file.abspath, out)
     end

@@ -4,7 +4,7 @@
  * \author Copyright (c) 2002-2014 Jason Perkins and the Premake project
  */
 
-#include "api.h"
+#include "luaapi.h"
 #include "lualib.h"
 #include "lauxlib.h"
 

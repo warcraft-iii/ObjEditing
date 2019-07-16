@@ -1,27 +1,43 @@
 #include <cmdline.h>
 
 #include "lua.hpp"
-#include "api.h"
+#include "luaapi.h"
+#include "luasource.h"
 
 constexpr const char* cmdline_map = "map";
 constexpr const char* cmdline_output = "output";
 
-static void lua_openobjediting(lua_State* L, int env)
+using LuaFile = void (*)(lua_State*, int);
+
+static void InitLuaFiles(lua_State* L, int env)
 {
-#include "lua/base/string.lua.inc"
-#include "lua/base/table.lua.inc"
-#include "lua/base/class.lua.inc"
-#include "lua/core/checker.lua.inc"
-#include "lua/core/object.lua.inc"
-#include "lua/core/readbuffer.lua.inc"
-#include "lua/core/writebuffer.lua.inc"
-#include "lua/core/objectreader.lua.inc"
-#include "lua/core/objectwriter.lua.inc"
-#include "lua/object/UnitObjEditing.lua.inc"
-#include "lua/application.lua.inc"
+    LuaFile files[] = {
+        InitBaseString,
+        InitBaseTable,
+        InitBaseClass,
+        InitCoreChecker,
+        InitCoreEnum,
+        InitCoreObject,
+        InitCoreReadbuffer,
+        InitCoreWritebuffer,
+        InitCoreObjectreader,
+        InitCoreObjectwriter,
+        InitObjectAbilityObjEditing,
+        InitObjectBuffObjEditing,
+        InitObjectDestructableObjEditing,
+        InitObjectItemObjEditing,
+        InitObjectUnitObjEditing,
+        InitObjectUpgradeObjEditing,
+        InitApplication,
+    };
+
+    for (auto file : files)
+    {
+        file(L, env);
+    }
 }
 
-static void registerTo(lua_State* L, lua_CFunction f, const char* table, const char* name)
+static void RegisterTo(lua_State* L, lua_CFunction f, const char* table, const char* name)
 {
     lua_getglobal(L, table);
     lua_pushcfunction(L, f);
@@ -44,7 +60,7 @@ int main(int argc, const char** argv)
     auto L = luaL_newstate();
     luaL_openlibs(L);
 
-    registerTo(L, os_chdir, "os", "chdir");
+    RegisterTo(L, os_chdir, "os", "chdir");
 
     lua_newtable(L); // _ENV
     {
@@ -79,7 +95,7 @@ int main(int argc, const char** argv)
         lua_setmetatable(L, -2);
     }
 
-    lua_openobjediting(L, lua_gettop(L));
+    InitLuaFiles(L, lua_gettop(L));
 
     lua_pop(L, 1);
     lua_close(L);
