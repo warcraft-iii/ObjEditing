@@ -85,6 +85,9 @@ project 'ObjEditing'
     filter 'system:Windows'
         defines { 'PLATFORM_WINDOWS' }
 
+    filter 'configurations:Release'
+        postbuildcommands { [[{COPY} "%{cfg.buildtarget.abspath}" "%{path.join(_MAIN_SCRIPT_DIR, '../warcraft-vscode/bin/')}"]] }
+
     filter 'files:**.lua'
         buildmessage 'Compiling %{file.abspath}'
         buildinputs { 'bin/build.lua' }
