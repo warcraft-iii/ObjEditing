@@ -3,8 +3,8 @@
 #include "luaapi.h"
 #include "luasource.h"
 
-constexpr const char* CMDLINE_MAP = "map";
-constexpr const char* CMDLINE_OUTPUT = "output";
+constexpr char* CMDLINE_MAP = "map";
+constexpr char* CMDLINE_OUTPUT = "output";
 
 static void RegisterTo(lua_State* L, lua_CFunction f, const char* table, const char* name)
 {
@@ -17,6 +17,7 @@ static void RegisterTo(lua_State* L, lua_CFunction f, const char* table, const c
 int main(int argc, const char** argv)
 {
     cmdline::parser parser;
+    parser.set_program_name("ObjEditing");
     parser.add<std::string>(CMDLINE_MAP, 'm', "The origin map directory");
     parser.add<std::string>(CMDLINE_OUTPUT, 'o', "The output directory");
 

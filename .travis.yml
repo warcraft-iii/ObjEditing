@@ -1,0 +1,19 @@
+language: minimal
+
+os: windows
+
+before_deploy:
+- init.bat
+
+deploy:
+- provider: script
+  script: msbuild .build\ObjEditing.vcxproj
+  skip_cleanup: true
+  on:
+    branch: master
+- provider: script
+  script: echo "Hello World"
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true

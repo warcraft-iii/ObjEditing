@@ -7,26 +7,9 @@
 Application = {}
 
 function Application:init()
-    self:initGlobals()
     self:initDefinitions()
     self:execute()
     self:saveDefinitions()
-end
-
-function Application:initGlobals()
-    local g = {
-        'W3UDefinition',
-        'UnitOrBuildingOrHeroDefinition',
-        'UnitOrHeroDefinition',
-        'HeroDefinition',
-        'UnitDefinition',
-        'BuildingDefinition',
-        'BuildingAndHeroDefinition',
-    }
-
-    for i, v in ipairs(g) do
-        _G[v] = _ENV[v]
-    end
 end
 
 function Application:initDefinitions()
