@@ -50,6 +50,7 @@ function W3UDefinition:setButtonPositionX(data)
 end
 
 UnitOrBuildingOrHeroDefinition = class('UnitOrBuildingOrHeroDefinition', W3UDefinition)
+_G.UnitOrBuildingOrHeroDefinition = UnitOrBuildingOrHeroDefinition
 
 function UnitOrBuildingOrHeroDefinition:setItemsSold(data)
     checktype(data, 'string', 'setItemsSold', 1)
@@ -932,6 +933,7 @@ function UnitOrBuildingOrHeroDefinition:setAcquisitionRange(data)
 end
 
 UnitOrHeroDefinition = class('UnitOrHeroDefinition', UnitOrBuildingOrHeroDefinition)
+_G.UnitOrHeroDefinition = UnitOrHeroDefinition
 
 function UnitOrHeroDefinition:setTransportedSize(data)
     checktype(data, 'integer', 'setTransportedSize', 1)
@@ -974,6 +976,7 @@ function UnitOrHeroDefinition:setStructuresBuilt(data)
 end
 
 HeroDefinition = class('HeroDefinition', UnitOrHeroDefinition)
+_G.HeroDefinition = HeroDefinition
 
 function HeroDefinition:hideHeroDeathMsg(flag)
     checktype(flag, 'boolean', 'hideHeroDeathMsg', 1)
@@ -1078,6 +1081,7 @@ function HeroDefinition:setRequierementsForTier(tier, data)
 end
 
 UnitDefinition = class('UnitDefinition', UnitOrHeroDefinition)
+_G.UnitDefinition = UnitDefinition
 
 function UnitDefinition:setCasterUpgradeTips(data)
     checktype(data, 'string', 'setCasterUpgradeTips', 1)
@@ -1095,6 +1099,7 @@ function UnitDefinition:setCasterUpgradeArt(data)
 end
 
 BuildingDefinition = class('BuildingDefinition', UnitOrBuildingOrHeroDefinition)
+_G.BuildingDefinition = BuildingDefinition
 
 function BuildingDefinition:setUpgradesTo(data)
     checktype(data, 'string', 'setUpgradesTo', 1)
@@ -1162,6 +1167,7 @@ function BuildingDefinition:setConstructionSound(data)
 end
 
 BuildingAndHeroDefinition = class('BuildingAndHeroDefinition', UnitOrBuildingOrHeroDefinition)
+_G.BuildingAndHeroDefinition = BuildingAndHeroDefinition
 
 function BuildingAndHeroDefinition:setUpgradesTo(data)
     checktype(data, 'string', 'setUpgradesTo', 1)

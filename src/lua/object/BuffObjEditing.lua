@@ -1,4 +1,5 @@
 BuffDefinition = class('BuffDefinition')
+_G.BuffDefinition = BuffDefinition
 
 function BuffDefinition:constructor(id, superId)
     self.def = createDefinition(DefinitionType.Buff, id, superId)

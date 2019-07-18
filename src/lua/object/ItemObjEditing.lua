@@ -50,6 +50,7 @@ function W3TDefinition:setButtonPositionX(data)
 end
 
 ItemDefinition = class('ItemDefinition', W3TDefinition)
+_G.ItemDefinition = ItemDefinition
 
 function ItemDefinition:setAbilities(data)
     checktype(data, 'string', 'setAbilities', 1)

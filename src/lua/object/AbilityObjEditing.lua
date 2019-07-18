@@ -1,4 +1,5 @@
 AbilityDefinition = class('AbilityDefinition')
+_G.AbilityDefinition = AbilityDefinition
 
 function AbilityDefinition:setName(value)
     checktype(value, 'string', 'setName', 1)
@@ -355,6 +356,7 @@ function AbilityDefinition:setEffects(level, value)
 end
 
 AbilityDefinitionTaunt = class('AbilityDefinitionTaunt', AbilityDefinition)
+_G.AbilityDefinitionTaunt = AbilityDefinitionTaunt
 
 function AbilityDefinitionTaunt:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Atau')
@@ -379,6 +381,7 @@ function AbilityDefinitionTaunt:setMaxUnits(level, value)
 end
 
 AbilityDefinitionPoisonArrows = class('AbilityDefinitionPoisonArrows', AbilityDefinition)
+_G.AbilityDefinitionPoisonArrows = AbilityDefinitionPoisonArrows
 
 function AbilityDefinitionPoisonArrows:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEpa')
@@ -415,6 +418,7 @@ function AbilityDefinitionPoisonArrows:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionRangerColdArrows = class('AbilityDefinitionRangerColdArrows', AbilityDefinition)
+_G.AbilityDefinitionRangerColdArrows = AbilityDefinitionRangerColdArrows
 
 function AbilityDefinitionRangerColdArrows:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHca')
@@ -445,6 +449,7 @@ function AbilityDefinitionRangerColdArrows:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionSeaWitchTornado = class('AbilityDefinitionSeaWitchTornado', AbilityDefinition)
+_G.AbilityDefinitionSeaWitchTornado = AbilityDefinitionSeaWitchTornado
 
 function AbilityDefinitionSeaWitchTornado:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANto')
@@ -457,6 +462,7 @@ function AbilityDefinitionSeaWitchTornado:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionAgilityBonusPlus4 = class('AbilityDefinitionAgilityBonusPlus4', AbilityDefinition)
+_G.AbilityDefinitionAgilityBonusPlus4 = AbilityDefinitionAgilityBonusPlus4
 
 function AbilityDefinitionAgilityBonusPlus4:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIa4')
@@ -487,6 +493,7 @@ function AbilityDefinitionAgilityBonusPlus4:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAlchemistTransmute = class('AbilityDefinitionAlchemistTransmute', AbilityDefinition)
+_G.AbilityDefinitionAlchemistTransmute = AbilityDefinitionAlchemistTransmute
 
 function AbilityDefinitionAlchemistTransmute:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANtm')
@@ -517,6 +524,7 @@ function AbilityDefinitionAlchemistTransmute:setGoldCostFactor(level, value)
 end
 
 AbilityDefinitionAgilityBonusPlus3 = class('AbilityDefinitionAgilityBonusPlus3', AbilityDefinition)
+_G.AbilityDefinitionAgilityBonusPlus3 = AbilityDefinitionAgilityBonusPlus3
 
 function AbilityDefinitionAgilityBonusPlus3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIa3')
@@ -547,6 +555,7 @@ function AbilityDefinitionAgilityBonusPlus3:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAgilityBonusPlus1 = class('AbilityDefinitionAgilityBonusPlus1', AbilityDefinition)
+_G.AbilityDefinitionAgilityBonusPlus1 = AbilityDefinitionAgilityBonusPlus1
 
 function AbilityDefinitionAgilityBonusPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIa1')
@@ -577,6 +586,7 @@ function AbilityDefinitionAgilityBonusPlus1:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionThornyShieldCreep = class('AbilityDefinitionThornyShieldCreep', AbilityDefinition)
+_G.AbilityDefinitionThornyShieldCreep = AbilityDefinitionThornyShieldCreep
 
 function AbilityDefinitionThornyShieldCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANth')
@@ -601,6 +611,7 @@ function AbilityDefinitionThornyShieldCreep:setReturnedDamageFactor(level, value
 end
 
 AbilityDefinitionAgilityBonusPlus6 = class('AbilityDefinitionAgilityBonusPlus6', AbilityDefinition)
+_G.AbilityDefinitionAgilityBonusPlus6 = AbilityDefinitionAgilityBonusPlus6
 
 function AbilityDefinitionAgilityBonusPlus6:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIa6')
@@ -631,6 +642,7 @@ function AbilityDefinitionAgilityBonusPlus6:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionBloodMageSiphonMana = class('AbilityDefinitionBloodMageSiphonMana', AbilityDefinition)
+_G.AbilityDefinitionBloodMageSiphonMana = AbilityDefinitionBloodMageSiphonMana
 
 function AbilityDefinitionBloodMageSiphonMana:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHdr')
@@ -691,6 +703,7 @@ function AbilityDefinitionBloodMageSiphonMana:setLifeTransferredPerSecond(level,
 end
 
 AbilityDefinitionPossessioncreep = class('AbilityDefinitionPossessioncreep', AbilityDefinition)
+_G.AbilityDefinitionPossessioncreep = AbilityDefinitionPossessioncreep
 
 function AbilityDefinitionPossessioncreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACps')
@@ -703,6 +716,7 @@ function AbilityDefinitionPossessioncreep:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionPaladinDivineShield = class('AbilityDefinitionPaladinDivineShield', AbilityDefinition)
+_G.AbilityDefinitionPaladinDivineShield = AbilityDefinitionPaladinDivineShield
 
 function AbilityDefinitionPaladinDivineShield:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHds')
@@ -715,6 +729,7 @@ function AbilityDefinitionPaladinDivineShield:setCanDeactivate(level, value)
 end
 
 AbilityDefinitionPurgeCreep = class('AbilityDefinitionPurgeCreep', AbilityDefinition)
+_G.AbilityDefinitionPurgeCreep = AbilityDefinitionPurgeCreep
 
 function AbilityDefinitionPurgeCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACpu')
@@ -757,6 +772,7 @@ function AbilityDefinitionPurgeCreep:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionRoarcreepSkeletalOrc = class('AbilityDefinitionRoarcreepSkeletalOrc', AbilityDefinition)
+_G.AbilityDefinitionRoarcreepSkeletalOrc = AbilityDefinitionRoarcreepSkeletalOrc
 
 function AbilityDefinitionRoarcreepSkeletalOrc:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACr1')
@@ -805,6 +821,7 @@ function AbilityDefinitionRoarcreepSkeletalOrc:setMaxUnits(level, value)
 end
 
 AbilityDefinitionTauntCreep = class('AbilityDefinitionTauntCreep', AbilityDefinition)
+_G.AbilityDefinitionTauntCreep = AbilityDefinitionTauntCreep
 
 function AbilityDefinitionTauntCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANta')
@@ -829,6 +846,7 @@ function AbilityDefinitionTauntCreep:setMaxUnits(level, value)
 end
 
 AbilityDefinitionRejuvinationFurbolg = class('AbilityDefinitionRejuvinationFurbolg', AbilityDefinition)
+_G.AbilityDefinitionRejuvinationFurbolg = AbilityDefinitionRejuvinationFurbolg
 
 function AbilityDefinitionRejuvinationFurbolg:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACr2')
@@ -859,6 +877,7 @@ function AbilityDefinitionRejuvinationFurbolg:setAllowWhenFull(level, value)
 end
 
 AbilityDefinitionPulverizecreep = class('AbilityDefinitionPulverizecreep', AbilityDefinition)
+_G.AbilityDefinitionPulverizecreep = AbilityDefinitionPulverizecreep
 
 function AbilityDefinitionPulverizecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACpv')
@@ -889,6 +908,7 @@ function AbilityDefinitionPulverizecreep:setChancetoStomp(level, value)
 end
 
 AbilityDefinitionBeastMasterSummonHawk = class('AbilityDefinitionBeastMasterSummonHawk', AbilityDefinition)
+_G.AbilityDefinitionBeastMasterSummonHawk = AbilityDefinitionBeastMasterSummonHawk
 
 function AbilityDefinitionBeastMasterSummonHawk:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsw')
@@ -907,6 +927,7 @@ function AbilityDefinitionBeastMasterSummonHawk:setSummonedUnitType(level, value
 end
 
 AbilityDefinitionTinkererSummonFactoryLevel0 = class('AbilityDefinitionTinkererSummonFactoryLevel0', AbilityDefinition)
+_G.AbilityDefinitionTinkererSummonFactoryLevel0 = AbilityDefinitionTinkererSummonFactoryLevel0
 
 function AbilityDefinitionTinkererSummonFactoryLevel0:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsy')
@@ -949,6 +970,7 @@ function AbilityDefinitionTinkererSummonFactoryLevel0:setSpawnUnitDuration(level
 end
 
 AbilityDefinitionPolymorphcreep = class('AbilityDefinitionPolymorphcreep', AbilityDefinition)
+_G.AbilityDefinitionPolymorphcreep = AbilityDefinitionPolymorphcreep
 
 function AbilityDefinitionPolymorphcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACpy')
@@ -985,6 +1007,7 @@ function AbilityDefinitionPolymorphcreep:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionBeastMasterStampede = class('AbilityDefinitionBeastMasterStampede', AbilityDefinition)
+_G.AbilityDefinitionBeastMasterStampede = AbilityDefinitionBeastMasterStampede
 
 function AbilityDefinitionBeastMasterStampede:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANst')
@@ -1021,6 +1044,7 @@ function AbilityDefinitionBeastMasterStampede:setDamageAmount(level, value)
 end
 
 AbilityDefinitionFirelordSoulBurn = class('AbilityDefinitionFirelordSoulBurn', AbilityDefinition)
+_G.AbilityDefinitionFirelordSoulBurn = AbilityDefinitionFirelordSoulBurn
 
 function AbilityDefinitionFirelordSoulBurn:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANso')
@@ -1057,6 +1081,7 @@ function AbilityDefinitionFirelordSoulBurn:setDamagePenalty(level, value)
 end
 
 AbilityDefinitionBeastMasterSummonQuilbeast = class('AbilityDefinitionBeastMasterSummonQuilbeast', AbilityDefinition)
+_G.AbilityDefinitionBeastMasterSummonQuilbeast = AbilityDefinitionBeastMasterSummonQuilbeast
 
 function AbilityDefinitionBeastMasterSummonQuilbeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsq')
@@ -1075,6 +1100,7 @@ function AbilityDefinitionBeastMasterSummonQuilbeast:setSummonedUnitType(level, 
 end
 
 AbilityDefinitionFrenzy = class('AbilityDefinitionFrenzy', AbilityDefinition)
+_G.AbilityDefinitionFrenzy = AbilityDefinitionFrenzy
 
 function AbilityDefinitionFrenzy:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afzy')
@@ -1099,6 +1125,7 @@ function AbilityDefinitionFrenzy:setScalingFactor(level, value)
 end
 
 AbilityDefinitionMalganisSoulPreservation = class('AbilityDefinitionMalganisSoulPreservation', AbilityDefinition)
+_G.AbilityDefinitionMalganisSoulPreservation = AbilityDefinitionMalganisSoulPreservation
 
 function AbilityDefinitionMalganisSoulPreservation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsl')
@@ -1111,6 +1138,7 @@ function AbilityDefinitionMalganisSoulPreservation:setUnittoPreserve(level, valu
 end
 
 AbilityDefinitionBeastMasterSummonBear = class('AbilityDefinitionBeastMasterSummonBear', AbilityDefinition)
+_G.AbilityDefinitionBeastMasterSummonBear = AbilityDefinitionBeastMasterSummonBear
 
 function AbilityDefinitionBeastMasterSummonBear:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsg')
@@ -1129,6 +1157,7 @@ function AbilityDefinitionBeastMasterSummonBear:setSummonedUnitType(level, value
 end
 
 AbilityDefinitionDarkRangerSilence = class('AbilityDefinitionDarkRangerSilence', AbilityDefinition)
+_G.AbilityDefinitionDarkRangerSilence = AbilityDefinitionDarkRangerSilence
 
 function AbilityDefinitionDarkRangerSilence:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsi')
@@ -1159,6 +1188,7 @@ function AbilityDefinitionDarkRangerSilence:setAttacksPrevented(level, value)
 end
 
 AbilityDefinitionSanctuary = class('AbilityDefinitionSanctuary', AbilityDefinition)
+_G.AbilityDefinitionSanctuary = AbilityDefinitionSanctuary
 
 function AbilityDefinitionSanctuary:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANsa')
@@ -1195,6 +1225,7 @@ function AbilityDefinitionSanctuary:setUnitRegenerationDelay(level, value)
 end
 
 AbilityDefinitionShadowMeldInstant = class('AbilityDefinitionShadowMeldInstant', AbilityDefinition)
+_G.AbilityDefinitionShadowMeldInstant = AbilityDefinitionShadowMeldInstant
 
 function AbilityDefinitionShadowMeldInstant:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sshm')
@@ -1219,6 +1250,7 @@ function AbilityDefinitionShadowMeldInstant:setFadeDuration(level, value)
 end
 
 AbilityDefinitionSpellShieldAOE = class('AbilityDefinitionSpellShieldAOE', AbilityDefinition)
+_G.AbilityDefinitionSpellShieldAOE = AbilityDefinitionSpellShieldAOE
 
 function AbilityDefinitionSpellShieldAOE:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANse')
@@ -1231,6 +1263,7 @@ function AbilityDefinitionSpellShieldAOE:setShieldCooldownTime(level, value)
 end
 
 AbilityDefinitionItemAuraEndurance = class('AbilityDefinitionItemAuraEndurance', AbilityDefinition)
+_G.AbilityDefinitionItemAuraEndurance = AbilityDefinitionItemAuraEndurance
 
 function AbilityDefinitionItemAuraEndurance:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIae')
@@ -1249,6 +1282,7 @@ function AbilityDefinitionItemAuraEndurance:setAttackSpeedIncrease(level, value)
 end
 
 AbilityDefinitionSpiritPigcreep = class('AbilityDefinitionSpiritPigcreep', AbilityDefinition)
+_G.AbilityDefinitionSpiritPigcreep = AbilityDefinitionSpiritPigcreep
 
 function AbilityDefinitionSpiritPigcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACs9')
@@ -1267,6 +1301,7 @@ function AbilityDefinitionSpiritPigcreep:setNumberofSummonedUnits(level, value)
 end
 
 AbilityDefinitionUnstableConcoction = class('AbilityDefinitionUnstableConcoction', AbilityDefinition)
+_G.AbilityDefinitionUnstableConcoction = AbilityDefinitionUnstableConcoction
 
 function AbilityDefinitionUnstableConcoction:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Auco')
@@ -1309,6 +1344,7 @@ function AbilityDefinitionUnstableConcoction:setPartialDamageRadius(level, value
 end
 
 AbilityDefinitionItemAuraDevotion = class('AbilityDefinitionItemAuraDevotion', AbilityDefinition)
+_G.AbilityDefinitionItemAuraDevotion = AbilityDefinitionItemAuraDevotion
 
 function AbilityDefinitionItemAuraDevotion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIad')
@@ -1327,6 +1363,7 @@ function AbilityDefinitionItemAuraDevotion:setArmorBonus(level, value)
 end
 
 AbilityDefinitionAttackMod = class('AbilityDefinitionAttackMod', AbilityDefinition)
+_G.AbilityDefinitionAttackMod = AbilityDefinitionAttackMod
 
 function AbilityDefinitionAttackMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIaa')
@@ -1339,6 +1376,7 @@ function AbilityDefinitionAttackMod:setAttackModification(level, value)
 end
 
 AbilityDefinitionMountainKingAvatar = class('AbilityDefinitionMountainKingAvatar', AbilityDefinition)
+_G.AbilityDefinitionMountainKingAvatar = AbilityDefinitionMountainKingAvatar
 
 function AbilityDefinitionMountainKingAvatar:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHav')
@@ -1369,6 +1407,7 @@ function AbilityDefinitionMountainKingAvatar:setHitPointBonus(level, value)
 end
 
 AbilityDefinitionAIab = class('AbilityDefinitionAIab', AbilityDefinition)
+_G.AbilityDefinitionAIab = AbilityDefinitionAIab
 
 function AbilityDefinitionAIab:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIab')
@@ -1399,6 +1438,7 @@ function AbilityDefinitionAIab:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionMannorothReincarnation = class('AbilityDefinitionMannorothReincarnation', AbilityDefinition)
+_G.AbilityDefinitionMannorothReincarnation = AbilityDefinitionMannorothReincarnation
 
 function AbilityDefinitionMannorothReincarnation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANrn')
@@ -1411,6 +1451,7 @@ function AbilityDefinitionMannorothReincarnation:setReincarnationDelay(level, va
 end
 
 AbilityDefinitionAnimateDead = class('AbilityDefinitionAnimateDead', AbilityDefinition)
+_G.AbilityDefinitionAnimateDead = AbilityDefinitionAnimateDead
 
 function AbilityDefinitionAnimateDead:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIan')
@@ -1435,6 +1476,7 @@ function AbilityDefinitionAnimateDead:setInheritUpgrades(level, value)
 end
 
 AbilityDefinitionAgilityMod = class('AbilityDefinitionAgilityMod', AbilityDefinition)
+_G.AbilityDefinitionAgilityMod = AbilityDefinitionAgilityMod
 
 function AbilityDefinitionAgilityMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIam')
@@ -1465,6 +1507,7 @@ function AbilityDefinitionAgilityMod:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionRainofFirecreep = class('AbilityDefinitionRainofFirecreep', AbilityDefinition)
+_G.AbilityDefinitionRainofFirecreep = AbilityDefinitionRainofFirecreep
 
 function AbilityDefinitionRainofFirecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACrf')
@@ -1507,6 +1550,7 @@ function AbilityDefinitionRainofFirecreep:setDamage(level, value)
 end
 
 AbilityDefinitionDreadlordSleep = class('AbilityDefinitionDreadlordSleep', AbilityDefinition)
+_G.AbilityDefinitionDreadlordSleep = AbilityDefinitionDreadlordSleep
 
 function AbilityDefinitionDreadlordSleep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUsl')
@@ -1519,6 +1563,7 @@ function AbilityDefinitionDreadlordSleep:setStunDuration(level, value)
 end
 
 AbilityDefinitionRaiseDeadCreep = class('AbilityDefinitionRaiseDeadCreep', AbilityDefinition)
+_G.AbilityDefinitionRaiseDeadCreep = AbilityDefinitionRaiseDeadCreep
 
 function AbilityDefinitionRaiseDeadCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACrd')
@@ -1555,6 +1600,7 @@ function AbilityDefinitionRaiseDeadCreep:setUnitTypeOne(level, value)
 end
 
 AbilityDefinitionFaerieFireAfa2 = class('AbilityDefinitionFaerieFireAfa2', AbilityDefinition)
+_G.AbilityDefinitionFaerieFireAfa2 = AbilityDefinitionFaerieFireAfa2
 
 function AbilityDefinitionFaerieFireAfa2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afa2')
@@ -1573,6 +1619,7 @@ function AbilityDefinitionFaerieFireAfa2:setDefenseReduction(level, value)
 end
 
 AbilityDefinitionUnholyFrenzyWarlock = class('AbilityDefinitionUnholyFrenzyWarlock', AbilityDefinition)
+_G.AbilityDefinitionUnholyFrenzyWarlock = AbilityDefinitionUnholyFrenzyWarlock
 
 function AbilityDefinitionUnholyFrenzyWarlock:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Suhf')
@@ -1591,6 +1638,7 @@ function AbilityDefinitionUnholyFrenzyWarlock:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionPaladinDevotionAura = class('AbilityDefinitionPaladinDevotionAura', AbilityDefinition)
+_G.AbilityDefinitionPaladinDevotionAura = AbilityDefinitionPaladinDevotionAura
 
 function AbilityDefinitionPaladinDevotionAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHad')
@@ -1609,6 +1657,7 @@ function AbilityDefinitionPaladinDevotionAura:setArmorBonus(level, value)
 end
 
 AbilityDefinitionTinkererRoboGoblinLevel0 = class('AbilityDefinitionTinkererRoboGoblinLevel0', AbilityDefinition)
+_G.AbilityDefinitionTinkererRoboGoblinLevel0 = AbilityDefinitionTinkererRoboGoblinLevel0
 
 function AbilityDefinitionTinkererRoboGoblinLevel0:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANrg')
@@ -1657,6 +1706,7 @@ function AbilityDefinitionTinkererRoboGoblinLevel0:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionRejuvinationcreep = class('AbilityDefinitionRejuvinationcreep', AbilityDefinition)
+_G.AbilityDefinitionRejuvinationcreep = AbilityDefinitionRejuvinationcreep
 
 function AbilityDefinitionRejuvinationcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACrj')
@@ -1687,6 +1737,7 @@ function AbilityDefinitionRejuvinationcreep:setAllowWhenFull(level, value)
 end
 
 AbilityDefinitionRainofFire = class('AbilityDefinitionRainofFire', AbilityDefinition)
+_G.AbilityDefinitionRainofFire = AbilityDefinitionRainofFire
 
 function AbilityDefinitionRainofFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANrf')
@@ -1729,6 +1780,7 @@ function AbilityDefinitionRainofFire:setDamage(level, value)
 end
 
 AbilityDefinitionItemAuraVampiric = class('AbilityDefinitionItemAuraVampiric', AbilityDefinition)
+_G.AbilityDefinitionItemAuraVampiric = AbilityDefinitionItemAuraVampiric
 
 function AbilityDefinitionItemAuraVampiric:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIav')
@@ -1741,6 +1793,7 @@ function AbilityDefinitionItemAuraVampiric:setAttackDamageStolen(level, value)
 end
 
 AbilityDefinitionItemAuraUnholy = class('AbilityDefinitionItemAuraUnholy', AbilityDefinition)
+_G.AbilityDefinitionItemAuraUnholy = AbilityDefinitionItemAuraUnholy
 
 function AbilityDefinitionItemAuraUnholy:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIau')
@@ -1765,6 +1818,7 @@ function AbilityDefinitionItemAuraUnholy:setMovementSpeedIncrease(level, value)
 end
 
 AbilityDefinitionArchMageBrillianceAura = class('AbilityDefinitionArchMageBrillianceAura', AbilityDefinition)
+_G.AbilityDefinitionArchMageBrillianceAura = AbilityDefinitionArchMageBrillianceAura
 
 function AbilityDefinitionArchMageBrillianceAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHab')
@@ -1783,6 +1837,7 @@ function AbilityDefinitionArchMageBrillianceAura:setPercentBonus(level, value)
 end
 
 AbilityDefinitionNeutralRegenmanaonly = class('AbilityDefinitionNeutralRegenmanaonly', AbilityDefinition)
+_G.AbilityDefinitionNeutralRegenmanaonly = AbilityDefinitionNeutralRegenmanaonly
 
 function AbilityDefinitionNeutralRegenmanaonly:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANre')
@@ -1801,6 +1856,7 @@ function AbilityDefinitionNeutralRegenmanaonly:setAmountRegenerated(level, value
 end
 
 AbilityDefinitionRoarcreep = class('AbilityDefinitionRoarcreep', AbilityDefinition)
+_G.AbilityDefinitionRoarcreep = AbilityDefinitionRoarcreep
 
 function AbilityDefinitionRoarcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACro')
@@ -1849,6 +1905,7 @@ function AbilityDefinitionRoarcreep:setMaxUnits(level, value)
 end
 
 AbilityDefinitionAttackBonus = class('AbilityDefinitionAttackBonus', AbilityDefinition)
+_G.AbilityDefinitionAttackBonus = AbilityDefinitionAttackBonus
 
 function AbilityDefinitionAttackBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIat')
@@ -1861,6 +1918,7 @@ function AbilityDefinitionAttackBonus:setAttackBonus(level, value)
 end
 
 AbilityDefinitionAIas = class('AbilityDefinitionAIas', AbilityDefinition)
+_G.AbilityDefinitionAIas = AbilityDefinitionAIas
 
 function AbilityDefinitionAIas:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIas')
@@ -1873,6 +1931,7 @@ function AbilityDefinitionAIas:setAttackSpeedIncrease(level, value)
 end
 
 AbilityDefinitionReincarnationcreep = class('AbilityDefinitionReincarnationcreep', AbilityDefinition)
+_G.AbilityDefinitionReincarnationcreep = AbilityDefinitionReincarnationcreep
 
 function AbilityDefinitionReincarnationcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACrn')
@@ -1885,6 +1944,7 @@ function AbilityDefinitionReincarnationcreep:setReincarnationDelay(level, value)
 end
 
 AbilityDefinitionItemAuraTrueshot = class('AbilityDefinitionItemAuraTrueshot', AbilityDefinition)
+_G.AbilityDefinitionItemAuraTrueshot = AbilityDefinitionItemAuraTrueshot
 
 function AbilityDefinitionItemAuraTrueshot:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIar')
@@ -1915,6 +1975,7 @@ function AbilityDefinitionItemAuraTrueshot:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionThunderClapThunderLizard = class('AbilityDefinitionThunderClapThunderLizard', AbilityDefinition)
+_G.AbilityDefinitionThunderClapThunderLizard = AbilityDefinitionThunderClapThunderLizard
 
 function AbilityDefinitionThunderClapThunderLizard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACt2')
@@ -1945,6 +2006,7 @@ function AbilityDefinitionThunderClapThunderLizard:setMovementSpeedReduction(lev
 end
 
 AbilityDefinitionWardenShadowStrike = class('AbilityDefinitionWardenShadowStrike', AbilityDefinition)
+_G.AbilityDefinitionWardenShadowStrike = AbilityDefinitionWardenShadowStrike
 
 function AbilityDefinitionWardenShadowStrike:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEsh')
@@ -1981,6 +2043,7 @@ function AbilityDefinitionWardenShadowStrike:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionBloodMageBanish = class('AbilityDefinitionBloodMageBanish', AbilityDefinition)
+_G.AbilityDefinitionBloodMageBanish = AbilityDefinitionBloodMageBanish
 
 function AbilityDefinitionBloodMageBanish:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHbn')
@@ -1999,6 +2062,7 @@ function AbilityDefinitionBloodMageBanish:setMovementSpeedReduction(level, value
 end
 
 AbilityDefinitionItemAuraBrilliance = class('AbilityDefinitionItemAuraBrilliance', AbilityDefinition)
+_G.AbilityDefinitionItemAuraBrilliance = AbilityDefinitionItemAuraBrilliance
 
 function AbilityDefinitionItemAuraBrilliance:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIba')
@@ -2017,6 +2081,7 @@ function AbilityDefinitionItemAuraBrilliance:setPercentBonus(level, value)
 end
 
 AbilityDefinitionRainofChaos = class('AbilityDefinitionRainofChaos', AbilityDefinition)
+_G.AbilityDefinitionRainofChaos = AbilityDefinitionRainofChaos
 
 function AbilityDefinitionRainofChaos:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANrc')
@@ -2035,6 +2100,7 @@ function AbilityDefinitionRainofChaos:setNumberofUnitsCreated(level, value)
 end
 
 AbilityDefinitionBuildTinyGreatHall = class('AbilityDefinitionBuildTinyGreatHall', AbilityDefinition)
+_G.AbilityDefinitionBuildTinyGreatHall = AbilityDefinitionBuildTinyGreatHall
 
 function AbilityDefinitionBuildTinyGreatHall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIbg')
@@ -2047,6 +2113,7 @@ function AbilityDefinitionBuildTinyGreatHall:setUnitCreatedperplayerrace(level, 
 end
 
 AbilityDefinitionCryptLordSpikedCarapace = class('AbilityDefinitionCryptLordSpikedCarapace', AbilityDefinition)
+_G.AbilityDefinitionCryptLordSpikedCarapace = AbilityDefinitionCryptLordSpikedCarapace
 
 function AbilityDefinitionCryptLordSpikedCarapace:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUts')
@@ -2071,6 +2138,7 @@ function AbilityDefinitionCryptLordSpikedCarapace:setReturnedDamageFactor(level,
 end
 
 AbilityDefinitionCenariusBeefyStarfall = class('AbilityDefinitionCenariusBeefyStarfall', AbilityDefinition)
+_G.AbilityDefinitionCenariusBeefyStarfall = AbilityDefinitionCenariusBeefyStarfall
 
 function AbilityDefinitionCenariusBeefyStarfall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEsb')
@@ -2095,6 +2163,7 @@ function AbilityDefinitionCenariusBeefyStarfall:setBuildingReduction(level, valu
 end
 
 AbilityDefinitionMoonPriestessStarfall = class('AbilityDefinitionMoonPriestessStarfall', AbilityDefinition)
+_G.AbilityDefinitionMoonPriestessStarfall = AbilityDefinitionMoonPriestessStarfall
 
 function AbilityDefinitionMoonPriestessStarfall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEsf')
@@ -2119,6 +2188,7 @@ function AbilityDefinitionMoonPriestessStarfall:setBuildingReduction(level, valu
 end
 
 AbilityDefinitionArchMageBlizzard = class('AbilityDefinitionArchMageBlizzard', AbilityDefinition)
+_G.AbilityDefinitionArchMageBlizzard = AbilityDefinitionArchMageBlizzard
 
 function AbilityDefinitionArchMageBlizzard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHbz')
@@ -2161,6 +2231,7 @@ function AbilityDefinitionArchMageBlizzard:setDamage(level, value)
 end
 
 AbilityDefinitionDefenseBonusPlus1 = class('AbilityDefinitionDefenseBonusPlus1', AbilityDefinition)
+_G.AbilityDefinitionDefenseBonusPlus1 = AbilityDefinitionDefenseBonusPlus1
 
 function AbilityDefinitionDefenseBonusPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AId1')
@@ -2173,6 +2244,7 @@ function AbilityDefinitionDefenseBonusPlus1:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionSearingArrowscreep = class('AbilityDefinitionSearingArrowscreep', AbilityDefinition)
+_G.AbilityDefinitionSearingArrowscreep = AbilityDefinitionSearingArrowscreep
 
 function AbilityDefinitionSearingArrowscreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsa')
@@ -2185,6 +2257,7 @@ function AbilityDefinitionSearingArrowscreep:setDamageBonus(level, value)
 end
 
 AbilityDefinitionTinkererSummonFactoryLevel1 = class('AbilityDefinitionTinkererSummonFactoryLevel1', AbilityDefinition)
+_G.AbilityDefinitionTinkererSummonFactoryLevel1 = AbilityDefinitionTinkererSummonFactoryLevel1
 
 function AbilityDefinitionTinkererSummonFactoryLevel1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANs1')
@@ -2227,6 +2300,7 @@ function AbilityDefinitionTinkererSummonFactoryLevel1:setSpawnUnitDuration(level
 end
 
 AbilityDefinitionDefenseBonusPlus3 = class('AbilityDefinitionDefenseBonusPlus3', AbilityDefinition)
+_G.AbilityDefinitionDefenseBonusPlus3 = AbilityDefinitionDefenseBonusPlus3
 
 function AbilityDefinitionDefenseBonusPlus3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AId3')
@@ -2239,6 +2313,7 @@ function AbilityDefinitionDefenseBonusPlus3:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionDefenseBonusPlus2 = class('AbilityDefinitionDefenseBonusPlus2', AbilityDefinition)
+_G.AbilityDefinitionDefenseBonusPlus2 = AbilityDefinitionDefenseBonusPlus2
 
 function AbilityDefinitionDefenseBonusPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AId2')
@@ -2251,6 +2326,7 @@ function AbilityDefinitionDefenseBonusPlus2:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionTinkererSummonFactoryLevel3 = class('AbilityDefinitionTinkererSummonFactoryLevel3', AbilityDefinition)
+_G.AbilityDefinitionTinkererSummonFactoryLevel3 = AbilityDefinitionTinkererSummonFactoryLevel3
 
 function AbilityDefinitionTinkererSummonFactoryLevel3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANs3')
@@ -2293,6 +2369,7 @@ function AbilityDefinitionTinkererSummonFactoryLevel3:setSpawnUnitDuration(level
 end
 
 AbilityDefinitionSpiritWolfcreep = class('AbilityDefinitionSpiritWolfcreep', AbilityDefinition)
+_G.AbilityDefinitionSpiritWolfcreep = AbilityDefinitionSpiritWolfcreep
 
 function AbilityDefinitionSpiritWolfcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsf')
@@ -2311,6 +2388,7 @@ function AbilityDefinitionSpiritWolfcreep:setNumberofSummonedUnits(level, value)
 end
 
 AbilityDefinitionTinkererSummonFactoryLevel2 = class('AbilityDefinitionTinkererSummonFactoryLevel2', AbilityDefinition)
+_G.AbilityDefinitionTinkererSummonFactoryLevel2 = AbilityDefinitionTinkererSummonFactoryLevel2
 
 function AbilityDefinitionTinkererSummonFactoryLevel2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANs2')
@@ -2353,6 +2431,7 @@ function AbilityDefinitionTinkererSummonFactoryLevel2:setSpawnUnitDuration(level
 end
 
 AbilityDefinitionMaxManaBonusMost = class('AbilityDefinitionMaxManaBonusMost', AbilityDefinition)
+_G.AbilityDefinitionMaxManaBonusMost = AbilityDefinitionMaxManaBonusMost
 
 function AbilityDefinitionMaxManaBonusMost:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIbm')
@@ -2365,6 +2444,7 @@ function AbilityDefinitionMaxManaBonusMost:setMaxManaGained(level, value)
 end
 
 AbilityDefinitionShockwaveCreep = class('AbilityDefinitionShockwaveCreep', AbilityDefinition)
+_G.AbilityDefinitionShockwaveCreep = AbilityDefinitionShockwaveCreep
 
 function AbilityDefinitionShockwaveCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsh')
@@ -2395,6 +2475,7 @@ function AbilityDefinitionShockwaveCreep:setMaximumDamage(level, value)
 end
 
 AbilityDefinitionBuildTinyCastle = class('AbilityDefinitionBuildTinyCastle', AbilityDefinition)
+_G.AbilityDefinitionBuildTinyCastle = AbilityDefinitionBuildTinyCastle
 
 function AbilityDefinitionBuildTinyCastle:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIbl')
@@ -2407,6 +2488,7 @@ function AbilityDefinitionBuildTinyCastle:setUnitCreatedperplayerrace(level, val
 end
 
 AbilityDefinitionSilenceCreep = class('AbilityDefinitionSilenceCreep', AbilityDefinition)
+_G.AbilityDefinitionSilenceCreep = AbilityDefinitionSilenceCreep
 
 function AbilityDefinitionSilenceCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsi')
@@ -2437,6 +2519,7 @@ function AbilityDefinitionSilenceCreep:setAttacksPrevented(level, value)
 end
 
 AbilityDefinitionSleepcreep = class('AbilityDefinitionSleepcreep', AbilityDefinition)
+_G.AbilityDefinitionSleepcreep = AbilityDefinitionSleepcreep
 
 function AbilityDefinitionSleepcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsl')
@@ -2449,6 +2532,7 @@ function AbilityDefinitionSleepcreep:setStunDuration(level, value)
 end
 
 AbilityDefinitionBashitem = class('AbilityDefinitionBashitem', AbilityDefinition)
+_G.AbilityDefinitionBashitem = AbilityDefinitionBashitem
 
 function AbilityDefinitionBashitem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIbx')
@@ -2461,6 +2545,7 @@ function AbilityDefinitionBashitem:setNeverMiss(level, value)
 end
 
 AbilityDefinitionDefenseBonusPlus5 = class('AbilityDefinitionDefenseBonusPlus5', AbilityDefinition)
+_G.AbilityDefinitionDefenseBonusPlus5 = AbilityDefinitionDefenseBonusPlus5
 
 function AbilityDefinitionDefenseBonusPlus5:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AId5')
@@ -2473,6 +2558,7 @@ function AbilityDefinitionDefenseBonusPlus5:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionMountainKingBash = class('AbilityDefinitionMountainKingBash', AbilityDefinition)
+_G.AbilityDefinitionMountainKingBash = AbilityDefinitionMountainKingBash
 
 function AbilityDefinitionMountainKingBash:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHbh')
@@ -2509,6 +2595,7 @@ function AbilityDefinitionMountainKingBash:setDamageMultiplier(level, value)
 end
 
 AbilityDefinitionSiphonManaCreep = class('AbilityDefinitionSiphonManaCreep', AbilityDefinition)
+_G.AbilityDefinitionSiphonManaCreep = AbilityDefinitionSiphonManaCreep
 
 function AbilityDefinitionSiphonManaCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsm')
@@ -2551,6 +2638,7 @@ function AbilityDefinitionSiphonManaCreep:setLifeTransferredPerSecond(level, val
 end
 
 AbilityDefinitionDefenseBonusPlus4 = class('AbilityDefinitionDefenseBonusPlus4', AbilityDefinition)
+_G.AbilityDefinitionDefenseBonusPlus4 = AbilityDefinitionDefenseBonusPlus4
 
 function AbilityDefinitionDefenseBonusPlus4:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AId4')
@@ -2563,6 +2651,7 @@ function AbilityDefinitionDefenseBonusPlus4:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionBuildTinyScoutTower = class('AbilityDefinitionBuildTinyScoutTower', AbilityDefinition)
+_G.AbilityDefinitionBuildTinyScoutTower = AbilityDefinitionBuildTinyScoutTower
 
 function AbilityDefinitionBuildTinyScoutTower:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIbt')
@@ -2575,6 +2664,7 @@ function AbilityDefinitionBuildTinyScoutTower:setUnitCreatedperplayerrace(level,
 end
 
 AbilityDefinitionItemCloakOfFlames = class('AbilityDefinitionItemCloakOfFlames', AbilityDefinition)
+_G.AbilityDefinitionItemCloakOfFlames = AbilityDefinitionItemCloakOfFlames
 
 function AbilityDefinitionItemCloakOfFlames:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIcf')
@@ -2599,6 +2689,7 @@ function AbilityDefinitionItemCloakOfFlames:setManaUsedPerSecond(level, value)
 end
 
 AbilityDefinitionItemAuraCommand = class('AbilityDefinitionItemAuraCommand', AbilityDefinition)
+_G.AbilityDefinitionItemAuraCommand = AbilityDefinitionItemAuraCommand
 
 function AbilityDefinitionItemAuraCommand:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIcd')
@@ -2629,6 +2720,7 @@ function AbilityDefinitionItemAuraCommand:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionHarvest = class('AbilityDefinitionHarvest', AbilityDefinition)
+_G.AbilityDefinitionHarvest = AbilityDefinitionHarvest
 
 function AbilityDefinitionHarvest:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahar')
@@ -2653,6 +2745,7 @@ function AbilityDefinitionHarvest:setDamagetoTree(level, value)
 end
 
 AbilityDefinitionMagicImmunityDragons = class('AbilityDefinitionMagicImmunityDragons', AbilityDefinition)
+_G.AbilityDefinitionMagicImmunityDragons = AbilityDefinitionMagicImmunityDragons
 
 function AbilityDefinitionMagicImmunityDragons:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACm3')
@@ -2665,6 +2758,7 @@ function AbilityDefinitionMagicImmunityDragons:setMagicDamageFactor(level, value
 end
 
 AbilityDefinitionMagicImmunityArchimonde = class('AbilityDefinitionMagicImmunityArchimonde', AbilityDefinition)
+_G.AbilityDefinitionMagicImmunityArchimonde = AbilityDefinitionMagicImmunityArchimonde
 
 function AbilityDefinitionMagicImmunityArchimonde:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACm2')
@@ -2677,6 +2771,7 @@ function AbilityDefinitionMagicImmunityArchimonde:setMagicDamageFactor(level, va
 end
 
 AbilityDefinitionOrbofCorruption = class('AbilityDefinitionOrbofCorruption', AbilityDefinition)
+_G.AbilityDefinitionOrbofCorruption = AbilityDefinitionOrbofCorruption
 
 function AbilityDefinitionOrbofCorruption:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIcb')
@@ -2701,6 +2796,7 @@ function AbilityDefinitionOrbofCorruption:setDamageBonusDice(level, value)
 end
 
 AbilityDefinitionWardenSpiritofVengeance = class('AbilityDefinitionWardenSpiritofVengeance', AbilityDefinition)
+_G.AbilityDefinitionWardenSpiritofVengeance = AbilityDefinitionWardenSpiritofVengeance
 
 function AbilityDefinitionWardenSpiritofVengeance:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEsv')
@@ -2719,6 +2815,7 @@ function AbilityDefinitionWardenSpiritofVengeance:setNumberofSummonedUnits(level
 end
 
 AbilityDefinitionItemChangeTOD = class('AbilityDefinitionItemChangeTOD', AbilityDefinition)
+_G.AbilityDefinitionItemChangeTOD = AbilityDefinitionItemChangeTOD
 
 function AbilityDefinitionItemChangeTOD:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIct')
@@ -2737,6 +2834,7 @@ function AbilityDefinitionItemChangeTOD:setNewTimeofDayHour(level, value)
 end
 
 AbilityDefinitionMoonPriestessScout = class('AbilityDefinitionMoonPriestessScout', AbilityDefinition)
+_G.AbilityDefinitionMoonPriestessScout = AbilityDefinitionMoonPriestessScout
 
 function AbilityDefinitionMoonPriestessScout:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEst')
@@ -2755,6 +2853,7 @@ function AbilityDefinitionMoonPriestessScout:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionCycloneAIcy = class('AbilityDefinitionCycloneAIcy', AbilityDefinition)
+_G.AbilityDefinitionCycloneAIcy = AbilityDefinitionCycloneAIcy
 
 function AbilityDefinitionCycloneAIcy:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIcy')
@@ -2767,6 +2866,7 @@ function AbilityDefinitionCycloneAIcy:setCanBeDispelled(level, value)
 end
 
 AbilityDefinitionExhume = class('AbilityDefinitionExhume', AbilityDefinition)
+_G.AbilityDefinitionExhume = AbilityDefinitionExhume
 
 function AbilityDefinitionExhume:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aexh')
@@ -2785,6 +2885,7 @@ function AbilityDefinitionExhume:setMaximumNumberofCorpses(level, value)
 end
 
 AbilityDefinitionItemCommand = class('AbilityDefinitionItemCommand', AbilityDefinition)
+_G.AbilityDefinitionItemCommand = AbilityDefinitionItemCommand
 
 function AbilityDefinitionItemCommand:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIco')
@@ -2797,6 +2898,7 @@ function AbilityDefinitionItemCommand:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionExperienceModgreater = class('AbilityDefinitionExperienceModgreater', AbilityDefinition)
+_G.AbilityDefinitionExperienceModgreater = AbilityDefinitionExperienceModgreater
 
 function AbilityDefinitionExperienceModgreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIe2')
@@ -2809,6 +2911,7 @@ function AbilityDefinitionExperienceModgreater:setExperienceGained(level, value)
 end
 
 AbilityDefinitionAIde = class('AbilityDefinitionAIde', AbilityDefinition)
+_G.AbilityDefinitionAIde = AbilityDefinitionAIde
 
 function AbilityDefinitionAIde:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIde')
@@ -2821,6 +2924,7 @@ function AbilityDefinitionAIde:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionDefendItem = class('AbilityDefinitionDefendItem', AbilityDefinition)
+_G.AbilityDefinitionDefendItem = AbilityDefinitionDefendItem
 
 function AbilityDefinitionDefendItem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIdd')
@@ -2875,6 +2979,7 @@ function AbilityDefinitionDefendItem:setMagicDamageReduction(level, value)
 end
 
 AbilityDefinitionOrbofDarkness = class('AbilityDefinitionOrbofDarkness', AbilityDefinition)
+_G.AbilityDefinitionOrbofDarkness = AbilityDefinitionOrbofDarkness
 
 function AbilityDefinitionOrbofDarkness:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIdf')
@@ -2917,6 +3022,7 @@ function AbilityDefinitionOrbofDarkness:setEffectAbility(level, value)
 end
 
 AbilityDefinitionItemDispelAoe = class('AbilityDefinitionItemDispelAoe', AbilityDefinition)
+_G.AbilityDefinitionItemDispelAoe = AbilityDefinitionItemDispelAoe
 
 function AbilityDefinitionItemDispelAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIdi')
@@ -2935,6 +3041,7 @@ function AbilityDefinitionItemDispelAoe:setManaLossPerUnit(level, value)
 end
 
 AbilityDefinitionLightningShieldcreep = class('AbilityDefinitionLightningShieldcreep', AbilityDefinition)
+_G.AbilityDefinitionLightningShieldcreep = AbilityDefinitionLightningShieldcreep
 
 function AbilityDefinitionLightningShieldcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACls')
@@ -2947,6 +3054,7 @@ function AbilityDefinitionLightningShieldcreep:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionCargoHoldShip = class('AbilityDefinitionCargoHoldShip', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldShip = AbilityDefinitionCargoHoldShip
 
 function AbilityDefinitionCargoHoldShip:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sch5')
@@ -2959,6 +3067,7 @@ function AbilityDefinitionCargoHoldShip:setCargoCapacity(level, value)
 end
 
 AbilityDefinitionCannibalize = class('AbilityDefinitionCannibalize', AbilityDefinition)
+_G.AbilityDefinitionCannibalize = AbilityDefinitionCannibalize
 
 function AbilityDefinitionCannibalize:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acan')
@@ -2977,6 +3086,7 @@ function AbilityDefinitionCannibalize:setHitPointsperSecond(level, value)
 end
 
 AbilityDefinitionCargoHoldTank = class('AbilityDefinitionCargoHoldTank', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldTank = AbilityDefinitionCargoHoldTank
 
 function AbilityDefinitionCargoHoldTank:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sch4')
@@ -2989,6 +3099,7 @@ function AbilityDefinitionCargoHoldTank:setCargoCapacity(level, value)
 end
 
 AbilityDefinitionItemDefenseAoe = class('AbilityDefinitionItemDefenseAoe', AbilityDefinition)
+_G.AbilityDefinitionItemDefenseAoe = AbilityDefinitionItemDefenseAoe
 
 function AbilityDefinitionItemDefenseAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIda')
@@ -3013,6 +3124,7 @@ function AbilityDefinitionItemDefenseAoe:setDefenseBonus(level, value)
 end
 
 AbilityDefinitionCargoHoldTransport = class('AbilityDefinitionCargoHoldTransport', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldTransport = AbilityDefinitionCargoHoldTransport
 
 function AbilityDefinitionCargoHoldTransport:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sch3')
@@ -3025,6 +3137,7 @@ function AbilityDefinitionCargoHoldTransport:setCargoCapacity(level, value)
 end
 
 AbilityDefinitionCargoHoldMeatWagon = class('AbilityDefinitionCargoHoldMeatWagon', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldMeatWagon = AbilityDefinitionCargoHoldMeatWagon
 
 function AbilityDefinitionCargoHoldMeatWagon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sch2')
@@ -3037,6 +3150,7 @@ function AbilityDefinitionCargoHoldMeatWagon:setCargoCapacity(level, value)
 end
 
 AbilityDefinitionItemDispelChain = class('AbilityDefinitionItemDispelChain', AbilityDefinition)
+_G.AbilityDefinitionItemDispelChain = AbilityDefinitionItemDispelChain
 
 function AbilityDefinitionItemDispelChain:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIdc')
@@ -3061,6 +3175,7 @@ function AbilityDefinitionItemDispelChain:setManaLossPerUnit(level, value)
 end
 
 AbilityDefinitionTaurenChieftainEnduranceAura = class('AbilityDefinitionTaurenChieftainEnduranceAura', AbilityDefinition)
+_G.AbilityDefinitionTaurenChieftainEnduranceAura = AbilityDefinitionTaurenChieftainEnduranceAura
 
 function AbilityDefinitionTaurenChieftainEnduranceAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOae')
@@ -3079,6 +3194,7 @@ function AbilityDefinitionTaurenChieftainEnduranceAura:setAttackSpeedIncrease(le
 end
 
 AbilityDefinitionItemDefenseAoePlusHealing = class('AbilityDefinitionItemDefenseAoePlusHealing', AbilityDefinition)
+_G.AbilityDefinitionItemDefenseAoePlusHealing = AbilityDefinitionItemDefenseAoePlusHealing
 
 function AbilityDefinitionItemDefenseAoePlusHealing:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIdb')
@@ -3103,6 +3219,7 @@ function AbilityDefinitionItemDefenseAoePlusHealing:setDefenseBonus(level, value
 end
 
 AbilityDefinitionMagicImmunityCreep = class('AbilityDefinitionMagicImmunityCreep', AbilityDefinition)
+_G.AbilityDefinitionMagicImmunityCreep = AbilityDefinitionMagicImmunityCreep
 
 function AbilityDefinitionMagicImmunityCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACmi')
@@ -3115,6 +3232,7 @@ function AbilityDefinitionMagicImmunityCreep:setMagicDamageFactor(level, value)
 end
 
 AbilityDefinitionKeeperoftheGroveTranquility = class('AbilityDefinitionKeeperoftheGroveTranquility', AbilityDefinition)
+_G.AbilityDefinitionKeeperoftheGroveTranquility = AbilityDefinitionKeeperoftheGroveTranquility
 
 function AbilityDefinitionKeeperoftheGroveTranquility:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEtq')
@@ -3139,6 +3257,7 @@ function AbilityDefinitionKeeperoftheGroveTranquility:setLifeHealed(level, value
 end
 
 AbilityDefinitionWindWalk = class('AbilityDefinitionWindWalk', AbilityDefinition)
+_G.AbilityDefinitionWindWalk = AbilityDefinitionWindWalk
 
 function AbilityDefinitionWindWalk:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANwk')
@@ -3169,6 +3288,7 @@ function AbilityDefinitionWindWalk:setTransitionTime(level, value)
 end
 
 AbilityDefinitionManaShieldCreep = class('AbilityDefinitionManaShieldCreep', AbilityDefinition)
+_G.AbilityDefinitionManaShieldCreep = AbilityDefinitionManaShieldCreep
 
 function AbilityDefinitionManaShieldCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACmf')
@@ -3187,6 +3307,7 @@ function AbilityDefinitionManaShieldCreep:setManaperHitPoint(level, value)
 end
 
 AbilityDefinitionWateryMinion = class('AbilityDefinitionWateryMinion', AbilityDefinition)
+_G.AbilityDefinitionWateryMinion = AbilityDefinitionWateryMinion
 
 function AbilityDefinitionWateryMinion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANwm')
@@ -3205,6 +3326,7 @@ function AbilityDefinitionWateryMinion:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionItemDispelAoeWithCooldown = class('AbilityDefinitionItemDispelAoeWithCooldown', AbilityDefinition)
+_G.AbilityDefinitionItemDispelAoeWithCooldown = AbilityDefinitionItemDispelAoeWithCooldown
 
 function AbilityDefinitionItemDispelAoeWithCooldown:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIds')
@@ -3223,6 +3345,7 @@ function AbilityDefinitionItemDispelAoeWithCooldown:setManaLossPerUnit(level, va
 end
 
 AbilityDefinitionEvilIllidanMetamorphosis = class('AbilityDefinitionEvilIllidanMetamorphosis', AbilityDefinition)
+_G.AbilityDefinitionEvilIllidanMetamorphosis = AbilityDefinitionEvilIllidanMetamorphosis
 
 function AbilityDefinitionEvilIllidanMetamorphosis:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEvi')
@@ -3265,6 +3388,7 @@ function AbilityDefinitionEvilIllidanMetamorphosis:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionImpaleCreep = class('AbilityDefinitionImpaleCreep', AbilityDefinition)
+_G.AbilityDefinitionImpaleCreep = AbilityDefinitionImpaleCreep
 
 function AbilityDefinitionImpaleCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACmp')
@@ -3295,6 +3419,7 @@ function AbilityDefinitionImpaleCreep:setWaveDistance(level, value)
 end
 
 AbilityDefinitionMonsooncreep = class('AbilityDefinitionMonsooncreep', AbilityDefinition)
+_G.AbilityDefinitionMonsooncreep = AbilityDefinitionMonsooncreep
 
 function AbilityDefinitionMonsooncreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACmo')
@@ -3319,6 +3444,7 @@ function AbilityDefinitionMonsooncreep:setBuildingReduction(level, value)
 end
 
 AbilityDefinitionDevourMagic = class('AbilityDefinitionDevourMagic', AbilityDefinition)
+_G.AbilityDefinitionDevourMagic = AbilityDefinitionDevourMagic
 
 function AbilityDefinitionDevourMagic:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Advm')
@@ -3361,6 +3487,7 @@ function AbilityDefinitionDevourMagic:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionEvasion = class('AbilityDefinitionEvasion', AbilityDefinition)
+_G.AbilityDefinitionEvasion = AbilityDefinitionEvasion
 
 function AbilityDefinitionEvasion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIev')
@@ -3373,6 +3500,7 @@ function AbilityDefinitionEvasion:setChancetoEvade(level, value)
 end
 
 AbilityDefinitionCargoHoldDevour = class('AbilityDefinitionCargoHoldDevour', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldDevour = AbilityDefinitionCargoHoldDevour
 
 function AbilityDefinitionCargoHoldDevour:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Advc')
@@ -3397,6 +3525,7 @@ function AbilityDefinitionCargoHoldDevour:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionExperienceMod = class('AbilityDefinitionExperienceMod', AbilityDefinition)
+_G.AbilityDefinitionExperienceMod = AbilityDefinitionExperienceMod
 
 function AbilityDefinitionExperienceMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIem')
@@ -3409,6 +3538,7 @@ function AbilityDefinitionExperienceMod:setExperienceGained(level, value)
 end
 
 AbilityDefinitionCloudofFogItem = class('AbilityDefinitionCloudofFogItem', AbilityDefinition)
+_G.AbilityDefinitionCloudofFogItem = AbilityDefinitionCloudofFogItem
 
 function AbilityDefinitionCloudofFogItem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfg')
@@ -3439,6 +3569,7 @@ function AbilityDefinitionCloudofFogItem:setAttacksPrevented(level, value)
 end
 
 AbilityDefinitionDisenchantold = class('AbilityDefinitionDisenchantold', AbilityDefinition)
+_G.AbilityDefinitionDisenchantold = AbilityDefinitionDisenchantold
 
 function AbilityDefinitionDisenchantold:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adch')
@@ -3457,6 +3588,7 @@ function AbilityDefinitionDisenchantold:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionPillage = class('AbilityDefinitionPillage', AbilityDefinition)
+_G.AbilityDefinitionPillage = AbilityDefinitionPillage
 
 function AbilityDefinitionPillage:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asal')
@@ -3475,6 +3607,7 @@ function AbilityDefinitionPillage:setSalvageCostRatio(level, value)
 end
 
 AbilityDefinitionInventoryPackMule = class('AbilityDefinitionInventoryPackMule', AbilityDefinition)
+_G.AbilityDefinitionInventoryPackMule = AbilityDefinitionInventoryPackMule
 
 function AbilityDefinitionInventoryPackMule:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apak')
@@ -3511,6 +3644,7 @@ function AbilityDefinitionInventoryPackMule:setItemCapacity(level, value)
 end
 
 AbilityDefinitionFigurineFurbolg = class('AbilityDefinitionFigurineFurbolg', AbilityDefinition)
+_G.AbilityDefinitionFigurineFurbolg = AbilityDefinitionFigurineFurbolg
 
 function AbilityDefinitionFigurineFurbolg:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIff')
@@ -3541,6 +3675,7 @@ function AbilityDefinitionFigurineFurbolg:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionFigurineFelHound = class('AbilityDefinitionFigurineFelHound', AbilityDefinition)
+_G.AbilityDefinitionFigurineFelHound = AbilityDefinitionFigurineFelHound
 
 function AbilityDefinitionFigurineFelHound:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfh')
@@ -3571,6 +3706,7 @@ function AbilityDefinitionFigurineFelHound:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionFireDamageBonus = class('AbilityDefinitionFireDamageBonus', AbilityDefinition)
+_G.AbilityDefinitionFireDamageBonus = AbilityDefinitionFireDamageBonus
 
 function AbilityDefinitionFireDamageBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfb')
@@ -3589,6 +3725,7 @@ function AbilityDefinitionFireDamageBonus:setDamageBonus(level, value)
 end
 
 AbilityDefinitionDetectMagicSentinel = class('AbilityDefinitionDetectMagicSentinel', AbilityDefinition)
+_G.AbilityDefinitionDetectMagicSentinel = AbilityDefinitionDetectMagicSentinel
 
 function AbilityDefinitionDetectMagicSentinel:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adts')
@@ -3601,6 +3738,7 @@ function AbilityDefinitionDetectMagicSentinel:setDetectionType(level, value)
 end
 
 AbilityDefinitionFirelordVolcano = class('AbilityDefinitionFirelordVolcano', AbilityDefinition)
+_G.AbilityDefinitionFirelordVolcano = AbilityDefinitionFirelordVolcano
 
 function AbilityDefinitionFirelordVolcano:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANvc')
@@ -3649,6 +3787,7 @@ function AbilityDefinitionFirelordVolcano:setWaveCount(level, value)
 end
 
 AbilityDefinitionFigurineRedDrake = class('AbilityDefinitionFigurineRedDrake', AbilityDefinition)
+_G.AbilityDefinitionFigurineRedDrake = AbilityDefinitionFigurineRedDrake
 
 function AbilityDefinitionFigurineRedDrake:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfd')
@@ -3679,6 +3818,7 @@ function AbilityDefinitionFigurineRedDrake:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionHealingWard = class('AbilityDefinitionHealingWard', AbilityDefinition)
+_G.AbilityDefinitionHealingWard = AbilityDefinitionHealingWard
 
 function AbilityDefinitionHealingWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahwd')
@@ -3691,6 +3831,7 @@ function AbilityDefinitionHealingWard:setWardUnitType(level, value)
 end
 
 AbilityDefinitionFlareGun = class('AbilityDefinitionFlareGun', AbilityDefinition)
+_G.AbilityDefinitionFlareGun = AbilityDefinitionFlareGun
 
 function AbilityDefinitionFlareGun:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfa')
@@ -3709,6 +3850,7 @@ function AbilityDefinitionFlareGun:setDelayForTargetEffect(level, value)
 end
 
 AbilityDefinitionLoadEntangledGoldMine = class('AbilityDefinitionLoadEntangledGoldMine', AbilityDefinition)
+_G.AbilityDefinitionLoadEntangledGoldMine = AbilityDefinitionLoadEntangledGoldMine
 
 function AbilityDefinitionLoadEntangledGoldMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Slo2')
@@ -3721,6 +3863,7 @@ function AbilityDefinitionLoadEntangledGoldMine:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionNeutralRegenhealthonly = class('AbilityDefinitionNeutralRegenhealthonly', AbilityDefinition)
+_G.AbilityDefinitionNeutralRegenhealthonly = AbilityDefinitionNeutralRegenhealthonly
 
 function AbilityDefinitionNeutralRegenhealthonly:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACnr')
@@ -3739,6 +3882,7 @@ function AbilityDefinitionNeutralRegenhealthonly:setAmountofHitPointsRegenerated
 end
 
 AbilityDefinitionAuraRegenerationHealingWard = class('AbilityDefinitionAuraRegenerationHealingWard', AbilityDefinition)
+_G.AbilityDefinitionAuraRegenerationHealingWard = AbilityDefinitionAuraRegenerationHealingWard
 
 function AbilityDefinitionAuraRegenerationHealingWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aoar')
@@ -3757,6 +3901,7 @@ function AbilityDefinitionAuraRegenerationHealingWard:setAmountofHitPointsRegene
 end
 
 AbilityDefinitionLoadNavies = class('AbilityDefinitionLoadNavies', AbilityDefinition)
+_G.AbilityDefinitionLoadNavies = AbilityDefinitionLoadNavies
 
 function AbilityDefinitionLoadNavies:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Slo3')
@@ -3769,6 +3914,7 @@ function AbilityDefinitionLoadNavies:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionInvisibility = class('AbilityDefinitionInvisibility', AbilityDefinition)
+_G.AbilityDefinitionInvisibility = AbilityDefinitionInvisibility
 
 function AbilityDefinitionInvisibility:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aivs')
@@ -3781,6 +3927,7 @@ function AbilityDefinitionInvisibility:setTransitionTimeseconds(level, value)
 end
 
 AbilityDefinitionSentryWard = class('AbilityDefinitionSentryWard', AbilityDefinition)
+_G.AbilityDefinitionSentryWard = AbilityDefinitionSentryWard
 
 function AbilityDefinitionSentryWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aeye')
@@ -3793,6 +3940,7 @@ function AbilityDefinitionSentryWard:setWardUnitType(level, value)
 end
 
 AbilityDefinitionFigurineRockGolem = class('AbilityDefinitionFigurineRockGolem', AbilityDefinition)
+_G.AbilityDefinitionFigurineRockGolem = AbilityDefinitionFigurineRockGolem
 
 function AbilityDefinitionFigurineRockGolem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfr')
@@ -3823,6 +3971,7 @@ function AbilityDefinitionFigurineRockGolem:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionFigurineSkeleton = class('AbilityDefinitionFigurineSkeleton', AbilityDefinition)
+_G.AbilityDefinitionFigurineSkeleton = AbilityDefinitionFigurineSkeleton
 
 function AbilityDefinitionFigurineSkeleton:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfs')
@@ -3853,6 +4002,7 @@ function AbilityDefinitionFigurineSkeleton:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionSubmergeMyrmidon = class('AbilityDefinitionSubmergeMyrmidon', AbilityDefinition)
+_G.AbilityDefinitionSubmergeMyrmidon = AbilityDefinitionSubmergeMyrmidon
 
 function AbilityDefinitionSubmergeMyrmidon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asb1')
@@ -3883,6 +4033,7 @@ function AbilityDefinitionSubmergeMyrmidon:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionSubmergeRoyalGuard = class('AbilityDefinitionSubmergeRoyalGuard', AbilityDefinition)
+_G.AbilityDefinitionSubmergeRoyalGuard = AbilityDefinitionSubmergeRoyalGuard
 
 function AbilityDefinitionSubmergeRoyalGuard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asb2')
@@ -3913,6 +4064,7 @@ function AbilityDefinitionSubmergeRoyalGuard:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionFigurineDoomGuard = class('AbilityDefinitionFigurineDoomGuard', AbilityDefinition)
+_G.AbilityDefinitionFigurineDoomGuard = AbilityDefinitionFigurineDoomGuard
 
 function AbilityDefinitionFigurineDoomGuard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIfu')
@@ -3943,6 +4095,7 @@ function AbilityDefinitionFigurineDoomGuard:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionSubmergeSnapDragon = class('AbilityDefinitionSubmergeSnapDragon', AbilityDefinition)
+_G.AbilityDefinitionSubmergeSnapDragon = AbilityDefinitionSubmergeSnapDragon
 
 function AbilityDefinitionSubmergeSnapDragon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asb3')
@@ -3973,6 +4126,7 @@ function AbilityDefinitionSubmergeSnapDragon:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionItemHealLesser = class('AbilityDefinitionItemHealLesser', AbilityDefinition)
+_G.AbilityDefinitionItemHealLesser = AbilityDefinitionItemHealLesser
 
 function AbilityDefinitionItemHealLesser:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIh1')
@@ -3985,6 +4139,7 @@ function AbilityDefinitionItemHealLesser:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionItemHealGreater = class('AbilityDefinitionItemHealGreater', AbilityDefinition)
+_G.AbilityDefinitionItemHealGreater = AbilityDefinitionItemHealGreater
 
 function AbilityDefinitionItemHealGreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIh2')
@@ -3997,6 +4152,7 @@ function AbilityDefinitionItemHealGreater:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionItemHealLeast = class('AbilityDefinitionItemHealLeast', AbilityDefinition)
+_G.AbilityDefinitionItemHealLeast = AbilityDefinitionItemHealLeast
 
 function AbilityDefinitionItemHealLeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIh3')
@@ -4009,6 +4165,7 @@ function AbilityDefinitionItemHealLeast:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionGiveGold = class('AbilityDefinitionGiveGold', AbilityDefinition)
+_G.AbilityDefinitionGiveGold = AbilityDefinitionGiveGold
 
 function AbilityDefinitionGiveGold:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIgo')
@@ -4021,6 +4178,7 @@ function AbilityDefinitionGiveGold:setGoldGiven(level, value)
 end
 
 AbilityDefinitionIntelligenceBonusPlus1 = class('AbilityDefinitionIntelligenceBonusPlus1', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceBonusPlus1 = AbilityDefinitionIntelligenceBonusPlus1
 
 function AbilityDefinitionIntelligenceBonusPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIi1')
@@ -4051,6 +4209,7 @@ function AbilityDefinitionIntelligenceBonusPlus1:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionBurrowscarablvl2 = class('AbilityDefinitionBurrowscarablvl2', AbilityDefinition)
+_G.AbilityDefinitionBurrowscarablvl2 = AbilityDefinitionBurrowscarablvl2
 
 function AbilityDefinitionBurrowscarablvl2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abu2')
@@ -4087,6 +4246,7 @@ function AbilityDefinitionBurrowscarablvl2:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionIntelligenceBonusPlus4 = class('AbilityDefinitionIntelligenceBonusPlus4', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceBonusPlus4 = AbilityDefinitionIntelligenceBonusPlus4
 
 function AbilityDefinitionIntelligenceBonusPlus4:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIi4')
@@ -4117,6 +4277,7 @@ function AbilityDefinitionIntelligenceBonusPlus4:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionFirelordSummonLavaSpawn = class('AbilityDefinitionFirelordSummonLavaSpawn', AbilityDefinition)
+_G.AbilityDefinitionFirelordSummonLavaSpawn = AbilityDefinitionFirelordSummonLavaSpawn
 
 function AbilityDefinitionFirelordSummonLavaSpawn:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANlm')
@@ -4165,6 +4326,7 @@ function AbilityDefinitionFirelordSummonLavaSpawn:setSplitAttackCount(level, val
 end
 
 AbilityDefinitionBurrowscarablvl3 = class('AbilityDefinitionBurrowscarablvl3', AbilityDefinition)
+_G.AbilityDefinitionBurrowscarablvl3 = AbilityDefinitionBurrowscarablvl3
 
 function AbilityDefinitionBurrowscarablvl3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abu3')
@@ -4201,6 +4363,7 @@ function AbilityDefinitionBurrowscarablvl3:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionHeal = class('AbilityDefinitionHeal', AbilityDefinition)
+_G.AbilityDefinitionHeal = AbilityDefinitionHeal
 
 function AbilityDefinitionHeal:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahea')
@@ -4213,6 +4376,7 @@ function AbilityDefinitionHeal:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionIntelligenceBonusPlus3 = class('AbilityDefinitionIntelligenceBonusPlus3', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceBonusPlus3 = AbilityDefinitionIntelligenceBonusPlus3
 
 function AbilityDefinitionIntelligenceBonusPlus3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIi3')
@@ -4243,6 +4407,7 @@ function AbilityDefinitionIntelligenceBonusPlus3:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionIntelligenceBonusPlus6 = class('AbilityDefinitionIntelligenceBonusPlus6', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceBonusPlus6 = AbilityDefinitionIntelligenceBonusPlus6
 
 function AbilityDefinitionIntelligenceBonusPlus6:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIi6')
@@ -4273,6 +4438,7 @@ function AbilityDefinitionIntelligenceBonusPlus6:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionBeserk = class('AbilityDefinitionBeserk', AbilityDefinition)
+_G.AbilityDefinitionBeserk = AbilityDefinitionBeserk
 
 function AbilityDefinitionBeserk:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Absk')
@@ -4297,6 +4463,7 @@ function AbilityDefinitionBeserk:setAttackSpeedIncrease(level, value)
 end
 
 AbilityDefinitionReplenishLifeMana = class('AbilityDefinitionReplenishLifeMana', AbilityDefinition)
+_G.AbilityDefinitionReplenishLifeMana = AbilityDefinitionReplenishLifeMana
 
 function AbilityDefinitionReplenishLifeMana:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arpb')
@@ -4339,6 +4506,7 @@ function AbilityDefinitionReplenishLifeMana:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionUltraVisionGlyph = class('AbilityDefinitionUltraVisionGlyph', AbilityDefinition)
+_G.AbilityDefinitionUltraVisionGlyph = AbilityDefinitionUltraVisionGlyph
 
 function AbilityDefinitionUltraVisionGlyph:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIgu')
@@ -4357,6 +4525,7 @@ function AbilityDefinitionUltraVisionGlyph:setUpgradeType(level, value)
 end
 
 AbilityDefinitionReplenishLife = class('AbilityDefinitionReplenishLife', AbilityDefinition)
+_G.AbilityDefinitionReplenishLife = AbilityDefinitionReplenishLife
 
 function AbilityDefinitionReplenishLife:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arpl')
@@ -4387,6 +4556,7 @@ function AbilityDefinitionReplenishLife:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionInventory2slotunitUndead = class('AbilityDefinitionInventory2slotunitUndead', AbilityDefinition)
+_G.AbilityDefinitionInventory2slotunitUndead = AbilityDefinitionInventory2slotunitUndead
 
 function AbilityDefinitionInventory2slotunitUndead:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aiun')
@@ -4423,6 +4593,7 @@ function AbilityDefinitionInventory2slotunitUndead:setItemCapacity(level, value)
 end
 
 AbilityDefinitionManaBattery = class('AbilityDefinitionManaBattery', AbilityDefinition)
+_G.AbilityDefinitionManaBattery = AbilityDefinitionManaBattery
 
 function AbilityDefinitionManaBattery:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ambt')
@@ -4459,6 +4630,7 @@ function AbilityDefinitionManaBattery:setRegenerateOnlyAtNight(level, value)
 end
 
 AbilityDefinitionReplenishMana = class('AbilityDefinitionReplenishMana', AbilityDefinition)
+_G.AbilityDefinitionReplenishMana = AbilityDefinitionReplenishMana
 
 function AbilityDefinitionReplenishMana:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arpm')
@@ -4489,6 +4661,7 @@ function AbilityDefinitionReplenishMana:setMaximumUnitsAffected(level, value)
 end
 
 AbilityDefinitionHealCreepNormal = class('AbilityDefinitionHealCreepNormal', AbilityDefinition)
+_G.AbilityDefinitionHealCreepNormal = AbilityDefinitionHealCreepNormal
 
 function AbilityDefinitionHealCreepNormal:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Anh1')
@@ -4501,6 +4674,7 @@ function AbilityDefinitionHealCreepNormal:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionHealCreepHigh = class('AbilityDefinitionHealCreepHigh', AbilityDefinition)
+_G.AbilityDefinitionHealCreepHigh = AbilityDefinitionHealCreepHigh
 
 function AbilityDefinitionHealCreepHigh:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Anh2')
@@ -4513,6 +4687,7 @@ function AbilityDefinitionHealCreepHigh:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionAuraSlow = class('AbilityDefinitionAuraSlow', AbilityDefinition)
+_G.AbilityDefinitionAuraSlow = AbilityDefinitionAuraSlow
 
 function AbilityDefinitionAuraSlow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aasl')
@@ -4537,6 +4712,7 @@ function AbilityDefinitionAuraSlow:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionCurse = class('AbilityDefinitionCurse', AbilityDefinition)
+_G.AbilityDefinitionCurse = AbilityDefinitionCurse
 
 function AbilityDefinitionCurse:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acrs')
@@ -4549,6 +4725,7 @@ function AbilityDefinitionCurse:setChancetoMiss(level, value)
 end
 
 AbilityDefinitionSuperEarthquake = class('AbilityDefinitionSuperEarthquake', AbilityDefinition)
+_G.AbilityDefinitionSuperEarthquake = AbilityDefinitionSuperEarthquake
 
 function AbilityDefinitionSuperEarthquake:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SNeq')
@@ -4579,6 +4756,7 @@ function AbilityDefinitionSuperEarthquake:setDamageperSecondtoBuildings(level, v
 end
 
 AbilityDefinitionFortificationGlyph = class('AbilityDefinitionFortificationGlyph', AbilityDefinition)
+_G.AbilityDefinitionFortificationGlyph = AbilityDefinitionFortificationGlyph
 
 function AbilityDefinitionFortificationGlyph:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIgf')
@@ -4597,6 +4775,7 @@ function AbilityDefinitionFortificationGlyph:setUpgradeType(level, value)
 end
 
 AbilityDefinitionManaBurndemonAmbd = class('AbilityDefinitionManaBurndemonAmbd', AbilityDefinition)
+_G.AbilityDefinitionManaBurndemonAmbd = AbilityDefinitionManaBurndemonAmbd
 
 function AbilityDefinitionManaBurndemonAmbd:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ambd')
@@ -4621,6 +4800,7 @@ function AbilityDefinitionManaBurndemonAmbd:setBoltDelay(level, value)
 end
 
 AbilityDefinitionFarseerFarSight = class('AbilityDefinitionFarseerFarSight', AbilityDefinition)
+_G.AbilityDefinitionFarseerFarSight = AbilityDefinitionFarseerFarSight
 
 function AbilityDefinitionFarseerFarSight:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOfs')
@@ -4633,6 +4813,7 @@ function AbilityDefinitionFarseerFarSight:setDetectionType(level, value)
 end
 
 AbilityDefinitionAgilityModPlus2 = class('AbilityDefinitionAgilityModPlus2', AbilityDefinition)
+_G.AbilityDefinitionAgilityModPlus2 = AbilityDefinitionAgilityModPlus2
 
 function AbilityDefinitionAgilityModPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIgm')
@@ -4663,6 +4844,7 @@ function AbilityDefinitionAgilityModPlus2:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionHarvestLumberArchimondeghouls = class('AbilityDefinitionHarvestLumberArchimondeghouls', AbilityDefinition)
+_G.AbilityDefinitionHarvestLumberArchimondeghouls = AbilityDefinitionHarvestLumberArchimondeghouls
 
 function AbilityDefinitionHarvestLumberArchimondeghouls:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahr2')
@@ -4681,6 +4863,7 @@ function AbilityDefinitionHarvestLumberArchimondeghouls:setDamagetoTree(level, v
 end
 
 AbilityDefinitionHealingWardAIhw = class('AbilityDefinitionHealingWardAIhw', AbilityDefinition)
+_G.AbilityDefinitionHealingWardAIhw = AbilityDefinitionHealingWardAIhw
 
 function AbilityDefinitionHealingWardAIhw:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIhw')
@@ -4693,6 +4876,7 @@ function AbilityDefinitionHealingWardAIhw:setWardUnitType(level, value)
 end
 
 AbilityDefinitionIllidanMetamorphosis = class('AbilityDefinitionIllidanMetamorphosis', AbilityDefinition)
+_G.AbilityDefinitionIllidanMetamorphosis = AbilityDefinitionIllidanMetamorphosis
 
 function AbilityDefinitionIllidanMetamorphosis:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEIl')
@@ -4735,6 +4919,7 @@ function AbilityDefinitionIllidanMetamorphosis:setAlternateFormUnit(level, value
 end
 
 AbilityDefinitionHexCreep = class('AbilityDefinitionHexCreep', AbilityDefinition)
+_G.AbilityDefinitionHexCreep = AbilityDefinitionHexCreep
 
 function AbilityDefinitionHexCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AChx')
@@ -4771,6 +4956,7 @@ function AbilityDefinitionHexCreep:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionHealingWardcreep = class('AbilityDefinitionHealingWardcreep', AbilityDefinition)
+_G.AbilityDefinitionHealingWardcreep = AbilityDefinitionHealingWardcreep
 
 function AbilityDefinitionHealingWardcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AChw')
@@ -4783,6 +4969,7 @@ function AbilityDefinitionHealingWardcreep:setWardUnitType(level, value)
 end
 
 AbilityDefinitionBattlestations = class('AbilityDefinitionBattlestations', AbilityDefinition)
+_G.AbilityDefinitionBattlestations = AbilityDefinitionBattlestations
 
 function AbilityDefinitionBattlestations:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abtl')
@@ -4801,6 +4988,7 @@ function AbilityDefinitionBattlestations:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionHealingWaveCreep = class('AbilityDefinitionHealingWaveCreep', AbilityDefinition)
+_G.AbilityDefinitionHealingWaveCreep = AbilityDefinitionHealingWaveCreep
 
 function AbilityDefinitionHealingWaveCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AChv')
@@ -4825,6 +5013,7 @@ function AbilityDefinitionHealingWaveCreep:setDamageReductionperTarget(level, va
 end
 
 AbilityDefinitionInnerFireCreep = class('AbilityDefinitionInnerFireCreep', AbilityDefinition)
+_G.AbilityDefinitionInnerFireCreep = AbilityDefinitionInnerFireCreep
 
 function AbilityDefinitionInnerFireCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACif')
@@ -4855,6 +5044,7 @@ function AbilityDefinitionInnerFireCreep:setDamageIncrease(level, value)
 end
 
 AbilityDefinitionAncestralSpirit = class('AbilityDefinitionAncestralSpirit', AbilityDefinition)
+_G.AbilityDefinitionAncestralSpirit = AbilityDefinitionAncestralSpirit
 
 function AbilityDefinitionAncestralSpirit:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aast')
@@ -4873,6 +5063,7 @@ function AbilityDefinitionAncestralSpirit:setManaRestoredFactor(level, value)
 end
 
 AbilityDefinitionHarvestLumbershredder = class('AbilityDefinitionHarvestLumbershredder', AbilityDefinition)
+_G.AbilityDefinitionHarvestLumbershredder = AbilityDefinitionHarvestLumbershredder
 
 function AbilityDefinitionHarvestLumbershredder:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahr3')
@@ -4891,6 +5082,7 @@ function AbilityDefinitionHarvestLumbershredder:setDamagetoTree(level, value)
 end
 
 AbilityDefinitionItemHealAoeGreater = class('AbilityDefinitionItemHealAoeGreater', AbilityDefinition)
+_G.AbilityDefinitionItemHealAoeGreater = AbilityDefinitionItemHealAoeGreater
 
 function AbilityDefinitionItemHealAoeGreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIhb')
@@ -4903,6 +5095,7 @@ function AbilityDefinitionItemHealAoeGreater:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionPulverize = class('AbilityDefinitionPulverize', AbilityDefinition)
+_G.AbilityDefinitionPulverize = AbilityDefinitionPulverize
 
 function AbilityDefinitionPulverize:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awar')
@@ -4933,6 +5126,7 @@ function AbilityDefinitionPulverize:setChancetoStomp(level, value)
 end
 
 AbilityDefinitionItemHealAoe = class('AbilityDefinitionItemHealAoe', AbilityDefinition)
+_G.AbilityDefinitionItemHealAoe = AbilityDefinitionItemHealAoe
 
 function AbilityDefinitionItemHealAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIha')
@@ -4945,6 +5139,7 @@ function AbilityDefinitionItemHealAoe:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionAIhe = class('AbilityDefinitionAIhe', AbilityDefinition)
+_G.AbilityDefinitionAIhe = AbilityDefinitionAIhe
 
 function AbilityDefinitionAIhe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIhe')
@@ -4957,6 +5152,7 @@ function AbilityDefinitionAIhe:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionFarseerEarthquake = class('AbilityDefinitionFarseerEarthquake', AbilityDefinition)
+_G.AbilityDefinitionFarseerEarthquake = AbilityDefinitionFarseerEarthquake
 
 function AbilityDefinitionFarseerEarthquake:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOeq')
@@ -4987,6 +5183,7 @@ function AbilityDefinitionFarseerEarthquake:setDamageperSecondtoBuildings(level,
 end
 
 AbilityDefinitionDemonHunterImmolation = class('AbilityDefinitionDemonHunterImmolation', AbilityDefinition)
+_G.AbilityDefinitionDemonHunterImmolation = AbilityDefinitionDemonHunterImmolation
 
 function AbilityDefinitionDemonHunterImmolation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEim')
@@ -5011,6 +5208,7 @@ function AbilityDefinitionDemonHunterImmolation:setDamageperInterval(level, valu
 end
 
 AbilityDefinitionNeutralDetectionRevealability = class('AbilityDefinitionNeutralDetectionRevealability', AbilityDefinition)
+_G.AbilityDefinitionNeutralDetectionRevealability = AbilityDefinitionNeutralDetectionRevealability
 
 function AbilityDefinitionNeutralDetectionRevealability:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Andt')
@@ -5035,6 +5233,7 @@ function AbilityDefinitionNeutralDetectionRevealability:setGoldCost(level, value
 end
 
 AbilityDefinitionWeb = class('AbilityDefinitionWeb', AbilityDefinition)
+_G.AbilityDefinitionWeb = AbilityDefinitionWeb
 
 function AbilityDefinitionWeb:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aweb')
@@ -5059,6 +5258,7 @@ function AbilityDefinitionWeb:setMeleeAttackRange(level, value)
 end
 
 AbilityDefinitionFigurineIceRevenant = class('AbilityDefinitionFigurineIceRevenant', AbilityDefinition)
+_G.AbilityDefinitionFigurineIceRevenant = AbilityDefinitionFigurineIceRevenant
 
 function AbilityDefinitionFigurineIceRevenant:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIir')
@@ -5089,6 +5289,7 @@ function AbilityDefinitionFigurineIceRevenant:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionSuperDeathandDecay = class('AbilityDefinitionSuperDeathandDecay', AbilityDefinition)
+_G.AbilityDefinitionSuperDeathandDecay = AbilityDefinitionSuperDeathandDecay
 
 function AbilityDefinitionSuperDeathandDecay:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SNdd')
@@ -5107,6 +5308,7 @@ function AbilityDefinitionSuperDeathandDecay:setMaxLifeDrainedperSecond(level, v
 end
 
 AbilityDefinitionDarkConversionFast = class('AbilityDefinitionDarkConversionFast', AbilityDefinition)
+_G.AbilityDefinitionDarkConversionFast = AbilityDefinitionDarkConversionFast
 
 function AbilityDefinitionDarkConversionFast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SNdc')
@@ -5125,6 +5327,7 @@ function AbilityDefinitionDarkConversionFast:setRacetoConvert(level, value)
 end
 
 AbilityDefinitionImmolationcreep = class('AbilityDefinitionImmolationcreep', AbilityDefinition)
+_G.AbilityDefinitionImmolationcreep = AbilityDefinitionImmolationcreep
 
 function AbilityDefinitionImmolationcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACim')
@@ -5149,6 +5352,7 @@ function AbilityDefinitionImmolationcreep:setDamageperInterval(level, value)
 end
 
 AbilityDefinitionIntelligenceMod = class('AbilityDefinitionIntelligenceMod', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceMod = AbilityDefinitionIntelligenceMod
 
 function AbilityDefinitionIntelligenceMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIim')
@@ -5179,6 +5383,7 @@ function AbilityDefinitionIntelligenceMod:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionItemInferno = class('AbilityDefinitionItemInferno', AbilityDefinition)
+_G.AbilityDefinitionItemInferno = AbilityDefinitionItemInferno
 
 function AbilityDefinitionItemInferno:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIin')
@@ -5209,6 +5414,7 @@ function AbilityDefinitionItemInferno:setImpactDelay(level, value)
 end
 
 AbilityDefinitionItemIllusion = class('AbilityDefinitionItemIllusion', AbilityDefinition)
+_G.AbilityDefinitionItemIllusion = AbilityDefinitionItemIllusion
 
 function AbilityDefinitionItemIllusion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIil')
@@ -5227,6 +5433,7 @@ function AbilityDefinitionItemIllusion:setDamageDealtofnormal(level, value)
 end
 
 AbilityDefinitionMagicDefense = class('AbilityDefinitionMagicDefense', AbilityDefinition)
+_G.AbilityDefinitionMagicDefense = AbilityDefinitionMagicDefense
 
 function AbilityDefinitionMagicDefense:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amdf')
@@ -5281,6 +5488,7 @@ function AbilityDefinitionMagicDefense:setMagicDamageReduction(level, value)
 end
 
 AbilityDefinitionAvengerForm = class('AbilityDefinitionAvengerForm', AbilityDefinition)
+_G.AbilityDefinitionAvengerForm = AbilityDefinitionAvengerForm
 
 function AbilityDefinitionAvengerForm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aave')
@@ -5323,6 +5531,7 @@ function AbilityDefinitionAvengerForm:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionHarvestLumber = class('AbilityDefinitionHarvestLumber', AbilityDefinition)
+_G.AbilityDefinitionHarvestLumber = AbilityDefinitionHarvestLumber
 
 function AbilityDefinitionHarvestLumber:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahrl')
@@ -5341,6 +5550,7 @@ function AbilityDefinitionHarvestLumber:setDamagetoTree(level, value)
 end
 
 AbilityDefinitionNeutralBuilding = class('AbilityDefinitionNeutralBuilding', AbilityDefinition)
+_G.AbilityDefinitionNeutralBuilding = AbilityDefinitionNeutralBuilding
 
 function AbilityDefinitionNeutralBuilding:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aneu')
@@ -5371,6 +5581,7 @@ function AbilityDefinitionNeutralBuilding:setInteractionType(level, value)
 end
 
 AbilityDefinitionRepairHuman = class('AbilityDefinitionRepairHuman', AbilityDefinition)
+_G.AbilityDefinitionRepairHuman = AbilityDefinitionRepairHuman
 
 function AbilityDefinitionRepairHuman:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahrp')
@@ -5407,6 +5618,7 @@ function AbilityDefinitionRepairHuman:setPowerbuildCost(level, value)
 end
 
 AbilityDefinitionAhrs = class('AbilityDefinitionAhrs', AbilityDefinition)
+_G.AbilityDefinitionAhrs = AbilityDefinitionAhrs
 
 function AbilityDefinitionAhrs:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahrs')
@@ -5431,6 +5643,7 @@ function AbilityDefinitionAhrs:setDamage(level, value)
 end
 
 AbilityDefinitionFirelordIncinerate = class('AbilityDefinitionFirelordIncinerate', AbilityDefinition)
+_G.AbilityDefinitionFirelordIncinerate = AbilityDefinitionFirelordIncinerate
 
 function AbilityDefinitionFirelordIncinerate:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANic')
@@ -5473,6 +5686,7 @@ function AbilityDefinitionFirelordIncinerate:setDeathDamageHalfArea(level, value
 end
 
 AbilityDefinitionBearform = class('AbilityDefinitionBearform', AbilityDefinition)
+_G.AbilityDefinitionBearform = AbilityDefinitionBearform
 
 function AbilityDefinitionBearform:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abrf')
@@ -5509,6 +5723,7 @@ function AbilityDefinitionBearform:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionCryptLordLocustSwarm = class('AbilityDefinitionCryptLordLocustSwarm', AbilityDefinition)
+_G.AbilityDefinitionCryptLordLocustSwarm = AbilityDefinitionCryptLordLocustSwarm
 
 function AbilityDefinitionCryptLordLocustSwarm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUls')
@@ -5551,6 +5766,7 @@ function AbilityDefinitionCryptLordLocustSwarm:setDamageReturnFactor(level, valu
 end
 
 AbilityDefinitionRestoration = class('AbilityDefinitionRestoration', AbilityDefinition)
+_G.AbilityDefinitionRestoration = AbilityDefinitionRestoration
 
 function AbilityDefinitionRestoration:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arst')
@@ -5587,6 +5803,7 @@ function AbilityDefinitionRestoration:setPowerbuildCost(level, value)
 end
 
 AbilityDefinitionFarseerChainLightning = class('AbilityDefinitionFarseerChainLightning', AbilityDefinition)
+_G.AbilityDefinitionFarseerChainLightning = AbilityDefinitionFarseerChainLightning
 
 function AbilityDefinitionFarseerChainLightning:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOcl')
@@ -5611,6 +5828,7 @@ function AbilityDefinitionFarseerChainLightning:setDamageReductionperTarget(leve
 end
 
 AbilityDefinitionMaxLifeBonusGreater = class('AbilityDefinitionMaxLifeBonusGreater', AbilityDefinition)
+_G.AbilityDefinitionMaxLifeBonusGreater = AbilityDefinitionMaxLifeBonusGreater
 
 function AbilityDefinitionMaxLifeBonusGreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIl2')
@@ -5623,6 +5841,7 @@ function AbilityDefinitionMaxLifeBonusGreater:setMaxLifeGained(level, value)
 end
 
 AbilityDefinitionInferno = class('AbilityDefinitionInferno', AbilityDefinition)
+_G.AbilityDefinitionInferno = AbilityDefinitionInferno
 
 function AbilityDefinitionInferno:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANin')
@@ -5653,6 +5872,7 @@ function AbilityDefinitionInferno:setImpactDelay(level, value)
 end
 
 AbilityDefinitionMechanicalCritter = class('AbilityDefinitionMechanicalCritter', AbilityDefinition)
+_G.AbilityDefinitionMechanicalCritter = AbilityDefinitionMechanicalCritter
 
 function AbilityDefinitionMechanicalCritter:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amec')
@@ -5665,6 +5885,7 @@ function AbilityDefinitionMechanicalCritter:setNumberofUnitsCreated(level, value
 end
 
 AbilityDefinitionMaxLifeBonusLesser = class('AbilityDefinitionMaxLifeBonusLesser', AbilityDefinition)
+_G.AbilityDefinitionMaxLifeBonusLesser = AbilityDefinitionMaxLifeBonusLesser
 
 function AbilityDefinitionMaxLifeBonusLesser:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIl1')
@@ -5677,6 +5898,7 @@ function AbilityDefinitionMaxLifeBonusLesser:setMaxLifeGained(level, value)
 end
 
 AbilityDefinitionPurgeApg2 = class('AbilityDefinitionPurgeApg2', AbilityDefinition)
+_G.AbilityDefinitionPurgeApg2 = AbilityDefinitionPurgeApg2
 
 function AbilityDefinitionPurgeApg2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apg2')
@@ -5689,6 +5911,7 @@ function AbilityDefinitionPurgeApg2:setManaLoss(level, value)
 end
 
 AbilityDefinitionBladeMasterCriticalStrike = class('AbilityDefinitionBladeMasterCriticalStrike', AbilityDefinition)
+_G.AbilityDefinitionBladeMasterCriticalStrike = AbilityDefinitionBladeMasterCriticalStrike
 
 function AbilityDefinitionBladeMasterCriticalStrike:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOcr')
@@ -5725,6 +5948,7 @@ function AbilityDefinitionBladeMasterCriticalStrike:setNeverMiss(level, value)
 end
 
 AbilityDefinitionAuraPlagueAbomination = class('AbilityDefinitionAuraPlagueAbomination', AbilityDefinition)
+_G.AbilityDefinitionAuraPlagueAbomination = AbilityDefinitionAuraPlagueAbomination
 
 function AbilityDefinitionAuraPlagueAbomination:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aap1')
@@ -5755,6 +5979,7 @@ function AbilityDefinitionAuraPlagueAbomination:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionAuraPlagueCreep = class('AbilityDefinitionAuraPlagueCreep', AbilityDefinition)
+_G.AbilityDefinitionAuraPlagueCreep = AbilityDefinitionAuraPlagueCreep
 
 function AbilityDefinitionAuraPlagueCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aap3')
@@ -5785,6 +6010,7 @@ function AbilityDefinitionAuraPlagueCreep:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionPermanentImmolation = class('AbilityDefinitionPermanentImmolation', AbilityDefinition)
+_G.AbilityDefinitionPermanentImmolation = AbilityDefinitionPermanentImmolation
 
 function AbilityDefinitionPermanentImmolation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANpi')
@@ -5809,6 +6035,7 @@ function AbilityDefinitionPermanentImmolation:setDamageperInterval(level, value)
 end
 
 AbilityDefinitionAuraPlaguePlagueWard = class('AbilityDefinitionAuraPlaguePlagueWard', AbilityDefinition)
+_G.AbilityDefinitionAuraPlaguePlagueWard = AbilityDefinitionAuraPlaguePlagueWard
 
 function AbilityDefinitionAuraPlaguePlagueWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aap2')
@@ -5839,6 +6066,7 @@ function AbilityDefinitionAuraPlaguePlagueWard:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionCyclonecreep = class('AbilityDefinitionCyclonecreep', AbilityDefinition)
+_G.AbilityDefinitionCyclonecreep = AbilityDefinitionCyclonecreep
 
 function AbilityDefinitionCyclonecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcy')
@@ -5851,6 +6079,7 @@ function AbilityDefinitionCyclonecreep:setCanBeDispelled(level, value)
 end
 
 AbilityDefinitionAuraPlagueCreepnodamage = class('AbilityDefinitionAuraPlagueCreepnodamage', AbilityDefinition)
+_G.AbilityDefinitionAuraPlagueCreepnodamage = AbilityDefinitionAuraPlagueCreepnodamage
 
 function AbilityDefinitionAuraPlagueCreepnodamage:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aap4')
@@ -5881,6 +6110,7 @@ function AbilityDefinitionAuraPlagueCreepnodamage:setDamageperSecond(level, valu
 end
 
 AbilityDefinitionLightningDamageBonus = class('AbilityDefinitionLightningDamageBonus', AbilityDefinition)
+_G.AbilityDefinitionLightningDamageBonus = AbilityDefinitionLightningDamageBonus
 
 function AbilityDefinitionLightningDamageBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIlb')
@@ -5905,6 +6135,7 @@ function AbilityDefinitionLightningDamageBonus:setDamageBonusDice(level, value)
 end
 
 AbilityDefinitionArtn = class('AbilityDefinitionArtn', AbilityDefinition)
+_G.AbilityDefinitionArtn = AbilityDefinitionArtn
 
 function AbilityDefinitionArtn:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Artn')
@@ -5923,6 +6154,7 @@ function AbilityDefinitionArtn:setAcceptsLumber(level, value)
 end
 
 AbilityDefinitionCrushingWave = class('AbilityDefinitionCrushingWave', AbilityDefinition)
+_G.AbilityDefinitionCrushingWave = AbilityDefinitionCrushingWave
 
 function AbilityDefinitionCrushingWave:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcv')
@@ -5953,6 +6185,7 @@ function AbilityDefinitionCrushingWave:setDistance(level, value)
 end
 
 AbilityDefinitionColdArrowscreep = class('AbilityDefinitionColdArrowscreep', AbilityDefinition)
+_G.AbilityDefinitionColdArrowscreep = AbilityDefinitionColdArrowscreep
 
 function AbilityDefinitionColdArrowscreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcw')
@@ -5983,6 +6216,7 @@ function AbilityDefinitionColdArrowscreep:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionEatTree = class('AbilityDefinitionEatTree', AbilityDefinition)
+_G.AbilityDefinitionEatTree = AbilityDefinitionEatTree
 
 function AbilityDefinitionEatTree:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aeat')
@@ -6007,6 +6241,7 @@ function AbilityDefinitionEatTree:setRipDelay(level, value)
 end
 
 AbilityDefinitionPreservation = class('AbilityDefinitionPreservation', AbilityDefinition)
+_G.AbilityDefinitionPreservation = AbilityDefinitionPreservation
 
 function AbilityDefinitionPreservation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANpr')
@@ -6019,6 +6254,7 @@ function AbilityDefinitionPreservation:setBuildingTypesAllowed(level, value)
 end
 
 AbilityDefinitionShadowMeldAkama = class('AbilityDefinitionShadowMeldAkama', AbilityDefinition)
+_G.AbilityDefinitionShadowMeldAkama = AbilityDefinitionShadowMeldAkama
 
 function AbilityDefinitionShadowMeldAkama:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahid')
@@ -6043,6 +6279,7 @@ function AbilityDefinitionShadowMeldAkama:setFadeDuration(level, value)
 end
 
 AbilityDefinitionCripplecreep = class('AbilityDefinitionCripplecreep', AbilityDefinition)
+_G.AbilityDefinitionCripplecreep = AbilityDefinitionCripplecreep
 
 function AbilityDefinitionCripplecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcr')
@@ -6067,6 +6304,7 @@ function AbilityDefinitionCripplecreep:setMovementSpeedReduction(level, value)
 end
 
 AbilityDefinitionCursecreep = class('AbilityDefinitionCursecreep', AbilityDefinition)
+_G.AbilityDefinitionCursecreep = AbilityDefinitionCursecreep
 
 function AbilityDefinitionCursecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcs')
@@ -6079,6 +6317,7 @@ function AbilityDefinitionCursecreep:setChancetoMiss(level, value)
 end
 
 AbilityDefinitionCriticalStrikecreep = class('AbilityDefinitionCriticalStrikecreep', AbilityDefinition)
+_G.AbilityDefinitionCriticalStrikecreep = AbilityDefinitionCriticalStrikecreep
 
 function AbilityDefinitionCriticalStrikecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACct')
@@ -6115,6 +6354,7 @@ function AbilityDefinitionCriticalStrikecreep:setNeverMiss(level, value)
 end
 
 AbilityDefinitionCannibalizecreep = class('AbilityDefinitionCannibalizecreep', AbilityDefinition)
+_G.AbilityDefinitionCannibalizecreep = AbilityDefinitionCannibalizecreep
 
 function AbilityDefinitionCannibalizecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcn')
@@ -6133,6 +6373,7 @@ function AbilityDefinitionCannibalizecreep:setHitPointsperSecond(level, value)
 end
 
 AbilityDefinitionCycloneCenarius = class('AbilityDefinitionCycloneCenarius', AbilityDefinition)
+_G.AbilityDefinitionCycloneCenarius = AbilityDefinitionCycloneCenarius
 
 function AbilityDefinitionCycloneCenarius:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SCc1')
@@ -6145,6 +6386,7 @@ function AbilityDefinitionCycloneCenarius:setCanBeDispelled(level, value)
 end
 
 AbilityDefinitionItemManaRestoreGreater = class('AbilityDefinitionItemManaRestoreGreater', AbilityDefinition)
+_G.AbilityDefinitionItemManaRestoreGreater = AbilityDefinitionItemManaRestoreGreater
 
 function AbilityDefinitionItemManaRestoreGreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIm2')
@@ -6157,6 +6399,7 @@ function AbilityDefinitionItemManaRestoreGreater:setManaPointsGained(level, valu
 end
 
 AbilityDefinitionItemManaRestoreLesser = class('AbilityDefinitionItemManaRestoreLesser', AbilityDefinition)
+_G.AbilityDefinitionItemManaRestoreLesser = AbilityDefinitionItemManaRestoreLesser
 
 function AbilityDefinitionItemManaRestoreLesser:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIm1')
@@ -6169,6 +6412,7 @@ function AbilityDefinitionItemManaRestoreLesser:setManaPointsGained(level, value
 end
 
 AbilityDefinitionStoneForm = class('AbilityDefinitionStoneForm', AbilityDefinition)
+_G.AbilityDefinitionStoneForm = AbilityDefinitionStoneForm
 
 function AbilityDefinitionStoneForm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Astn')
@@ -6211,6 +6455,7 @@ function AbilityDefinitionStoneForm:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionChainLightningcreep = class('AbilityDefinitionChainLightningcreep', AbilityDefinition)
+_G.AbilityDefinitionChainLightningcreep = AbilityDefinitionChainLightningcreep
 
 function AbilityDefinitionChainLightningcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcl')
@@ -6235,6 +6480,7 @@ function AbilityDefinitionChainLightningcreep:setDamageReductionperTarget(level,
 end
 
 AbilityDefinitionFaerieFire = class('AbilityDefinitionFaerieFire', AbilityDefinition)
+_G.AbilityDefinitionFaerieFire = AbilityDefinitionFaerieFire
 
 function AbilityDefinitionFaerieFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afae')
@@ -6253,6 +6499,7 @@ function AbilityDefinitionFaerieFire:setDefenseReduction(level, value)
 end
 
 AbilityDefinitionCharm = class('AbilityDefinitionCharm', AbilityDefinition)
+_G.AbilityDefinitionCharm = AbilityDefinitionCharm
 
 function AbilityDefinitionCharm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACch')
@@ -6265,6 +6512,7 @@ function AbilityDefinitionCharm:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionManaSteal = class('AbilityDefinitionManaSteal', AbilityDefinition)
+_G.AbilityDefinitionManaSteal = AbilityDefinitionManaSteal
 
 function AbilityDefinitionManaSteal:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aste')
@@ -6301,6 +6549,7 @@ function AbilityDefinitionManaSteal:setManaConversionAsPercent(level, value)
 end
 
 AbilityDefinitionAuraEnduranceCreep = class('AbilityDefinitionAuraEnduranceCreep', AbilityDefinition)
+_G.AbilityDefinitionAuraEnduranceCreep = AbilityDefinitionAuraEnduranceCreep
 
 function AbilityDefinitionAuraEnduranceCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SCae')
@@ -6319,6 +6568,7 @@ function AbilityDefinitionAuraEnduranceCreep:setAttackSpeedIncrease(level, value
 end
 
 AbilityDefinitionTichondriusInferno = class('AbilityDefinitionTichondriusInferno', AbilityDefinition)
+_G.AbilityDefinitionTichondriusInferno = AbilityDefinitionTichondriusInferno
 
 function AbilityDefinitionTichondriusInferno:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SNin')
@@ -6349,6 +6599,7 @@ function AbilityDefinitionTichondriusInferno:setImpactDelay(level, value)
 end
 
 AbilityDefinitionCryptLordImpale = class('AbilityDefinitionCryptLordImpale', AbilityDefinition)
+_G.AbilityDefinitionCryptLordImpale = AbilityDefinitionCryptLordImpale
 
 function AbilityDefinitionCryptLordImpale:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUim')
@@ -6379,6 +6630,7 @@ function AbilityDefinitionCryptLordImpale:setWaveDistance(level, value)
 end
 
 AbilityDefinitionFrostBolt = class('AbilityDefinitionFrostBolt', AbilityDefinition)
+_G.AbilityDefinitionFrostBolt = AbilityDefinitionFrostBolt
 
 function AbilityDefinitionFrostBolt:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACcb')
@@ -6391,6 +6643,7 @@ function AbilityDefinitionFrostBolt:setDamage(level, value)
 end
 
 AbilityDefinitionCarrionSwarmcreep = class('AbilityDefinitionCarrionSwarmcreep', AbilityDefinition)
+_G.AbilityDefinitionCarrionSwarmcreep = AbilityDefinitionCarrionSwarmcreep
 
 function AbilityDefinitionCarrionSwarmcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACca')
@@ -6421,6 +6674,7 @@ function AbilityDefinitionCarrionSwarmcreep:setDistance(level, value)
 end
 
 AbilityDefinitionDreadlordInferno = class('AbilityDefinitionDreadlordInferno', AbilityDefinition)
+_G.AbilityDefinitionDreadlordInferno = AbilityDefinitionDreadlordInferno
 
 function AbilityDefinitionDreadlordInferno:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUin')
@@ -6451,6 +6705,7 @@ function AbilityDefinitionDreadlordInferno:setImpactDelay(level, value)
 end
 
 AbilityDefinitionWispHarvestInvulnerable = class('AbilityDefinitionWispHarvestInvulnerable', AbilityDefinition)
+_G.AbilityDefinitionWispHarvestInvulnerable = AbilityDefinitionWispHarvestInvulnerable
 
 function AbilityDefinitionWispHarvestInvulnerable:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awh2')
@@ -6475,6 +6730,7 @@ function AbilityDefinitionWispHarvestInvulnerable:setLumberperInterval(level, va
 end
 
 AbilityDefinitionOrbofAnnihilation = class('AbilityDefinitionOrbofAnnihilation', AbilityDefinition)
+_G.AbilityDefinitionOrbofAnnihilation = AbilityDefinitionOrbofAnnihilation
 
 function AbilityDefinitionOrbofAnnihilation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afak')
@@ -6511,6 +6767,7 @@ function AbilityDefinitionOrbofAnnihilation:setFullDamageRadius(level, value)
 end
 
 AbilityDefinitionMaxManaBonusLeast = class('AbilityDefinitionMaxManaBonusLeast', AbilityDefinition)
+_G.AbilityDefinitionMaxManaBonusLeast = AbilityDefinitionMaxManaBonusLeast
 
 function AbilityDefinitionMaxManaBonusLeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImb')
@@ -6523,6 +6780,7 @@ function AbilityDefinitionMaxManaBonusLeast:setMaxManaGained(level, value)
 end
 
 AbilityDefinitionNeutralBuildinganyunit = class('AbilityDefinitionNeutralBuildinganyunit', AbilityDefinition)
+_G.AbilityDefinitionNeutralBuildinganyunit = AbilityDefinitionNeutralBuildinganyunit
 
 function AbilityDefinitionNeutralBuildinganyunit:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ane2')
@@ -6553,6 +6811,7 @@ function AbilityDefinitionNeutralBuildinganyunit:setInteractionType(level, value
 end
 
 AbilityDefinitionGhost = class('AbilityDefinitionGhost', AbilityDefinition)
+_G.AbilityDefinitionGhost = AbilityDefinitionGhost
 
 function AbilityDefinitionGhost:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Agho')
@@ -6577,6 +6836,7 @@ function AbilityDefinitionGhost:setAutoAcquireAttackTargets(level, value)
 end
 
 AbilityDefinitionDevourCreep = class('AbilityDefinitionDevourCreep', AbilityDefinition)
+_G.AbilityDefinitionDevourCreep = AbilityDefinitionDevourCreep
 
 function AbilityDefinitionDevourCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACdv')
@@ -6589,6 +6849,7 @@ function AbilityDefinitionDevourCreep:setMaxCreepLevel(level, value)
 end
 
 AbilityDefinitionGiveLumber = class('AbilityDefinitionGiveLumber', AbilityDefinition)
+_G.AbilityDefinitionGiveLumber = AbilityDefinitionGiveLumber
 
 function AbilityDefinitionGiveLumber:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIlu')
@@ -6601,6 +6862,7 @@ function AbilityDefinitionGiveLumber:setLumberGiven(level, value)
 end
 
 AbilityDefinitionFireBoltwarlock = class('AbilityDefinitionFireBoltwarlock', AbilityDefinition)
+_G.AbilityDefinitionFireBoltwarlock = AbilityDefinitionFireBoltwarlock
 
 function AbilityDefinitionFireBoltwarlock:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awfb')
@@ -6613,6 +6875,7 @@ function AbilityDefinitionFireBoltwarlock:setDamage(level, value)
 end
 
 AbilityDefinitionDrainLifeCreep = class('AbilityDefinitionDrainLifeCreep', AbilityDefinition)
+_G.AbilityDefinitionDrainLifeCreep = AbilityDefinitionDrainLifeCreep
 
 function AbilityDefinitionDrainLifeCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACdr')
@@ -6655,6 +6918,7 @@ function AbilityDefinitionDrainLifeCreep:setLifeTransferredPerSecond(level, valu
 end
 
 AbilityDefinitionPaladinHolyLight = class('AbilityDefinitionPaladinHolyLight', AbilityDefinition)
+_G.AbilityDefinitionPaladinHolyLight = AbilityDefinitionPaladinHolyLight
 
 function AbilityDefinitionPaladinHolyLight:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHhb')
@@ -6667,6 +6931,7 @@ function AbilityDefinitionPaladinHolyLight:setAmountHealedDamaged(level, value)
 end
 
 AbilityDefinitionLevelMod = class('AbilityDefinitionLevelMod', AbilityDefinition)
+_G.AbilityDefinitionLevelMod = AbilityDefinitionLevelMod
 
 function AbilityDefinitionLevelMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIlm')
@@ -6679,6 +6944,7 @@ function AbilityDefinitionLevelMod:setLevelsGained(level, value)
 end
 
 AbilityDefinitionOrbofLightning = class('AbilityDefinitionOrbofLightning', AbilityDefinition)
+_G.AbilityDefinitionOrbofLightning = AbilityDefinitionOrbofLightning
 
 function AbilityDefinitionOrbofLightning:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIll')
@@ -6721,6 +6987,7 @@ function AbilityDefinitionOrbofLightning:setEffectAbility(level, value)
 end
 
 AbilityDefinitionLightningShieldAIls = class('AbilityDefinitionLightningShieldAIls', AbilityDefinition)
+_G.AbilityDefinitionLightningShieldAIls = AbilityDefinitionLightningShieldAIls
 
 function AbilityDefinitionLightningShieldAIls:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIls')
@@ -6733,6 +7000,7 @@ function AbilityDefinitionLightningShieldAIls:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionAbolishMagicCreep = class('AbilityDefinitionAbolishMagicCreep', AbilityDefinition)
+_G.AbilityDefinitionAbolishMagicCreep = AbilityDefinitionAbolishMagicCreep
 
 function AbilityDefinitionAbolishMagicCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACdm')
@@ -6751,6 +7019,7 @@ function AbilityDefinitionAbolishMagicCreep:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionLightningPurge = class('AbilityDefinitionLightningPurge', AbilityDefinition)
+_G.AbilityDefinitionLightningPurge = AbilityDefinitionLightningPurge
 
 function AbilityDefinitionLightningPurge:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIlp')
@@ -6793,6 +7062,7 @@ function AbilityDefinitionLightningPurge:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionMaxLifeBonusLeast = class('AbilityDefinitionMaxLifeBonusLeast', AbilityDefinition)
+_G.AbilityDefinitionMaxLifeBonusLeast = AbilityDefinitionMaxLifeBonusLeast
 
 function AbilityDefinitionMaxLifeBonusLeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIlf')
@@ -6805,6 +7075,7 @@ function AbilityDefinitionMaxLifeBonusLeast:setMaxLifeGained(level, value)
 end
 
 AbilityDefinitionParasite = class('AbilityDefinitionParasite', AbilityDefinition)
+_G.AbilityDefinitionParasite = AbilityDefinitionParasite
 
 function AbilityDefinitionParasite:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANpa')
@@ -6853,6 +7124,7 @@ function AbilityDefinitionParasite:setUnitType(level, value)
 end
 
 AbilityDefinitionDemonHunterMetamorphosis = class('AbilityDefinitionDemonHunterMetamorphosis', AbilityDefinition)
+_G.AbilityDefinitionDemonHunterMetamorphosis = AbilityDefinitionDemonHunterMetamorphosis
 
 function AbilityDefinitionDemonHunterMetamorphosis:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEme')
@@ -6895,6 +7167,7 @@ function AbilityDefinitionDemonHunterMetamorphosis:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionDevourMagiccreep = class('AbilityDefinitionDevourMagiccreep', AbilityDefinition)
+_G.AbilityDefinitionDevourMagiccreep = AbilityDefinitionDevourMagiccreep
 
 function AbilityDefinitionDevourMagiccreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACde')
@@ -6907,6 +7180,7 @@ function AbilityDefinitionDevourMagiccreep:setIgnoreFriendlyBuffs(level, value)
 end
 
 AbilityDefinitionAapl = class('AbilityDefinitionAapl', AbilityDefinition)
+_G.AbilityDefinitionAapl = AbilityDefinitionAapl
 
 function AbilityDefinitionAapl:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aapl')
@@ -6937,6 +7211,7 @@ function AbilityDefinitionAapl:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionDeathCoilcreep = class('AbilityDefinitionDeathCoilcreep', AbilityDefinition)
+_G.AbilityDefinitionDeathCoilcreep = AbilityDefinitionDeathCoilcreep
 
 function AbilityDefinitionDeathCoilcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACdc')
@@ -6949,6 +7224,7 @@ function AbilityDefinitionDeathCoilcreep:setAmountHealedDamaged(level, value)
 end
 
 AbilityDefinitionDemonHunterManaBurn = class('AbilityDefinitionDemonHunterManaBurn', AbilityDefinition)
+_G.AbilityDefinitionDemonHunterManaBurn = AbilityDefinitionDemonHunterManaBurn
 
 function AbilityDefinitionDemonHunterManaBurn:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEmb')
@@ -6973,6 +7249,7 @@ function AbilityDefinitionDemonHunterManaBurn:setBoltDelay(level, value)
 end
 
 AbilityDefinitionLichFrostArmorAutocast = class('AbilityDefinitionLichFrostArmorAutocast', AbilityDefinition)
+_G.AbilityDefinitionLichFrostArmorAutocast = AbilityDefinitionLichFrostArmorAutocast
 
 function AbilityDefinitionLichFrostArmorAutocast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUfu')
@@ -6991,6 +7268,7 @@ function AbilityDefinitionLichFrostArmorAutocast:setArmorBonus(level, value)
 end
 
 AbilityDefinitionAnimateDeaditemspecial = class('AbilityDefinitionAnimateDeaditemspecial', AbilityDefinition)
+_G.AbilityDefinitionAnimateDeaditemspecial = AbilityDefinitionAnimateDeaditemspecial
 
 function AbilityDefinitionAnimateDeaditemspecial:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AInd')
@@ -7003,6 +7281,7 @@ function AbilityDefinitionAnimateDeaditemspecial:setInheritUpgrades(level, value
 end
 
 AbilityDefinitionFrostArmorcreep = class('AbilityDefinitionFrostArmorcreep', AbilityDefinition)
+_G.AbilityDefinitionFrostArmorcreep = AbilityDefinitionFrostArmorcreep
 
 function AbilityDefinitionFrostArmorcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACfa')
@@ -7021,6 +7300,7 @@ function AbilityDefinitionFrostArmorcreep:setArmorBonus(level, value)
 end
 
 AbilityDefinitionManaBatteryObsidianStatue = class('AbilityDefinitionManaBatteryObsidianStatue', AbilityDefinition)
+_G.AbilityDefinitionManaBatteryObsidianStatue = AbilityDefinitionManaBatteryObsidianStatue
 
 function AbilityDefinitionManaBatteryObsidianStatue:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amb2')
@@ -7057,6 +7337,7 @@ function AbilityDefinitionManaBatteryObsidianStatue:setRegenerateOnlyAtNight(lev
 end
 
 AbilityDefinitionFireBoltcreep = class('AbilityDefinitionFireBoltcreep', AbilityDefinition)
+_G.AbilityDefinitionFireBoltcreep = AbilityDefinitionFireBoltcreep
 
 function AbilityDefinitionFireBoltcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACfb')
@@ -7069,6 +7350,7 @@ function AbilityDefinitionFireBoltcreep:setDamage(level, value)
 end
 
 AbilityDefinitionEvasioncreep100 = class('AbilityDefinitionEvasioncreep100', AbilityDefinition)
+_G.AbilityDefinitionEvasioncreep100 = AbilityDefinitionEvasioncreep100
 
 function AbilityDefinitionEvasioncreep100:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACes')
@@ -7081,6 +7363,7 @@ function AbilityDefinitionEvasioncreep100:setChancetoEvade(level, value)
 end
 
 AbilityDefinitionVenomSpears = class('AbilityDefinitionVenomSpears', AbilityDefinition)
+_G.AbilityDefinitionVenomSpears = AbilityDefinitionVenomSpears
 
 function AbilityDefinitionVenomSpears:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aven')
@@ -7111,6 +7394,7 @@ function AbilityDefinitionVenomSpears:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionEvasioncreep = class('AbilityDefinitionEvasioncreep', AbilityDefinition)
+_G.AbilityDefinitionEvasioncreep = AbilityDefinitionEvasioncreep
 
 function AbilityDefinitionEvasioncreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACev')
@@ -7123,6 +7407,7 @@ function AbilityDefinitionEvasioncreep:setChancetoEvade(level, value)
 end
 
 AbilityDefinitionCargoHoldBurrow = class('AbilityDefinitionCargoHoldBurrow', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldBurrow = AbilityDefinitionCargoHoldBurrow
 
 function AbilityDefinitionCargoHoldBurrow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abun')
@@ -7135,6 +7420,7 @@ function AbilityDefinitionCargoHoldBurrow:setCargoCapacity(level, value)
 end
 
 AbilityDefinitionMagicImmunityAImx = class('AbilityDefinitionMagicImmunityAImx', AbilityDefinition)
+_G.AbilityDefinitionMagicImmunityAImx = AbilityDefinitionMagicImmunityAImx
 
 function AbilityDefinitionMagicImmunityAImx:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImx')
@@ -7147,6 +7433,7 @@ function AbilityDefinitionMagicImmunityAImx:setMagicDamageFactor(level, value)
 end
 
 AbilityDefinitionBurrow = class('AbilityDefinitionBurrow', AbilityDefinition)
+_G.AbilityDefinitionBurrow = AbilityDefinitionBurrow
 
 function AbilityDefinitionBurrow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abur')
@@ -7183,6 +7470,7 @@ function AbilityDefinitionBurrow:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionCyclone = class('AbilityDefinitionCyclone', AbilityDefinition)
+_G.AbilityDefinitionCyclone = AbilityDefinitionCyclone
 
 function AbilityDefinitionCyclone:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acyc')
@@ -7195,6 +7483,7 @@ function AbilityDefinitionCyclone:setCanBeDispelled(level, value)
 end
 
 AbilityDefinitionItemManaRestoreAoe = class('AbilityDefinitionItemManaRestoreAoe', AbilityDefinition)
+_G.AbilityDefinitionItemManaRestoreAoe = AbilityDefinitionItemManaRestoreAoe
 
 function AbilityDefinitionItemManaRestoreAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImr')
@@ -7207,6 +7496,7 @@ function AbilityDefinitionItemManaRestoreAoe:setManaPointsGained(level, value)
 end
 
 AbilityDefinitionStaffoTeleportation = class('AbilityDefinitionStaffoTeleportation', AbilityDefinition)
+_G.AbilityDefinitionStaffoTeleportation = AbilityDefinitionStaffoTeleportation
 
 function AbilityDefinitionStaffoTeleportation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImt')
@@ -7231,6 +7521,7 @@ function AbilityDefinitionStaffoTeleportation:setNumberofUnitsTeleported(level, 
 end
 
 AbilityDefinitionEnsnareCreep = class('AbilityDefinitionEnsnareCreep', AbilityDefinition)
+_G.AbilityDefinitionEnsnareCreep = AbilityDefinitionEnsnareCreep
 
 function AbilityDefinitionEnsnareCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACen')
@@ -7255,6 +7546,7 @@ function AbilityDefinitionEnsnareCreep:setMeleeAttackRange(level, value)
 end
 
 AbilityDefinitionMoveSpeedBonus = class('AbilityDefinitionMoveSpeedBonus', AbilityDefinition)
+_G.AbilityDefinitionMoveSpeedBonus = AbilityDefinitionMoveSpeedBonus
 
 function AbilityDefinitionMoveSpeedBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIms')
@@ -7267,6 +7559,7 @@ function AbilityDefinitionMoveSpeedBonus:setMovementSpeedBonus(level, value)
 end
 
 AbilityDefinitionPhoenix = class('AbilityDefinitionPhoenix', AbilityDefinition)
+_G.AbilityDefinitionPhoenix = AbilityDefinitionPhoenix
 
 function AbilityDefinitionPhoenix:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aphx')
@@ -7303,6 +7596,7 @@ function AbilityDefinitionPhoenix:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionNeutralSpell = class('AbilityDefinitionNeutralSpell', AbilityDefinition)
+_G.AbilityDefinitionNeutralSpell = AbilityDefinitionNeutralSpell
 
 function AbilityDefinitionNeutralSpell:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AAns')
@@ -7333,6 +7627,7 @@ function AbilityDefinitionNeutralSpell:setLumberCost(level, value)
 end
 
 AbilityDefinitionAImm = class('AbilityDefinitionAImm', AbilityDefinition)
+_G.AbilityDefinitionAImm = AbilityDefinitionAImm
 
 function AbilityDefinitionAImm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImm')
@@ -7345,6 +7640,7 @@ function AbilityDefinitionAImm:setMaxManaGained(level, value)
 end
 
 AbilityDefinitionShadowHunterHealingWave = class('AbilityDefinitionShadowHunterHealingWave', AbilityDefinition)
+_G.AbilityDefinitionShadowHunterHealingWave = AbilityDefinitionShadowHunterHealingWave
 
 function AbilityDefinitionShadowHunterHealingWave:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOhw')
@@ -7369,6 +7665,7 @@ function AbilityDefinitionShadowHunterHealingWave:setDamageReductionperTarget(le
 end
 
 AbilityDefinitionShadowHunterHex = class('AbilityDefinitionShadowHunterHex', AbilityDefinition)
+_G.AbilityDefinitionShadowHunterHex = AbilityDefinitionShadowHunterHex
 
 function AbilityDefinitionShadowHunterHex:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOhx')
@@ -7405,6 +7702,7 @@ function AbilityDefinitionShadowHunterHex:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionItemMonsterLure = class('AbilityDefinitionItemMonsterLure', AbilityDefinition)
+_G.AbilityDefinitionItemMonsterLure = AbilityDefinitionItemMonsterLure
 
 function AbilityDefinitionItemMonsterLure:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImo')
@@ -7435,6 +7733,7 @@ function AbilityDefinitionItemMonsterLure:setLureIntervalseconds(level, value)
 end
 
 AbilityDefinitionAImi = class('AbilityDefinitionAImi', AbilityDefinition)
+_G.AbilityDefinitionAImi = AbilityDefinitionAImi
 
 function AbilityDefinitionAImi:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImi')
@@ -7447,6 +7746,7 @@ function AbilityDefinitionAImi:setMaxLifeGained(level, value)
 end
 
 AbilityDefinitionAIml = class('AbilityDefinitionAIml', AbilityDefinition)
+_G.AbilityDefinitionAIml = AbilityDefinitionAIml
 
 function AbilityDefinitionAIml:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIml')
@@ -7459,6 +7759,7 @@ function AbilityDefinitionAIml:setMaxLifeGained(level, value)
 end
 
 AbilityDefinitionPermanentHitpointBonusfromchargeditem = class('AbilityDefinitionPermanentHitpointBonusfromchargeditem', AbilityDefinition)
+_G.AbilityDefinitionPermanentHitpointBonusfromchargeditem = AbilityDefinitionPermanentHitpointBonusfromchargeditem
 
 function AbilityDefinitionPermanentHitpointBonusfromchargeditem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AImh')
@@ -7471,6 +7772,7 @@ function AbilityDefinitionPermanentHitpointBonusfromchargeditem:setMaxLifeGained
 end
 
 AbilityDefinitionFeedbackArcaneTower = class('AbilityDefinitionFeedbackArcaneTower', AbilityDefinition)
+_G.AbilityDefinitionFeedbackArcaneTower = AbilityDefinitionFeedbackArcaneTower
 
 function AbilityDefinitionFeedbackArcaneTower:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afbt')
@@ -7483,6 +7785,7 @@ function AbilityDefinitionFeedbackArcaneTower:setSummonedDamage(level, value)
 end
 
 AbilityDefinitionChaosGrunt = class('AbilityDefinitionChaosGrunt', AbilityDefinition)
+_G.AbilityDefinitionChaosGrunt = AbilityDefinitionChaosGrunt
 
 function AbilityDefinitionChaosGrunt:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca1')
@@ -7495,6 +7798,7 @@ function AbilityDefinitionChaosGrunt:setNewUnitType(level, value)
 end
 
 AbilityDefinitionChaosRaider = class('AbilityDefinitionChaosRaider', AbilityDefinition)
+_G.AbilityDefinitionChaosRaider = AbilityDefinitionChaosRaider
 
 function AbilityDefinitionChaosRaider:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca2')
@@ -7507,6 +7811,7 @@ function AbilityDefinitionChaosRaider:setNewUnitType(level, value)
 end
 
 AbilityDefinitionStasisTrap = class('AbilityDefinitionStasisTrap', AbilityDefinition)
+_G.AbilityDefinitionStasisTrap = AbilityDefinitionStasisTrap
 
 function AbilityDefinitionStasisTrap:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asta')
@@ -7543,6 +7848,7 @@ function AbilityDefinitionStasisTrap:setStunDuration(level, value)
 end
 
 AbilityDefinitionPermanentImmolationgraphic = class('AbilityDefinitionPermanentImmolationgraphic', AbilityDefinition)
+_G.AbilityDefinitionPermanentImmolationgraphic = AbilityDefinitionPermanentImmolationgraphic
 
 function AbilityDefinitionPermanentImmolationgraphic:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apig')
@@ -7567,6 +7873,7 @@ function AbilityDefinitionPermanentImmolationgraphic:setDamageperInterval(level,
 end
 
 AbilityDefinitionChaosShaman = class('AbilityDefinitionChaosShaman', AbilityDefinition)
+_G.AbilityDefinitionChaosShaman = AbilityDefinitionChaosShaman
 
 function AbilityDefinitionChaosShaman:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca3')
@@ -7579,6 +7886,7 @@ function AbilityDefinitionChaosShaman:setNewUnitType(level, value)
 end
 
 AbilityDefinitionChaosKodo = class('AbilityDefinitionChaosKodo', AbilityDefinition)
+_G.AbilityDefinitionChaosKodo = AbilityDefinitionChaosKodo
 
 function AbilityDefinitionChaosKodo:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca4')
@@ -7591,6 +7899,7 @@ function AbilityDefinitionChaosKodo:setNewUnitType(level, value)
 end
 
 AbilityDefinitionChaosPeon = class('AbilityDefinitionChaosPeon', AbilityDefinition)
+_G.AbilityDefinitionChaosPeon = AbilityDefinitionChaosPeon
 
 function AbilityDefinitionChaosPeon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca5')
@@ -7603,6 +7912,7 @@ function AbilityDefinitionChaosPeon:setNewUnitType(level, value)
 end
 
 AbilityDefinitionFrostDamageBonus = class('AbilityDefinitionFrostDamageBonus', AbilityDefinition)
+_G.AbilityDefinitionFrostDamageBonus = AbilityDefinitionFrostDamageBonus
 
 function AbilityDefinitionFrostDamageBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIob')
@@ -7621,6 +7931,7 @@ function AbilityDefinitionFrostDamageBonus:setDamageBonus(level, value)
 end
 
 AbilityDefinitionChaosGrom = class('AbilityDefinitionChaosGrom', AbilityDefinition)
+_G.AbilityDefinitionChaosGrom = AbilityDefinitionChaosGrom
 
 function AbilityDefinitionChaosGrom:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sca6')
@@ -7633,6 +7944,7 @@ function AbilityDefinitionChaosGrom:setNewUnitType(level, value)
 end
 
 AbilityDefinitionInnerFire = class('AbilityDefinitionInnerFire', AbilityDefinition)
+_G.AbilityDefinitionInnerFire = AbilityDefinitionInnerFire
 
 function AbilityDefinitionInnerFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ainf')
@@ -7663,6 +7975,7 @@ function AbilityDefinitionInnerFire:setDamageIncrease(level, value)
 end
 
 AbilityDefinitionMoonPriestessSearingArrows = class('AbilityDefinitionMoonPriestessSearingArrows', AbilityDefinition)
+_G.AbilityDefinitionMoonPriestessSearingArrows = AbilityDefinitionMoonPriestessSearingArrows
 
 function AbilityDefinitionMoonPriestessSearingArrows:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHfa')
@@ -7675,6 +7988,7 @@ function AbilityDefinitionMoonPriestessSearingArrows:setDamageBonus(level, value
 end
 
 AbilityDefinitionMonsoon = class('AbilityDefinitionMonsoon', AbilityDefinition)
+_G.AbilityDefinitionMonsoon = AbilityDefinitionMonsoon
 
 function AbilityDefinitionMonsoon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANmo')
@@ -7699,6 +8013,7 @@ function AbilityDefinitionMonsoon:setBuildingReduction(level, value)
 end
 
 AbilityDefinitionInventory = class('AbilityDefinitionInventory', AbilityDefinition)
+_G.AbilityDefinitionInventory = AbilityDefinitionInventory
 
 function AbilityDefinitionInventory:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AInv')
@@ -7735,6 +8050,7 @@ function AbilityDefinitionInventory:setItemCapacity(level, value)
 end
 
 AbilityDefinitionnullroarsummoner = class('AbilityDefinitionnullroarsummoner', AbilityDefinition)
+_G.AbilityDefinitionnullroarsummoner = AbilityDefinitionnullroarsummoner
 
 function AbilityDefinitionnullroarsummoner:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ahnl')
@@ -7765,6 +8081,7 @@ function AbilityDefinitionnullroarsummoner:setManaRegen(level, value)
 end
 
 AbilityDefinitionSeaWitchManaShield = class('AbilityDefinitionSeaWitchManaShield', AbilityDefinition)
+_G.AbilityDefinitionSeaWitchManaShield = AbilityDefinitionSeaWitchManaShield
 
 function AbilityDefinitionSeaWitchManaShield:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANms')
@@ -7783,6 +8100,7 @@ function AbilityDefinitionSeaWitchManaShield:setManaperHitPoint(level, value)
 end
 
 AbilityDefinitionSpawnSpiderlingOnDeath = class('AbilityDefinitionSpawnSpiderlingOnDeath', AbilityDefinition)
+_G.AbilityDefinitionSpawnSpiderlingOnDeath = AbilityDefinitionSpawnSpiderlingOnDeath
 
 function AbilityDefinitionSpawnSpiderlingOnDeath:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Assp')
@@ -7801,6 +8119,7 @@ function AbilityDefinitionSpawnSpiderlingOnDeath:setUnitType(level, value)
 end
 
 AbilityDefinitionScrollofRejuvII = class('AbilityDefinitionScrollofRejuvII', AbilityDefinition)
+_G.AbilityDefinitionScrollofRejuvII = AbilityDefinitionScrollofRejuvII
 
 function AbilityDefinitionScrollofRejuvII:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp6')
@@ -7837,6 +8156,7 @@ function AbilityDefinitionScrollofRejuvII:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionMindRot = class('AbilityDefinitionMindRot', AbilityDefinition)
+_G.AbilityDefinitionMindRot = AbilityDefinitionMindRot
 
 function AbilityDefinitionMindRot:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANmr')
@@ -7849,6 +8169,7 @@ function AbilityDefinitionMindRot:setManaDrainedperSecond(level, value)
 end
 
 AbilityDefinitionFrostNovacreep = class('AbilityDefinitionFrostNovacreep', AbilityDefinition)
+_G.AbilityDefinitionFrostNovacreep = AbilityDefinitionFrostNovacreep
 
 function AbilityDefinitionFrostNovacreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACfn')
@@ -7867,6 +8188,7 @@ function AbilityDefinitionFrostNovacreep:setSpecificTargetDamage(level, value)
 end
 
 AbilityDefinitionScrollofRejuvI = class('AbilityDefinitionScrollofRejuvI', AbilityDefinition)
+_G.AbilityDefinitionScrollofRejuvI = AbilityDefinitionScrollofRejuvI
 
 function AbilityDefinitionScrollofRejuvI:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp5')
@@ -7903,6 +8225,7 @@ function AbilityDefinitionScrollofRejuvI:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionPermanentInvisibility = class('AbilityDefinitionPermanentInvisibility', AbilityDefinition)
+_G.AbilityDefinitionPermanentInvisibility = AbilityDefinitionPermanentInvisibility
 
 function AbilityDefinitionPermanentInvisibility:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apiv')
@@ -7915,6 +8238,7 @@ function AbilityDefinitionPermanentInvisibility:setAutoAcquireAttackTargets(leve
 end
 
 AbilityDefinitionFeedbackSpiritBeast = class('AbilityDefinitionFeedbackSpiritBeast', AbilityDefinition)
+_G.AbilityDefinitionFeedbackSpiritBeast = AbilityDefinitionFeedbackSpiritBeast
 
 function AbilityDefinitionFeedbackSpiritBeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afbb')
@@ -7927,6 +8251,7 @@ function AbilityDefinitionFeedbackSpiritBeast:setSummonedDamage(level, value)
 end
 
 AbilityDefinitionPotionofRejuvIV = class('AbilityDefinitionPotionofRejuvIV', AbilityDefinition)
+_G.AbilityDefinitionPotionofRejuvIV = AbilityDefinitionPotionofRejuvIV
 
 function AbilityDefinitionPotionofRejuvIV:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp4')
@@ -7963,6 +8288,7 @@ function AbilityDefinitionPotionofRejuvIV:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionPotionofRejuvIII = class('AbilityDefinitionPotionofRejuvIII', AbilityDefinition)
+_G.AbilityDefinitionPotionofRejuvIII = AbilityDefinitionPotionofRejuvIII
 
 function AbilityDefinitionPotionofRejuvIII:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp3')
@@ -7999,6 +8325,7 @@ function AbilityDefinitionPotionofRejuvIII:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionFlameStrikeCreep = class('AbilityDefinitionFlameStrikeCreep', AbilityDefinition)
+_G.AbilityDefinitionFlameStrikeCreep = AbilityDefinitionFlameStrikeCreep
 
 function AbilityDefinitionFlameStrikeCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACfs')
@@ -8041,6 +8368,7 @@ function AbilityDefinitionFlameStrikeCreep:setFullDamageInterval(level, value)
 end
 
 AbilityDefinitionWispHarvest = class('AbilityDefinitionWispHarvest', AbilityDefinition)
+_G.AbilityDefinitionWispHarvest = AbilityDefinitionWispHarvest
 
 function AbilityDefinitionWispHarvest:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awha')
@@ -8065,6 +8393,7 @@ function AbilityDefinitionWispHarvest:setLumberperInterval(level, value)
 end
 
 AbilityDefinitionPotionofRejuvII = class('AbilityDefinitionPotionofRejuvII', AbilityDefinition)
+_G.AbilityDefinitionPotionofRejuvII = AbilityDefinitionPotionofRejuvII
 
 function AbilityDefinitionPotionofRejuvII:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp2')
@@ -8101,6 +8430,7 @@ function AbilityDefinitionPotionofRejuvII:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionHardenedSkin = class('AbilityDefinitionHardenedSkin', AbilityDefinition)
+_G.AbilityDefinitionHardenedSkin = AbilityDefinitionHardenedSkin
 
 function AbilityDefinitionHardenedSkin:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Assk')
@@ -8137,6 +8467,7 @@ function AbilityDefinitionHardenedSkin:setIncludeMeleeDamage(level, value)
 end
 
 AbilityDefinitionForceofNaturecreep = class('AbilityDefinitionForceofNaturecreep', AbilityDefinition)
+_G.AbilityDefinitionForceofNaturecreep = AbilityDefinitionForceofNaturecreep
 
 function AbilityDefinitionForceofNaturecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACfr')
@@ -8155,6 +8486,7 @@ function AbilityDefinitionForceofNaturecreep:setNumberofSummonedUnits(level, val
 end
 
 AbilityDefinitionPotionofRejuvI = class('AbilityDefinitionPotionofRejuvI', AbilityDefinition)
+_G.AbilityDefinitionPotionofRejuvI = AbilityDefinitionPotionofRejuvI
 
 function AbilityDefinitionPotionofRejuvI:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIp1')
@@ -8191,6 +8523,7 @@ function AbilityDefinitionPotionofRejuvI:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionFeedback = class('AbilityDefinitionFeedback', AbilityDefinition)
+_G.AbilityDefinitionFeedback = AbilityDefinitionFeedback
 
 function AbilityDefinitionFeedback:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afbk')
@@ -8227,6 +8560,7 @@ function AbilityDefinitionFeedback:setDamageRatioHeros(level, value)
 end
 
 AbilityDefinitionStrengthModPlus2 = class('AbilityDefinitionStrengthModPlus2', AbilityDefinition)
+_G.AbilityDefinitionStrengthModPlus2 = AbilityDefinitionStrengthModPlus2
 
 function AbilityDefinitionStrengthModPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AInm')
@@ -8257,6 +8591,7 @@ function AbilityDefinitionStrengthModPlus2:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionFaerieFirecreep = class('AbilityDefinitionFaerieFirecreep', AbilityDefinition)
+_G.AbilityDefinitionFaerieFirecreep = AbilityDefinitionFaerieFirecreep
 
 function AbilityDefinitionFaerieFirecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACff')
@@ -8275,6 +8610,7 @@ function AbilityDefinitionFaerieFirecreep:setDefenseReduction(level, value)
 end
 
 AbilityDefinitionAarm = class('AbilityDefinitionAarm', AbilityDefinition)
+_G.AbilityDefinitionAarm = AbilityDefinitionAarm
 
 function AbilityDefinitionAarm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aarm')
@@ -8293,6 +8629,7 @@ function AbilityDefinitionAarm:setAmountRegenerated(level, value)
 end
 
 AbilityDefinitionBloodMageFlameStrike = class('AbilityDefinitionBloodMageFlameStrike', AbilityDefinition)
+_G.AbilityDefinitionBloodMageFlameStrike = AbilityDefinitionBloodMageFlameStrike
 
 function AbilityDefinitionBloodMageFlameStrike:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHfs')
@@ -8335,6 +8672,7 @@ function AbilityDefinitionBloodMageFlameStrike:setFullDamageInterval(level, valu
 end
 
 AbilityDefinitionBloodlustCreep = class('AbilityDefinitionBloodlustCreep', AbilityDefinition)
+_G.AbilityDefinitionBloodlustCreep = AbilityDefinitionBloodlustCreep
 
 function AbilityDefinitionBloodlustCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACbl')
@@ -8359,6 +8697,7 @@ function AbilityDefinitionBloodlustCreep:setScalingFactor(level, value)
 end
 
 AbilityDefinitionRoarAIrr = class('AbilityDefinitionRoarAIrr', AbilityDefinition)
+_G.AbilityDefinitionRoarAIrr = AbilityDefinitionRoarAIrr
 
 function AbilityDefinitionRoarAIrr:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrr')
@@ -8407,6 +8746,7 @@ function AbilityDefinitionRoarAIrr:setMaxUnits(level, value)
 end
 
 AbilityDefinitionResurrection = class('AbilityDefinitionResurrection', AbilityDefinition)
+_G.AbilityDefinitionResurrection = AbilityDefinitionResurrection
 
 function AbilityDefinitionResurrection:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrs')
@@ -8425,6 +8765,7 @@ function AbilityDefinitionResurrection:setNumberofCorpsesRaised(level, value)
 end
 
 AbilityDefinitionItemRecall = class('AbilityDefinitionItemRecall', AbilityDefinition)
+_G.AbilityDefinitionItemRecall = AbilityDefinitionItemRecall
 
 function AbilityDefinitionItemRecall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrt')
@@ -8443,6 +8784,7 @@ function AbilityDefinitionItemRecall:setUseTeleportClustering(level, value)
 end
 
 AbilityDefinitionAttackBonusAIt6 = class('AbilityDefinitionAttackBonusAIt6', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusAIt6 = AbilityDefinitionAttackBonusAIt6
 
 function AbilityDefinitionAttackBonusAIt6:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIt6')
@@ -8455,6 +8797,7 @@ function AbilityDefinitionAttackBonusAIt6:setAttackBonus(level, value)
 end
 
 AbilityDefinitionItemRevealMap = class('AbilityDefinitionItemRevealMap', AbilityDefinition)
+_G.AbilityDefinitionItemRevealMap = AbilityDefinitionItemRevealMap
 
 function AbilityDefinitionItemRevealMap:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrv')
@@ -8467,6 +8810,7 @@ function AbilityDefinitionItemRevealMap:setDetectionType(level, value)
 end
 
 AbilityDefinitionBashcreep = class('AbilityDefinitionBashcreep', AbilityDefinition)
+_G.AbilityDefinitionBashcreep = AbilityDefinitionBashcreep
 
 function AbilityDefinitionBashcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACbh')
@@ -8503,6 +8847,7 @@ function AbilityDefinitionBashcreep:setDamageMultiplier(level, value)
 end
 
 AbilityDefinitionAlchemistChemicalRage = class('AbilityDefinitionAlchemistChemicalRage', AbilityDefinition)
+_G.AbilityDefinitionAlchemistChemicalRage = AbilityDefinitionAlchemistChemicalRage
 
 function AbilityDefinitionAlchemistChemicalRage:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANcr')
@@ -8551,6 +8896,7 @@ function AbilityDefinitionAlchemistChemicalRage:setAlternateFormUnit(level, valu
 end
 
 AbilityDefinitionTinkererClusterRocketsLevel0 = class('AbilityDefinitionTinkererClusterRocketsLevel0', AbilityDefinition)
+_G.AbilityDefinitionTinkererClusterRocketsLevel0 = AbilityDefinitionTinkererClusterRocketsLevel0
 
 function AbilityDefinitionTinkererClusterRocketsLevel0:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANcs')
@@ -8593,6 +8939,7 @@ function AbilityDefinitionTinkererClusterRocketsLevel0:setBuildingDamageFactor(l
 end
 
 AbilityDefinitionAttackBonusAIt9 = class('AbilityDefinitionAttackBonusAIt9', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusAIt9 = AbilityDefinitionAttackBonusAIt9
 
 function AbilityDefinitionAttackBonusAIt9:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIt9')
@@ -8605,6 +8952,7 @@ function AbilityDefinitionAttackBonusAIt9:setAttackBonus(level, value)
 end
 
 AbilityDefinitionPossession = class('AbilityDefinitionPossession', AbilityDefinition)
+_G.AbilityDefinitionPossession = AbilityDefinitionPossession
 
 function AbilityDefinitionPossession:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apos')
@@ -8617,6 +8965,7 @@ function AbilityDefinitionPossession:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionPotionofLifeRegen = class('AbilityDefinitionPotionofLifeRegen', AbilityDefinition)
+_G.AbilityDefinitionPotionofLifeRegen = AbilityDefinitionPotionofLifeRegen
 
 function AbilityDefinitionPotionofLifeRegen:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrl')
@@ -8653,6 +9002,7 @@ function AbilityDefinitionPotionofLifeRegen:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionDarkRangerCharm = class('AbilityDefinitionDarkRangerCharm', AbilityDefinition)
+_G.AbilityDefinitionDarkRangerCharm = AbilityDefinitionDarkRangerCharm
 
 function AbilityDefinitionDarkRangerCharm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANch')
@@ -8665,6 +9015,7 @@ function AbilityDefinitionDarkRangerCharm:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionBreathofFrostCreep = class('AbilityDefinitionBreathofFrostCreep', AbilityDefinition)
+_G.AbilityDefinitionBreathofFrostCreep = AbilityDefinitionBreathofFrostCreep
 
 function AbilityDefinitionBreathofFrostCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACbf')
@@ -8701,6 +9052,7 @@ function AbilityDefinitionBreathofFrostCreep:setDistance(level, value)
 end
 
 AbilityDefinitionItemRegenMana = class('AbilityDefinitionItemRegenMana', AbilityDefinition)
+_G.AbilityDefinitionItemRegenMana = AbilityDefinitionItemRegenMana
 
 function AbilityDefinitionItemRegenMana:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrm')
@@ -8713,6 +9065,7 @@ function AbilityDefinitionItemRegenMana:setManaRegenerationBonusasfractionofnorm
 end
 
 AbilityDefinitionItemRegenManalesser = class('AbilityDefinitionItemRegenManalesser', AbilityDefinition)
+_G.AbilityDefinitionItemRegenManalesser = AbilityDefinitionItemRegenManalesser
 
 function AbilityDefinitionItemRegenManalesser:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrn')
@@ -8725,6 +9078,7 @@ function AbilityDefinitionItemRegenManalesser:setManaRegenerationBonusasfraction
 end
 
 AbilityDefinitionAuraBrilliancecreep = class('AbilityDefinitionAuraBrilliancecreep', AbilityDefinition)
+_G.AbilityDefinitionAuraBrilliancecreep = AbilityDefinitionAuraBrilliancecreep
 
 function AbilityDefinitionAuraBrilliancecreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACba')
@@ -8743,6 +9097,7 @@ function AbilityDefinitionAuraBrilliancecreep:setPercentBonus(level, value)
 end
 
 AbilityDefinitionIllidanChannel = class('AbilityDefinitionIllidanChannel', AbilityDefinition)
+_G.AbilityDefinitionIllidanChannel = AbilityDefinitionIllidanChannel
 
 function AbilityDefinitionIllidanChannel:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANcl')
@@ -8785,6 +9140,7 @@ function AbilityDefinitionIllidanChannel:setOptions(level, value)
 end
 
 AbilityDefinitionBreathofFireCreep = class('AbilityDefinitionBreathofFireCreep', AbilityDefinition)
+_G.AbilityDefinitionBreathofFireCreep = AbilityDefinitionBreathofFireCreep
 
 function AbilityDefinitionBreathofFireCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACbc')
@@ -8821,6 +9177,7 @@ function AbilityDefinitionBreathofFireCreep:setDistance(level, value)
 end
 
 AbilityDefinitionPitLordCleavingAttack = class('AbilityDefinitionPitLordCleavingAttack', AbilityDefinition)
+_G.AbilityDefinitionPitLordCleavingAttack = AbilityDefinitionPitLordCleavingAttack
 
 function AbilityDefinitionPitLordCleavingAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANca')
@@ -8833,6 +9190,7 @@ function AbilityDefinitionPitLordCleavingAttack:setDistributedDamageFactor(level
 end
 
 AbilityDefinitionSilenceItem = class('AbilityDefinitionSilenceItem', AbilityDefinition)
+_G.AbilityDefinitionSilenceItem = AbilityDefinitionSilenceItem
 
 function AbilityDefinitionSilenceItem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIse')
@@ -8863,6 +9221,7 @@ function AbilityDefinitionSilenceItem:setAttacksPrevented(level, value)
 end
 
 AbilityDefinitionSummonHeadhunteritem = class('AbilityDefinitionSummonHeadhunteritem', AbilityDefinition)
+_G.AbilityDefinitionSummonHeadhunteritem = AbilityDefinitionSummonHeadhunteritem
 
 function AbilityDefinitionSummonHeadhunteritem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsh')
@@ -8881,6 +9240,7 @@ function AbilityDefinitionSummonHeadhunteritem:setNumberofSummonedUnits(level, v
 end
 
 AbilityDefinitionSightBonus = class('AbilityDefinitionSightBonus', AbilityDefinition)
+_G.AbilityDefinitionSightBonus = AbilityDefinitionSightBonus
 
 function AbilityDefinitionSightBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsi')
@@ -8893,6 +9253,7 @@ function AbilityDefinitionSightBonus:setSightRangeBonus(level, value)
 end
 
 AbilityDefinitionBlizzardcreep = class('AbilityDefinitionBlizzardcreep', AbilityDefinition)
+_G.AbilityDefinitionBlizzardcreep = AbilityDefinitionBlizzardcreep
 
 function AbilityDefinitionBlizzardcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACbz')
@@ -8935,6 +9296,7 @@ function AbilityDefinitionBlizzardcreep:setDamage(level, value)
 end
 
 AbilityDefinitionCloudofFog = class('AbilityDefinitionCloudofFog', AbilityDefinition)
+_G.AbilityDefinitionCloudofFog = AbilityDefinitionCloudofFog
 
 function AbilityDefinitionCloudofFog:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aclf')
@@ -8965,6 +9327,7 @@ function AbilityDefinitionCloudofFog:setAttacksPrevented(level, value)
 end
 
 AbilityDefinitionAntimagicShieldMatrix = class('AbilityDefinitionAntimagicShieldMatrix', AbilityDefinition)
+_G.AbilityDefinitionAntimagicShieldMatrix = AbilityDefinitionAntimagicShieldMatrix
 
 function AbilityDefinitionAntimagicShieldMatrix:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aam2')
@@ -8977,6 +9340,7 @@ function AbilityDefinitionAntimagicShieldMatrix:setManaLoss(level, value)
 end
 
 AbilityDefinitionLoad = class('AbilityDefinitionLoad', AbilityDefinition)
+_G.AbilityDefinitionLoad = AbilityDefinitionLoad
 
 function AbilityDefinitionLoad:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aloa')
@@ -8989,6 +9353,7 @@ function AbilityDefinitionLoad:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionBladeMasterMirrorImage = class('AbilityDefinitionBladeMasterMirrorImage', AbilityDefinition)
+_G.AbilityDefinitionBladeMasterMirrorImage = AbilityDefinitionBladeMasterMirrorImage
 
 function AbilityDefinitionBladeMasterMirrorImage:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOmi')
@@ -9019,6 +9384,7 @@ function AbilityDefinitionBladeMasterMirrorImage:setAnimationDelay(level, value)
 end
 
 AbilityDefinitionWardenBlink = class('AbilityDefinitionWardenBlink', AbilityDefinition)
+_G.AbilityDefinitionWardenBlink = AbilityDefinitionWardenBlink
 
 function AbilityDefinitionWardenBlink:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEbl')
@@ -9037,6 +9403,7 @@ function AbilityDefinitionWardenBlink:setMinimumRange(level, value)
 end
 
 AbilityDefinitionPoisonAttack = class('AbilityDefinitionPoisonAttack', AbilityDefinition)
+_G.AbilityDefinitionPoisonAttack = AbilityDefinitionPoisonAttack
 
 function AbilityDefinitionPoisonAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apoi')
@@ -9067,6 +9434,7 @@ function AbilityDefinitionPoisonAttack:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionOrbofSpells = class('AbilityDefinitionOrbofSpells', AbilityDefinition)
+_G.AbilityDefinitionOrbofSpells = AbilityDefinitionOrbofSpells
 
 function AbilityDefinitionOrbofSpells:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsb')
@@ -9109,6 +9477,7 @@ function AbilityDefinitionOrbofSpells:setEffectAbility(level, value)
 end
 
 AbilityDefinitionItemSpeedAoe = class('AbilityDefinitionItemSpeedAoe', AbilityDefinition)
+_G.AbilityDefinitionItemSpeedAoe = AbilityDefinitionItemSpeedAoe
 
 function AbilityDefinitionItemSpeedAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsa')
@@ -9121,6 +9490,7 @@ function AbilityDefinitionItemSpeedAoe:setMovementSpeedIncrease(level, value)
 end
 
 AbilityDefinitionUnholyFrenzy = class('AbilityDefinitionUnholyFrenzy', AbilityDefinition)
+_G.AbilityDefinitionUnholyFrenzy = AbilityDefinitionUnholyFrenzy
 
 function AbilityDefinitionUnholyFrenzy:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Auhf')
@@ -9139,6 +9509,7 @@ function AbilityDefinitionUnholyFrenzy:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionAntimagicShieldcreep = class('AbilityDefinitionAntimagicShieldcreep', AbilityDefinition)
+_G.AbilityDefinitionAntimagicShieldcreep = AbilityDefinitionAntimagicShieldcreep
 
 function AbilityDefinitionAntimagicShieldcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACam')
@@ -9169,6 +9540,7 @@ function AbilityDefinitionAntimagicShieldcreep:setShieldLife(level, value)
 end
 
 AbilityDefinitionSpawnSpiderOnDeath = class('AbilityDefinitionSpawnSpiderOnDeath', AbilityDefinition)
+_G.AbilityDefinitionSpawnSpiderOnDeath = AbilityDefinitionSpawnSpiderOnDeath
 
 function AbilityDefinitionSpawnSpiderOnDeath:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspd')
@@ -9187,6 +9559,7 @@ function AbilityDefinitionSpawnSpiderOnDeath:setUnitType(level, value)
 end
 
 AbilityDefinitionDarkRangerDrain = class('AbilityDefinitionDarkRangerDrain', AbilityDefinition)
+_G.AbilityDefinitionDarkRangerDrain = AbilityDefinitionDarkRangerDrain
 
 function AbilityDefinitionDarkRangerDrain:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdr')
@@ -9247,6 +9620,7 @@ function AbilityDefinitionDarkRangerDrain:setLifeTransferredPerSecond(level, val
 end
 
 AbilityDefinitionFlare = class('AbilityDefinitionFlare', AbilityDefinition)
+_G.AbilityDefinitionFlare = AbilityDefinitionFlare
 
 function AbilityDefinitionFlare:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afla')
@@ -9271,6 +9645,7 @@ function AbilityDefinitionFlare:setEffectDelay(level, value)
 end
 
 AbilityDefinitionStrengthBonusPlus6 = class('AbilityDefinitionStrengthBonusPlus6', AbilityDefinition)
+_G.AbilityDefinitionStrengthBonusPlus6 = AbilityDefinitionStrengthBonusPlus6
 
 function AbilityDefinitionStrengthBonusPlus6:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIs6')
@@ -9301,6 +9676,7 @@ function AbilityDefinitionStrengthBonusPlus6:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionPitLordDoom = class('AbilityDefinitionPitLordDoom', AbilityDefinition)
+_G.AbilityDefinitionPitLordDoom = AbilityDefinitionPitLordDoom
 
 function AbilityDefinitionPitLordDoom:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdo')
@@ -9331,6 +9707,7 @@ function AbilityDefinitionPitLordDoom:setSummonedUnitDurationseconds(level, valu
 end
 
 AbilityDefinitionSpellBook = class('AbilityDefinitionSpellBook', AbilityDefinition)
+_G.AbilityDefinitionSpellBook = AbilityDefinitionSpellBook
 
 function AbilityDefinitionSpellBook:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspb')
@@ -9367,6 +9744,7 @@ function AbilityDefinitionSpellBook:setBaseOrderID(level, value)
 end
 
 AbilityDefinitionStrengthBonusPlus3 = class('AbilityDefinitionStrengthBonusPlus3', AbilityDefinition)
+_G.AbilityDefinitionStrengthBonusPlus3 = AbilityDefinitionStrengthBonusPlus3
 
 function AbilityDefinitionStrengthBonusPlus3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIs3')
@@ -9397,6 +9775,7 @@ function AbilityDefinitionStrengthBonusPlus3:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionDarkPortal = class('AbilityDefinitionDarkPortal', AbilityDefinition)
+_G.AbilityDefinitionDarkPortal = AbilityDefinitionDarkPortal
 
 function AbilityDefinitionDarkPortal:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdp')
@@ -9421,6 +9800,7 @@ function AbilityDefinitionDarkPortal:setMinimumNumberofUnits(level, value)
 end
 
 AbilityDefinitionMoonPriestessTrueshotAura = class('AbilityDefinitionMoonPriestessTrueshotAura', AbilityDefinition)
+_G.AbilityDefinitionMoonPriestessTrueshotAura = AbilityDefinitionMoonPriestessTrueshotAura
 
 function AbilityDefinitionMoonPriestessTrueshotAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEar')
@@ -9451,6 +9831,7 @@ function AbilityDefinitionMoonPriestessTrueshotAura:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionStrengthBonusPlus4 = class('AbilityDefinitionStrengthBonusPlus4', AbilityDefinition)
+_G.AbilityDefinitionStrengthBonusPlus4 = AbilityDefinitionStrengthBonusPlus4
 
 function AbilityDefinitionStrengthBonusPlus4:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIs4')
@@ -9481,6 +9862,7 @@ function AbilityDefinitionStrengthBonusPlus4:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionSpiderAttack = class('AbilityDefinitionSpiderAttack', AbilityDefinition)
+_G.AbilityDefinitionSpiderAttack = AbilityDefinitionSpiderAttack
 
 function AbilityDefinitionSpiderAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspa')
@@ -9493,6 +9875,7 @@ function AbilityDefinitionSpiderAttack:setSpiderCapacity(level, value)
 end
 
 AbilityDefinitionSpiritLink = class('AbilityDefinitionSpiritLink', AbilityDefinition)
+_G.AbilityDefinitionSpiritLink = AbilityDefinitionSpiritLink
 
 function AbilityDefinitionSpiritLink:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspl')
@@ -9511,6 +9894,7 @@ function AbilityDefinitionSpiritLink:setDistributedDamageFactor(level, value)
 end
 
 AbilityDefinitionAuraWarDrumsKodobeast = class('AbilityDefinitionAuraWarDrumsKodobeast', AbilityDefinition)
+_G.AbilityDefinitionAuraWarDrumsKodobeast = AbilityDefinitionAuraWarDrumsKodobeast
 
 function AbilityDefinitionAuraWarDrumsKodobeast:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aakb')
@@ -9541,6 +9925,7 @@ function AbilityDefinitionAuraWarDrumsKodobeast:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionArchMageMassTeleport = class('AbilityDefinitionArchMageMassTeleport', AbilityDefinition)
+_G.AbilityDefinitionArchMageMassTeleport = AbilityDefinitionArchMageMassTeleport
 
 function AbilityDefinitionArchMageMassTeleport:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHmt')
@@ -9565,6 +9950,7 @@ function AbilityDefinitionArchMageMassTeleport:setNumberofUnitsTeleported(level,
 end
 
 AbilityDefinitionGoldMine = class('AbilityDefinitionGoldMine', AbilityDefinition)
+_G.AbilityDefinitionGoldMine = AbilityDefinitionGoldMine
 
 function AbilityDefinitionGoldMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Agld')
@@ -9589,6 +9975,7 @@ function AbilityDefinitionGoldMine:setMiningDuration(level, value)
 end
 
 AbilityDefinitionAuraCommandCreep = class('AbilityDefinitionAuraCommandCreep', AbilityDefinition)
+_G.AbilityDefinitionAuraCommandCreep = AbilityDefinitionAuraCommandCreep
 
 function AbilityDefinitionAuraCommandCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACac')
@@ -9619,6 +10006,7 @@ function AbilityDefinitionAuraCommandCreep:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionBrewmasterDrunkenHaze = class('AbilityDefinitionBrewmasterDrunkenHaze', AbilityDefinition)
+_G.AbilityDefinitionBrewmasterDrunkenHaze = AbilityDefinitionBrewmasterDrunkenHaze
 
 function AbilityDefinitionBrewmasterDrunkenHaze:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdh')
@@ -9649,6 +10037,7 @@ function AbilityDefinitionBrewmasterDrunkenHaze:setAttacksPrevented(level, value
 end
 
 AbilityDefinitionAnimateDeadcreep = class('AbilityDefinitionAnimateDeadcreep', AbilityDefinition)
+_G.AbilityDefinitionAnimateDeadcreep = AbilityDefinitionAnimateDeadcreep
 
 function AbilityDefinitionAnimateDeadcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACad')
@@ -9673,6 +10062,7 @@ function AbilityDefinitionAnimateDeadcreep:setInheritUpgrades(level, value)
 end
 
 AbilityDefinitionStrengthBonusPlus1 = class('AbilityDefinitionStrengthBonusPlus1', AbilityDefinition)
+_G.AbilityDefinitionStrengthBonusPlus1 = AbilityDefinitionStrengthBonusPlus1
 
 function AbilityDefinitionStrengthBonusPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIs1')
@@ -9703,6 +10093,7 @@ function AbilityDefinitionStrengthBonusPlus1:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAttackSpeedIncreaseGreater = class('AbilityDefinitionAttackSpeedIncreaseGreater', AbilityDefinition)
+_G.AbilityDefinitionAttackSpeedIncreaseGreater = AbilityDefinitionAttackSpeedIncreaseGreater
 
 function AbilityDefinitionAttackSpeedIncreaseGreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIs2')
@@ -9715,6 +10106,7 @@ function AbilityDefinitionAttackSpeedIncreaseGreater:setAttackSpeedIncrease(leve
 end
 
 AbilityDefinitionItemRestore = class('AbilityDefinitionItemRestore', AbilityDefinition)
+_G.AbilityDefinitionItemRestore = AbilityDefinitionItemRestore
 
 function AbilityDefinitionItemRestore:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIre')
@@ -9733,6 +10125,7 @@ function AbilityDefinitionItemRestore:setHitPointsRestored(level, value)
 end
 
 AbilityDefinitionBrewmasterDrunkenBrawler = class('AbilityDefinitionBrewmasterDrunkenBrawler', AbilityDefinition)
+_G.AbilityDefinitionBrewmasterDrunkenBrawler = AbilityDefinitionBrewmasterDrunkenBrawler
 
 function AbilityDefinitionBrewmasterDrunkenBrawler:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdb')
@@ -9769,6 +10162,7 @@ function AbilityDefinitionBrewmasterDrunkenBrawler:setNeverMiss(level, value)
 end
 
 AbilityDefinitionRaiseDeadItem = class('AbilityDefinitionRaiseDeadItem', AbilityDefinition)
+_G.AbilityDefinitionRaiseDeadItem = AbilityDefinitionRaiseDeadItem
 
 function AbilityDefinitionRaiseDeadItem:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrd')
@@ -9805,6 +10199,7 @@ function AbilityDefinitionRaiseDeadItem:setUnitTypeOne(level, value)
 end
 
 AbilityDefinitionSpawnHydraHatchling = class('AbilityDefinitionSpawnHydraHatchling', AbilityDefinition)
+_G.AbilityDefinitionSpawnHydraHatchling = AbilityDefinitionSpawnHydraHatchling
 
 function AbilityDefinitionSpawnHydraHatchling:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspt')
@@ -9823,6 +10218,7 @@ function AbilityDefinitionSpawnHydraHatchling:setUnitType(level, value)
 end
 
 AbilityDefinitionItemReincarnation = class('AbilityDefinitionItemReincarnation', AbilityDefinition)
+_G.AbilityDefinitionItemReincarnation = AbilityDefinitionItemReincarnation
 
 function AbilityDefinitionItemReincarnation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIrc')
@@ -9847,6 +10243,7 @@ function AbilityDefinitionItemReincarnation:setRestoredManaforcurrent(level, val
 end
 
 AbilityDefinitionTinkererDemolishLevel0 = class('AbilityDefinitionTinkererDemolishLevel0', AbilityDefinition)
+_G.AbilityDefinitionTinkererDemolishLevel0 = AbilityDefinitionTinkererDemolishLevel0
 
 function AbilityDefinitionTinkererDemolishLevel0:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANde')
@@ -9877,6 +10274,7 @@ function AbilityDefinitionTinkererDemolishLevel0:setChancetoDemolish(level, valu
 end
 
 AbilityDefinitionRuneofSpiritLink = class('AbilityDefinitionRuneofSpiritLink', AbilityDefinition)
+_G.AbilityDefinitionRuneofSpiritLink = AbilityDefinitionRuneofSpiritLink
 
 function AbilityDefinitionRuneofSpiritLink:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspp')
@@ -9889,6 +10287,7 @@ function AbilityDefinitionRuneofSpiritLink:setDistributedDamageFactor(level, val
 end
 
 AbilityDefinitionSlowPoison = class('AbilityDefinitionSlowPoison', AbilityDefinition)
+_G.AbilityDefinitionSlowPoison = AbilityDefinitionSlowPoison
 
 function AbilityDefinitionSlowPoison:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspo')
@@ -9919,6 +10318,7 @@ function AbilityDefinitionSlowPoison:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionMalganisDarkConversion = class('AbilityDefinitionMalganisDarkConversion', AbilityDefinition)
+_G.AbilityDefinitionMalganisDarkConversion = AbilityDefinitionMalganisDarkConversion
 
 function AbilityDefinitionMalganisDarkConversion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANdc')
@@ -9937,6 +10337,7 @@ function AbilityDefinitionMalganisDarkConversion:setRacetoConvert(level, value)
 end
 
 AbilityDefinitionAuraDevotionCreep = class('AbilityDefinitionAuraDevotionCreep', AbilityDefinition)
+_G.AbilityDefinitionAuraDevotionCreep = AbilityDefinitionAuraDevotionCreep
 
 function AbilityDefinitionAuraDevotionCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACav')
@@ -9955,6 +10356,7 @@ function AbilityDefinitionAuraDevotionCreep:setArmorBonus(level, value)
 end
 
 AbilityDefinitionAuraTrueshotCreep = class('AbilityDefinitionAuraTrueshotCreep', AbilityDefinition)
+_G.AbilityDefinitionAuraTrueshotCreep = AbilityDefinitionAuraTrueshotCreep
 
 function AbilityDefinitionAuraTrueshotCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACat')
@@ -9985,6 +10387,7 @@ function AbilityDefinitionAuraTrueshotCreep:setMeleeBonus(level, value)
 end
 
 AbilityDefinitionItemRestoreAoe = class('AbilityDefinitionItemRestoreAoe', AbilityDefinition)
+_G.AbilityDefinitionItemRestoreAoe = AbilityDefinitionItemRestoreAoe
 
 function AbilityDefinitionItemRestoreAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIra')
@@ -10003,6 +10406,7 @@ function AbilityDefinitionItemRestoreAoe:setHitPointsRestored(level, value)
 end
 
 AbilityDefinitionKeeperoftheGroveThornsAura = class('AbilityDefinitionKeeperoftheGroveThornsAura', AbilityDefinition)
+_G.AbilityDefinitionKeeperoftheGroveThornsAura = AbilityDefinitionKeeperoftheGroveThornsAura
 
 function AbilityDefinitionKeeperoftheGroveThornsAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEah')
@@ -10021,6 +10425,7 @@ function AbilityDefinitionKeeperoftheGroveThornsAura:setDamageDealttoAttackers(l
 end
 
 AbilityDefinitionSpawnHydra = class('AbilityDefinitionSpawnHydra', AbilityDefinition)
+_G.AbilityDefinitionSpawnHydra = AbilityDefinitionSpawnHydra
 
 function AbilityDefinitionSpawnHydra:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspy')
@@ -10039,6 +10444,7 @@ function AbilityDefinitionSpawnHydra:setUnitType(level, value)
 end
 
 AbilityDefinitionAspx = class('AbilityDefinitionAspx', AbilityDefinition)
+_G.AbilityDefinitionAspx = AbilityDefinitionAspx
 
 function AbilityDefinitionAspx:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aspx')
@@ -10075,6 +10481,7 @@ function AbilityDefinitionAspx:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionTinkererClusterRocketsLevel2 = class('AbilityDefinitionTinkererClusterRocketsLevel2', AbilityDefinition)
+_G.AbilityDefinitionTinkererClusterRocketsLevel2 = AbilityDefinitionTinkererClusterRocketsLevel2
 
 function AbilityDefinitionTinkererClusterRocketsLevel2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANc2')
@@ -10117,6 +10524,7 @@ function AbilityDefinitionTinkererClusterRocketsLevel2:setBuildingDamageFactor(l
 end
 
 AbilityDefinitionDreadlordVampiricAura = class('AbilityDefinitionDreadlordVampiricAura', AbilityDefinition)
+_G.AbilityDefinitionDreadlordVampiricAura = AbilityDefinitionDreadlordVampiricAura
 
 function AbilityDefinitionDreadlordVampiricAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUav')
@@ -10129,6 +10537,7 @@ function AbilityDefinitionDreadlordVampiricAura:setAttackDamageStolen(level, val
 end
 
 AbilityDefinitionTinkererClusterRocketsLevel3 = class('AbilityDefinitionTinkererClusterRocketsLevel3', AbilityDefinition)
+_G.AbilityDefinitionTinkererClusterRocketsLevel3 = AbilityDefinitionTinkererClusterRocketsLevel3
 
 function AbilityDefinitionTinkererClusterRocketsLevel3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANc3')
@@ -10171,6 +10580,7 @@ function AbilityDefinitionTinkererClusterRocketsLevel3:setBuildingDamageFactor(l
 end
 
 AbilityDefinitionDeathKnightUnholyAura = class('AbilityDefinitionDeathKnightUnholyAura', AbilityDefinition)
+_G.AbilityDefinitionDeathKnightUnholyAura = AbilityDefinitionDeathKnightUnholyAura
 
 function AbilityDefinitionDeathKnightUnholyAura:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUau')
@@ -10195,6 +10605,7 @@ function AbilityDefinitionDeathKnightUnholyAura:setMovementSpeedIncrease(level, 
 end
 
 AbilityDefinitionItemPotionVampirism = class('AbilityDefinitionItemPotionVampirism', AbilityDefinition)
+_G.AbilityDefinitionItemPotionVampirism = AbilityDefinitionItemPotionVampirism
 
 function AbilityDefinitionItemPotionVampirism:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpv')
@@ -10219,6 +10630,7 @@ function AbilityDefinitionItemPotionVampirism:setLifeStealAmount(level, value)
 end
 
 AbilityDefinitionOrbofVenomPoisonAttack = class('AbilityDefinitionOrbofVenomPoisonAttack', AbilityDefinition)
+_G.AbilityDefinitionOrbofVenomPoisonAttack = AbilityDefinitionOrbofVenomPoisonAttack
 
 function AbilityDefinitionOrbofVenomPoisonAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apo2')
@@ -10249,6 +10661,7 @@ function AbilityDefinitionOrbofVenomPoisonAttack:setMovementSpeedFactor(level, v
 end
 
 AbilityDefinitionCoupleInstantArcher = class('AbilityDefinitionCoupleInstantArcher', AbilityDefinition)
+_G.AbilityDefinitionCoupleInstantArcher = AbilityDefinitionCoupleInstantArcher
 
 function AbilityDefinitionCoupleInstantArcher:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aco2')
@@ -10273,6 +10686,7 @@ function AbilityDefinitionCoupleInstantArcher:setPartnerUnitType(level, value)
 end
 
 AbilityDefinitionPotionofManaRegengreater = class('AbilityDefinitionPotionofManaRegengreater', AbilityDefinition)
+_G.AbilityDefinitionPotionofManaRegengreater = AbilityDefinitionPotionofManaRegengreater
 
 function AbilityDefinitionPotionofManaRegengreater:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpr')
@@ -10309,6 +10723,7 @@ function AbilityDefinitionPotionofManaRegengreater:setLifeRegenerated(level, val
 end
 
 AbilityDefinitionTinkererClusterRocketsLevel1 = class('AbilityDefinitionTinkererClusterRocketsLevel1', AbilityDefinition)
+_G.AbilityDefinitionTinkererClusterRocketsLevel1 = AbilityDefinitionTinkererClusterRocketsLevel1
 
 function AbilityDefinitionTinkererClusterRocketsLevel1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANc1')
@@ -10351,6 +10766,7 @@ function AbilityDefinitionTinkererClusterRocketsLevel1:setBuildingDamageFactor(l
 end
 
 AbilityDefinitionCoupleInstantHippogryph = class('AbilityDefinitionCoupleInstantHippogryph', AbilityDefinition)
+_G.AbilityDefinitionCoupleInstantHippogryph = AbilityDefinitionCoupleInstantHippogryph
 
 function AbilityDefinitionCoupleInstantHippogryph:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aco3')
@@ -10375,6 +10791,7 @@ function AbilityDefinitionCoupleInstantHippogryph:setPartnerUnitType(level, valu
 end
 
 AbilityDefinitionSpawnOnDeathskeleton = class('AbilityDefinitionSpawnOnDeathskeleton', AbilityDefinition)
+_G.AbilityDefinitionSpawnOnDeathskeleton = AbilityDefinitionSpawnOnDeathskeleton
 
 function AbilityDefinitionSpawnOnDeathskeleton:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asod')
@@ -10393,6 +10810,7 @@ function AbilityDefinitionSpawnOnDeathskeleton:setUnitType(level, value)
 end
 
 AbilityDefinitionPotionofManaRegenlesser = class('AbilityDefinitionPotionofManaRegenlesser', AbilityDefinition)
+_G.AbilityDefinitionPotionofManaRegenlesser = AbilityDefinitionPotionofManaRegenlesser
 
 function AbilityDefinitionPotionofManaRegenlesser:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpl')
@@ -10429,6 +10847,7 @@ function AbilityDefinitionPotionofManaRegenlesser:setLifeRegenerated(level, valu
 end
 
 AbilityDefinitionDeathKnightAnimateDead = class('AbilityDefinitionDeathKnightAnimateDead', AbilityDefinition)
+_G.AbilityDefinitionDeathKnightAnimateDead = AbilityDefinitionDeathKnightAnimateDead
 
 function AbilityDefinitionDeathKnightAnimateDead:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUan')
@@ -10453,6 +10872,7 @@ function AbilityDefinitionDeathKnightAnimateDead:setNumberofCorpsesRaised(level,
 end
 
 AbilityDefinitionItemPlaceMine = class('AbilityDefinitionItemPlaceMine', AbilityDefinition)
+_G.AbilityDefinitionItemPlaceMine = AbilityDefinitionItemPlaceMine
 
 function AbilityDefinitionItemPlaceMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpm')
@@ -10465,6 +10885,7 @@ function AbilityDefinitionItemPlaceMine:setUnitType(level, value)
 end
 
 AbilityDefinitionBloodMagePhoenix = class('AbilityDefinitionBloodMagePhoenix', AbilityDefinition)
+_G.AbilityDefinitionBloodMagePhoenix = AbilityDefinitionBloodMagePhoenix
 
 function AbilityDefinitionBloodMagePhoenix:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHpx')
@@ -10483,6 +10904,7 @@ function AbilityDefinitionBloodMagePhoenix:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionAlchemistAcidBomb = class('AbilityDefinitionAlchemistAcidBomb', AbilityDefinition)
+_G.AbilityDefinitionAlchemistAcidBomb = AbilityDefinitionAlchemistAcidBomb
 
 function AbilityDefinitionAlchemistAcidBomb:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANab')
@@ -10525,6 +10947,7 @@ function AbilityDefinitionAlchemistAcidBomb:setAttackSpeedReduction(level, value
 end
 
 AbilityDefinitionPermanentImmolationflying = class('AbilityDefinitionPermanentImmolationflying', AbilityDefinition)
+_G.AbilityDefinitionPermanentImmolationflying = AbilityDefinitionPermanentImmolationflying
 
 function AbilityDefinitionPermanentImmolationflying:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apmf')
@@ -10549,6 +10972,7 @@ function AbilityDefinitionPermanentImmolationflying:setDamageperInterval(level, 
 end
 
 AbilityDefinitionTornadoSpin = class('AbilityDefinitionTornadoSpin', AbilityDefinition)
+_G.AbilityDefinitionTornadoSpin = AbilityDefinitionTornadoSpin
 
 function AbilityDefinitionTornadoSpin:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Atsp')
@@ -10567,6 +10991,7 @@ function AbilityDefinitionTornadoSpin:setAirTimeseconds(level, value)
 end
 
 AbilityDefinitionAntimagicShield = class('AbilityDefinitionAntimagicShield', AbilityDefinition)
+_G.AbilityDefinitionAntimagicShield = AbilityDefinitionAntimagicShield
 
 function AbilityDefinitionAntimagicShield:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aams')
@@ -10597,6 +11022,7 @@ function AbilityDefinitionAntimagicShield:setShieldLife(level, value)
 end
 
 AbilityDefinitionOrbofDarknessBlackArrow = class('AbilityDefinitionOrbofDarknessBlackArrow', AbilityDefinition)
+_G.AbilityDefinitionOrbofDarknessBlackArrow = AbilityDefinitionOrbofDarknessBlackArrow
 
 function AbilityDefinitionOrbofDarknessBlackArrow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANbs')
@@ -10627,6 +11053,7 @@ function AbilityDefinitionOrbofDarknessBlackArrow:setSummonedUnitDurationseconds
 end
 
 AbilityDefinitionTinkererDemolishLevel3 = class('AbilityDefinitionTinkererDemolishLevel3', AbilityDefinition)
+_G.AbilityDefinitionTinkererDemolishLevel3 = AbilityDefinitionTinkererDemolishLevel3
 
 function AbilityDefinitionTinkererDemolishLevel3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANd3')
@@ -10657,6 +11084,7 @@ function AbilityDefinitionTinkererDemolishLevel3:setChancetoDemolish(level, valu
 end
 
 AbilityDefinitionSlowAIos = class('AbilityDefinitionSlowAIos', AbilityDefinition)
+_G.AbilityDefinitionSlowAIos = AbilityDefinitionSlowAIos
 
 function AbilityDefinitionSlowAIos:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIos')
@@ -10681,6 +11109,7 @@ function AbilityDefinitionSlowAIos:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionBattleRoar = class('AbilityDefinitionBattleRoar', AbilityDefinition)
+_G.AbilityDefinitionBattleRoar = AbilityDefinitionBattleRoar
 
 function AbilityDefinitionBattleRoar:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANbr')
@@ -10729,6 +11158,7 @@ function AbilityDefinitionBattleRoar:setMaxUnits(level, value)
 end
 
 AbilityDefinitionTinkererDemolishLevel1 = class('AbilityDefinitionTinkererDemolishLevel1', AbilityDefinition)
+_G.AbilityDefinitionTinkererDemolishLevel1 = AbilityDefinitionTinkererDemolishLevel1
 
 function AbilityDefinitionTinkererDemolishLevel1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANd1')
@@ -10759,6 +11189,7 @@ function AbilityDefinitionTinkererDemolishLevel1:setChancetoDemolish(level, valu
 end
 
 AbilityDefinitionTinkererDemolishLevel2 = class('AbilityDefinitionTinkererDemolishLevel2', AbilityDefinition)
+_G.AbilityDefinitionTinkererDemolishLevel2 = AbilityDefinitionTinkererDemolishLevel2
 
 function AbilityDefinitionTinkererDemolishLevel2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANd2')
@@ -10789,6 +11220,7 @@ function AbilityDefinitionTinkererDemolishLevel2:setChancetoDemolish(level, valu
 end
 
 AbilityDefinitionAttributeModifierSkill = class('AbilityDefinitionAttributeModifierSkill', AbilityDefinition)
+_G.AbilityDefinitionAttributeModifierSkill = AbilityDefinitionAttributeModifierSkill
 
 function AbilityDefinitionAttributeModifierSkill:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aamk')
@@ -10819,6 +11251,7 @@ function AbilityDefinitionAttributeModifierSkill:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionDispelMagic = class('AbilityDefinitionDispelMagic', AbilityDefinition)
+_G.AbilityDefinitionDispelMagic = AbilityDefinitionDispelMagic
 
 function AbilityDefinitionDispelMagic:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adis')
@@ -10837,6 +11270,7 @@ function AbilityDefinitionDispelMagic:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionBashBeastmasterBear = class('AbilityDefinitionBashBeastmasterBear', AbilityDefinition)
+_G.AbilityDefinitionBashBeastmasterBear = AbilityDefinitionBashBeastmasterBear
 
 function AbilityDefinitionBashBeastmasterBear:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANbh')
@@ -10849,6 +11283,7 @@ function AbilityDefinitionBashBeastmasterBear:setNeverMiss(level, value)
 end
 
 AbilityDefinitionBrewmasterBreathofFire = class('AbilityDefinitionBrewmasterBreathofFire', AbilityDefinition)
+_G.AbilityDefinitionBrewmasterBreathofFire = AbilityDefinitionBrewmasterBreathofFire
 
 function AbilityDefinitionBrewmasterBreathofFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANbf')
@@ -10885,6 +11320,7 @@ function AbilityDefinitionBrewmasterBreathofFire:setDistance(level, value)
 end
 
 AbilityDefinitionPolymorph = class('AbilityDefinitionPolymorph', AbilityDefinition)
+_G.AbilityDefinitionPolymorph = AbilityDefinitionPolymorph
 
 function AbilityDefinitionPolymorph:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aply')
@@ -10921,6 +11357,7 @@ function AbilityDefinitionPolymorph:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionPurgeorb = class('AbilityDefinitionPurgeorb', AbilityDefinition)
+_G.AbilityDefinitionPurgeorb = AbilityDefinitionPurgeorb
 
 function AbilityDefinitionPurgeorb:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpg')
@@ -10963,6 +11400,7 @@ function AbilityDefinitionPurgeorb:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionDarkRangerBlackArrow = class('AbilityDefinitionDarkRangerBlackArrow', AbilityDefinition)
+_G.AbilityDefinitionDarkRangerBlackArrow = AbilityDefinitionDarkRangerBlackArrow
 
 function AbilityDefinitionDarkRangerBlackArrow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANba')
@@ -10993,6 +11431,7 @@ function AbilityDefinitionDarkRangerBlackArrow:setSummonedUnitDurationseconds(le
 end
 
 AbilityDefinitionCargoHoldEntangledGoldMine = class('AbilityDefinitionCargoHoldEntangledGoldMine', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldEntangledGoldMine = AbilityDefinitionCargoHoldEntangledGoldMine
 
 function AbilityDefinitionCargoHoldEntangledGoldMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aenc')
@@ -11005,6 +11444,7 @@ function AbilityDefinitionCargoHoldEntangledGoldMine:setCargoCapacity(level, val
 end
 
 AbilityDefinitionAerialShackles = class('AbilityDefinitionAerialShackles', AbilityDefinition)
+_G.AbilityDefinitionAerialShackles = AbilityDefinitionAerialShackles
 
 function AbilityDefinitionAerialShackles:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amls')
@@ -11017,6 +11457,7 @@ function AbilityDefinitionAerialShackles:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionOrbofVenom = class('AbilityDefinitionOrbofVenom', AbilityDefinition)
+_G.AbilityDefinitionOrbofVenom = AbilityDefinitionOrbofVenom
 
 function AbilityDefinitionOrbofVenom:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIpb')
@@ -11041,6 +11482,7 @@ function AbilityDefinitionOrbofVenom:setDamageBonusDice(level, value)
 end
 
 AbilityDefinitionDetectShade = class('AbilityDefinitionDetectShade', AbilityDefinition)
+_G.AbilityDefinitionDetectShade = AbilityDefinitionDetectShade
 
 function AbilityDefinitionDetectShade:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Atru')
@@ -11053,6 +11495,7 @@ function AbilityDefinitionDetectShade:setDetectionType(level, value)
 end
 
 AbilityDefinitionAlliedBuilding = class('AbilityDefinitionAlliedBuilding', AbilityDefinition)
+_G.AbilityDefinitionAlliedBuilding = AbilityDefinitionAlliedBuilding
 
 function AbilityDefinitionAlliedBuilding:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aall')
@@ -11083,6 +11526,7 @@ function AbilityDefinitionAlliedBuilding:setInteractionType(level, value)
 end
 
 AbilityDefinitionControlMagic = class('AbilityDefinitionControlMagic', AbilityDefinition)
+_G.AbilityDefinitionControlMagic = AbilityDefinitionControlMagic
 
 function AbilityDefinitionControlMagic:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acmg')
@@ -11107,6 +11551,7 @@ function AbilityDefinitionControlMagic:setMaximumCreepLevel(level, value)
 end
 
 AbilityDefinitionDreadlordCarrionSwarm = class('AbilityDefinitionDreadlordCarrionSwarm', AbilityDefinition)
+_G.AbilityDefinitionDreadlordCarrionSwarm = AbilityDefinitionDreadlordCarrionSwarm
 
 function AbilityDefinitionDreadlordCarrionSwarm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUcs')
@@ -11137,6 +11582,7 @@ function AbilityDefinitionDreadlordCarrionSwarm:setDistance(level, value)
 end
 
 AbilityDefinitionAllPlus1 = class('AbilityDefinitionAllPlus1', AbilityDefinition)
+_G.AbilityDefinitionAllPlus1 = AbilityDefinitionAllPlus1
 
 function AbilityDefinitionAllPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIx1')
@@ -11167,6 +11613,7 @@ function AbilityDefinitionAllPlus1:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAllPlus2 = class('AbilityDefinitionAllPlus2', AbilityDefinition)
+_G.AbilityDefinitionAllPlus2 = AbilityDefinitionAllPlus2
 
 function AbilityDefinitionAllPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIx2')
@@ -11197,6 +11644,7 @@ function AbilityDefinitionAllPlus2:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionCrownofKingsAllPlus5 = class('AbilityDefinitionCrownofKingsAllPlus5', AbilityDefinition)
+_G.AbilityDefinitionCrownofKingsAllPlus5 = AbilityDefinitionCrownofKingsAllPlus5
 
 function AbilityDefinitionCrownofKingsAllPlus5:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIx5')
@@ -11227,6 +11675,7 @@ function AbilityDefinitionCrownofKingsAllPlus5:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionCorrosiveBreath = class('AbilityDefinitionCorrosiveBreath', AbilityDefinition)
+_G.AbilityDefinitionCorrosiveBreath = AbilityDefinitionCorrosiveBreath
 
 function AbilityDefinitionCorrosiveBreath:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acor')
@@ -11239,6 +11688,7 @@ function AbilityDefinitionCorrosiveBreath:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionRootAncients = class('AbilityDefinitionRootAncients', AbilityDefinition)
+_G.AbilityDefinitionRootAncients = AbilityDefinitionRootAncients
 
 function AbilityDefinitionRootAncients:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aro1')
@@ -11269,6 +11719,7 @@ function AbilityDefinitionRootAncients:setRootedWeapons(level, value)
 end
 
 AbilityDefinitionRootAncientProtector = class('AbilityDefinitionRootAncientProtector', AbilityDefinition)
+_G.AbilityDefinitionRootAncientProtector = AbilityDefinitionRootAncientProtector
 
 function AbilityDefinitionRootAncientProtector:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aro2')
@@ -11299,6 +11750,7 @@ function AbilityDefinitionRootAncientProtector:setRootedWeapons(level, value)
 end
 
 AbilityDefinitionFactory = class('AbilityDefinitionFactory', AbilityDefinition)
+_G.AbilityDefinitionFactory = AbilityDefinitionFactory
 
 function AbilityDefinitionFactory:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANfy')
@@ -11323,6 +11775,7 @@ function AbilityDefinitionFactory:setSpawnInterval(level, value)
 end
 
 AbilityDefinitionKeeperoftheGroveForceofNature = class('AbilityDefinitionKeeperoftheGroveForceofNature', AbilityDefinition)
+_G.AbilityDefinitionKeeperoftheGroveForceofNature = AbilityDefinitionKeeperoftheGroveForceofNature
 
 function AbilityDefinitionKeeperoftheGroveForceofNature:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEfn')
@@ -11341,6 +11794,7 @@ function AbilityDefinitionKeeperoftheGroveForceofNature:setNumberofSummonedUnits
 end
 
 AbilityDefinitionLichDeathandDecay = class('AbilityDefinitionLichDeathandDecay', AbilityDefinition)
+_G.AbilityDefinitionLichDeathandDecay = AbilityDefinitionLichDeathandDecay
 
 function AbilityDefinitionLichDeathandDecay:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUdd')
@@ -11359,6 +11813,7 @@ function AbilityDefinitionLichDeathandDecay:setMaxLifeDrainedperSecond(level, va
 end
 
 AbilityDefinitionItemWeb = class('AbilityDefinitionItemWeb', AbilityDefinition)
+_G.AbilityDefinitionItemWeb = AbilityDefinitionItemWeb
 
 function AbilityDefinitionItemWeb:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIwb')
@@ -11383,6 +11838,7 @@ function AbilityDefinitionItemWeb:setMeleeAttackRange(level, value)
 end
 
 AbilityDefinitionWardenFanofKnives = class('AbilityDefinitionWardenFanofKnives', AbilityDefinition)
+_G.AbilityDefinitionWardenFanofKnives = AbilityDefinitionWardenFanofKnives
 
 function AbilityDefinitionWardenFanofKnives:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEfk')
@@ -11413,6 +11869,7 @@ function AbilityDefinitionWardenFanofKnives:setMaximumTotalDamage(level, value)
 end
 
 AbilityDefinitionBattlestationsChaos = class('AbilityDefinitionBattlestationsChaos', AbilityDefinition)
+_G.AbilityDefinitionBattlestationsChaos = AbilityDefinitionBattlestationsChaos
 
 function AbilityDefinitionBattlestationsChaos:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sbtl')
@@ -11431,6 +11888,7 @@ function AbilityDefinitionBattlestationsChaos:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionCorporealForm = class('AbilityDefinitionCorporealForm', AbilityDefinition)
+_G.AbilityDefinitionCorporealForm = AbilityDefinitionCorporealForm
 
 function AbilityDefinitionCorporealForm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acpf')
@@ -11467,6 +11925,7 @@ function AbilityDefinitionCorporealForm:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionDeathKnightDeathCoil = class('AbilityDefinitionDeathKnightDeathCoil', AbilityDefinition)
+_G.AbilityDefinitionDeathKnightDeathCoil = AbilityDefinitionDeathKnightDeathCoil
 
 function AbilityDefinitionDeathKnightDeathCoil:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUdc')
@@ -11479,6 +11938,7 @@ function AbilityDefinitionDeathKnightDeathCoil:setAmountHealedDamaged(level, val
 end
 
 AbilityDefinitionPhaseShift = class('AbilityDefinitionPhaseShift', AbilityDefinition)
+_G.AbilityDefinitionPhaseShift = AbilityDefinitionPhaseShift
 
 function AbilityDefinitionPhaseShift:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apsh')
@@ -11497,6 +11957,7 @@ function AbilityDefinitionPhaseShift:setMovementSpeedReduction(level, value)
 end
 
 AbilityDefinitionSleepAlways = class('AbilityDefinitionSleepAlways', AbilityDefinition)
+_G.AbilityDefinitionSleepAlways = AbilityDefinitionSleepAlways
 
 function AbilityDefinitionSleepAlways:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asla')
@@ -11515,6 +11976,7 @@ function AbilityDefinitionSleepAlways:setAllowOnAnyPlayerSlot(level, value)
 end
 
 AbilityDefinitionFigurineUrsaWarrior = class('AbilityDefinitionFigurineUrsaWarrior', AbilityDefinition)
+_G.AbilityDefinitionFigurineUrsaWarrior = AbilityDefinitionFigurineUrsaWarrior
 
 function AbilityDefinitionFigurineUrsaWarrior:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIuw')
@@ -11545,6 +12007,7 @@ function AbilityDefinitionFigurineUrsaWarrior:setSummonAmount1(level, value)
 end
 
 AbilityDefinitionElunesGrace = class('AbilityDefinitionElunesGrace', AbilityDefinition)
+_G.AbilityDefinitionElunesGrace = AbilityDefinitionElunesGrace
 
 function AbilityDefinitionElunesGrace:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aegr')
@@ -11581,6 +12044,7 @@ function AbilityDefinitionElunesGrace:setDamageTaken(level, value)
 end
 
 AbilityDefinitionReturnLumber = class('AbilityDefinitionReturnLumber', AbilityDefinition)
+_G.AbilityDefinitionReturnLumber = AbilityDefinitionReturnLumber
 
 function AbilityDefinitionReturnLumber:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arlm')
@@ -11599,6 +12063,7 @@ function AbilityDefinitionReturnLumber:setAcceptsLumber(level, value)
 end
 
 AbilityDefinitionRegenLifeArll = class('AbilityDefinitionRegenLifeArll', AbilityDefinition)
+_G.AbilityDefinitionRegenLifeArll = AbilityDefinitionRegenLifeArll
 
 function AbilityDefinitionRegenLifeArll:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arll')
@@ -11611,6 +12076,7 @@ function AbilityDefinitionRegenLifeArll:setHitPointsRegeneratedPerSecond(level, 
 end
 
 AbilityDefinitionDemonHunterEvasion = class('AbilityDefinitionDemonHunterEvasion', AbilityDefinition)
+_G.AbilityDefinitionDemonHunterEvasion = AbilityDefinitionDemonHunterEvasion
 
 function AbilityDefinitionDemonHunterEvasion:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEev')
@@ -11623,6 +12089,7 @@ function AbilityDefinitionDemonHunterEvasion:setChancetoEvade(level, value)
 end
 
 AbilityDefinitionPitLordHowlofTerror = class('AbilityDefinitionPitLordHowlofTerror', AbilityDefinition)
+_G.AbilityDefinitionPitLordHowlofTerror = AbilityDefinitionPitLordHowlofTerror
 
 function AbilityDefinitionPitLordHowlofTerror:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANht')
@@ -11671,6 +12138,7 @@ function AbilityDefinitionPitLordHowlofTerror:setMaxUnits(level, value)
 end
 
 AbilityDefinitionAlchemistHealingSpray = class('AbilityDefinitionAlchemistHealingSpray', AbilityDefinition)
+_G.AbilityDefinitionAlchemistHealingSpray = AbilityDefinitionAlchemistHealingSpray
 
 function AbilityDefinitionAlchemistHealingSpray:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANhs')
@@ -11713,6 +12181,7 @@ function AbilityDefinitionAlchemistHealingSpray:setBuildingDamageFactor(level, v
 end
 
 AbilityDefinitionEntangledGoldMine = class('AbilityDefinitionEntangledGoldMine', AbilityDefinition)
+_G.AbilityDefinitionEntangledGoldMine = AbilityDefinitionEntangledGoldMine
 
 function AbilityDefinitionEntangledGoldMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aegm')
@@ -11731,6 +12200,7 @@ function AbilityDefinitionEntangledGoldMine:setGoldperInterval(level, value)
 end
 
 AbilityDefinitionKeeperoftheGroveEntanglingRoots = class('AbilityDefinitionKeeperoftheGroveEntanglingRoots', AbilityDefinition)
+_G.AbilityDefinitionKeeperoftheGroveEntanglingRoots = AbilityDefinitionKeeperoftheGroveEntanglingRoots
 
 function AbilityDefinitionKeeperoftheGroveEntanglingRoots:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AEer')
@@ -11743,6 +12213,7 @@ function AbilityDefinitionKeeperoftheGroveEntanglingRoots:setDamageperSecond(lev
 end
 
 AbilityDefinitionLightningShield = class('AbilityDefinitionLightningShield', AbilityDefinition)
+_G.AbilityDefinitionLightningShield = AbilityDefinitionLightningShield
 
 function AbilityDefinitionLightningShield:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Alsh')
@@ -11755,6 +12226,7 @@ function AbilityDefinitionLightningShield:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionVampiricattackAIva = class('AbilityDefinitionVampiricattackAIva', AbilityDefinition)
+_G.AbilityDefinitionVampiricattackAIva = AbilityDefinitionVampiricattackAIva
 
 function AbilityDefinitionVampiricattackAIva:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIva')
@@ -11767,6 +12239,7 @@ function AbilityDefinitionVampiricattackAIva:setLifeStolenPerAttack(level, value
 end
 
 AbilityDefinitionCoupleHippogryph = class('AbilityDefinitionCoupleHippogryph', AbilityDefinition)
+_G.AbilityDefinitionCoupleHippogryph = AbilityDefinitionCoupleHippogryph
 
 function AbilityDefinitionCoupleHippogryph:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acoh')
@@ -11785,6 +12258,7 @@ function AbilityDefinitionCoupleHippogryph:setPartnerUnitType(level, value)
 end
 
 AbilityDefinitionPaladinResurrection = class('AbilityDefinitionPaladinResurrection', AbilityDefinition)
+_G.AbilityDefinitionPaladinResurrection = AbilityDefinitionPaladinResurrection
 
 function AbilityDefinitionPaladinResurrection:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHre')
@@ -11803,6 +12277,7 @@ function AbilityDefinitionPaladinResurrection:setNumberofCorpsesRaised(level, va
 end
 
 AbilityDefinitionCryptLordCarrionScarabs = class('AbilityDefinitionCryptLordCarrionScarabs', AbilityDefinition)
+_G.AbilityDefinitionCryptLordCarrionScarabs = AbilityDefinitionCryptLordCarrionScarabs
 
 function AbilityDefinitionCryptLordCarrionScarabs:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUcb')
@@ -11845,6 +12320,7 @@ function AbilityDefinitionCryptLordCarrionScarabs:setUnitTypeOne(level, value)
 end
 
 AbilityDefinitionBerserkerUpgrade = class('AbilityDefinitionBerserkerUpgrade', AbilityDefinition)
+_G.AbilityDefinitionBerserkerUpgrade = AbilityDefinitionBerserkerUpgrade
 
 function AbilityDefinitionBerserkerUpgrade:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sbsk')
@@ -11857,6 +12333,7 @@ function AbilityDefinitionBerserkerUpgrade:setNewUnitType(level, value)
 end
 
 AbilityDefinitionRuneofGreaterResurrection = class('AbilityDefinitionRuneofGreaterResurrection', AbilityDefinition)
+_G.AbilityDefinitionRuneofGreaterResurrection = AbilityDefinitionRuneofGreaterResurrection
 
 function AbilityDefinitionRuneofGreaterResurrection:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'APrr')
@@ -11869,6 +12346,7 @@ function AbilityDefinitionRuneofGreaterResurrection:setRaisedUnitsAreInvulnerabl
 end
 
 AbilityDefinitionManaFlare = class('AbilityDefinitionManaFlare', AbilityDefinition)
+_G.AbilityDefinitionManaFlare = AbilityDefinitionManaFlare
 
 function AbilityDefinitionManaFlare:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amfl')
@@ -11911,6 +12389,7 @@ function AbilityDefinitionManaFlare:setUnitMaximumDamage(level, value)
 end
 
 AbilityDefinitionTaurenChieftainReincarnation = class('AbilityDefinitionTaurenChieftainReincarnation', AbilityDefinition)
+_G.AbilityDefinitionTaurenChieftainReincarnation = AbilityDefinitionTaurenChieftainReincarnation
 
 function AbilityDefinitionTaurenChieftainReincarnation:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOre')
@@ -11923,6 +12402,7 @@ function AbilityDefinitionTaurenChieftainReincarnation:setReincarnationDelay(lev
 end
 
 AbilityDefinitionCoupleArcher = class('AbilityDefinitionCoupleArcher', AbilityDefinition)
+_G.AbilityDefinitionCoupleArcher = AbilityDefinitionCoupleArcher
 
 function AbilityDefinitionCoupleArcher:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acoa')
@@ -11941,6 +12421,7 @@ function AbilityDefinitionCoupleArcher:setPartnerUnitType(level, value)
 end
 
 AbilityDefinitionBallsofFire = class('AbilityDefinitionBallsofFire', AbilityDefinition)
+_G.AbilityDefinitionBallsofFire = AbilityDefinitionBallsofFire
 
 function AbilityDefinitionBallsofFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abof')
@@ -11983,6 +12464,7 @@ function AbilityDefinitionBallsofFire:setFullDamageInterval(level, value)
 end
 
 AbilityDefinitionPurge = class('AbilityDefinitionPurge', AbilityDefinition)
+_G.AbilityDefinitionPurge = AbilityDefinitionPurge
 
 function AbilityDefinitionPurge:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aprg')
@@ -12025,6 +12507,7 @@ function AbilityDefinitionPurge:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionSlow = class('AbilityDefinitionSlow', AbilityDefinition)
+_G.AbilityDefinitionSlow = AbilityDefinitionSlow
 
 function AbilityDefinitionSlow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aslo')
@@ -12049,6 +12532,7 @@ function AbilityDefinitionSlow:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionRuneofLesserResurrection = class('AbilityDefinitionRuneofLesserResurrection', AbilityDefinition)
+_G.AbilityDefinitionRuneofLesserResurrection = AbilityDefinitionRuneofLesserResurrection
 
 function AbilityDefinitionRuneofLesserResurrection:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'APrl')
@@ -12061,6 +12545,7 @@ function AbilityDefinitionRuneofLesserResurrection:setRaisedUnitsAreInvulnerable
 end
 
 AbilityDefinitionItemTownPortal = class('AbilityDefinitionItemTownPortal', AbilityDefinition)
+_G.AbilityDefinitionItemTownPortal = AbilityDefinitionItemTownPortal
 
 function AbilityDefinitionItemTownPortal:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItp')
@@ -12079,6 +12564,7 @@ function AbilityDefinitionItemTownPortal:setUseTeleportClustering(level, value)
 end
 
 AbilityDefinitionTinkererRoboGoblinLevel1 = class('AbilityDefinitionTinkererRoboGoblinLevel1', AbilityDefinition)
+_G.AbilityDefinitionTinkererRoboGoblinLevel1 = AbilityDefinitionTinkererRoboGoblinLevel1
 
 function AbilityDefinitionTinkererRoboGoblinLevel1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANg1')
@@ -12127,6 +12613,7 @@ function AbilityDefinitionTinkererRoboGoblinLevel1:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionMilitia = class('AbilityDefinitionMilitia', AbilityDefinition)
+_G.AbilityDefinitionMilitia = AbilityDefinitionMilitia
 
 function AbilityDefinitionMilitia:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amil')
@@ -12145,6 +12632,7 @@ function AbilityDefinitionMilitia:setNormalFormUnit(level, value)
 end
 
 AbilityDefinitionVengeance = class('AbilityDefinitionVengeance', AbilityDefinition)
+_G.AbilityDefinitionVengeance = AbilityDefinitionVengeance
 
 function AbilityDefinitionVengeance:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Avng')
@@ -12193,6 +12681,7 @@ function AbilityDefinitionVengeance:setUnitTypeTwo(level, value)
 end
 
 AbilityDefinitionIntelligenceModPlus2 = class('AbilityDefinitionIntelligenceModPlus2', AbilityDefinition)
+_G.AbilityDefinitionIntelligenceModPlus2 = AbilityDefinitionIntelligenceModPlus2
 
 function AbilityDefinitionIntelligenceModPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItm')
@@ -12223,6 +12712,7 @@ function AbilityDefinitionIntelligenceModPlus2:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus8 = class('AbilityDefinitionAttackBonusPlus8', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus8 = AbilityDefinitionAttackBonusPlus8
 
 function AbilityDefinitionAttackBonusPlus8:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItl')
@@ -12235,6 +12725,7 @@ function AbilityDefinitionAttackBonusPlus8:setAttackBonus(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus10 = class('AbilityDefinitionAttackBonusPlus10', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus10 = AbilityDefinitionAttackBonusPlus10
 
 function AbilityDefinitionAttackBonusPlus10:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItn')
@@ -12247,6 +12738,7 @@ function AbilityDefinitionAttackBonusPlus10:setAttackBonus(level, value)
 end
 
 AbilityDefinitionTinkererRoboGoblinLevel3 = class('AbilityDefinitionTinkererRoboGoblinLevel3', AbilityDefinition)
+_G.AbilityDefinitionTinkererRoboGoblinLevel3 = AbilityDefinitionTinkererRoboGoblinLevel3
 
 function AbilityDefinitionTinkererRoboGoblinLevel3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANg3')
@@ -12295,6 +12787,7 @@ function AbilityDefinitionTinkererRoboGoblinLevel3:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionDeathDamageAOEsapper = class('AbilityDefinitionDeathDamageAOEsapper', AbilityDefinition)
+_G.AbilityDefinitionDeathDamageAOEsapper = AbilityDefinitionDeathDamageAOEsapper
 
 function AbilityDefinitionDeathDamageAOEsapper:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adda')
@@ -12325,6 +12818,7 @@ function AbilityDefinitionDeathDamageAOEsapper:setPartialDamageRadius(level, val
 end
 
 AbilityDefinitionAroo = class('AbilityDefinitionAroo', AbilityDefinition)
+_G.AbilityDefinitionAroo = AbilityDefinitionAroo
 
 function AbilityDefinitionAroo:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aroo')
@@ -12355,6 +12849,7 @@ function AbilityDefinitionAroo:setRootedWeapons(level, value)
 end
 
 AbilityDefinitionTinkererRoboGoblinLevel2 = class('AbilityDefinitionTinkererRoboGoblinLevel2', AbilityDefinition)
+_G.AbilityDefinitionTinkererRoboGoblinLevel2 = AbilityDefinitionTinkererRoboGoblinLevel2
 
 function AbilityDefinitionTinkererRoboGoblinLevel2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANg2')
@@ -12403,6 +12898,7 @@ function AbilityDefinitionTinkererRoboGoblinLevel2:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionLichFrostArmor = class('AbilityDefinitionLichFrostArmor', AbilityDefinition)
+_G.AbilityDefinitionLichFrostArmor = AbilityDefinitionLichFrostArmor
 
 function AbilityDefinitionLichFrostArmor:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUfa')
@@ -12421,6 +12917,7 @@ function AbilityDefinitionLichFrostArmor:setArmorBonus(level, value)
 end
 
 AbilityDefinitionTankUpgrade = class('AbilityDefinitionTankUpgrade', AbilityDefinition)
+_G.AbilityDefinitionTankUpgrade = AbilityDefinitionTankUpgrade
 
 function AbilityDefinitionTankUpgrade:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Srtt')
@@ -12433,6 +12930,7 @@ function AbilityDefinitionTankUpgrade:setNewUnitType(level, value)
 end
 
 AbilityDefinitionCripple = class('AbilityDefinitionCripple', AbilityDefinition)
+_G.AbilityDefinitionCripple = AbilityDefinitionCripple
 
 function AbilityDefinitionCripple:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acri')
@@ -12457,6 +12955,7 @@ function AbilityDefinitionCripple:setMovementSpeedReduction(level, value)
 end
 
 AbilityDefinitionFlakCannon = class('AbilityDefinitionFlakCannon', AbilityDefinition)
+_G.AbilityDefinitionFlakCannon = AbilityDefinitionFlakCannon
 
 function AbilityDefinitionFlakCannon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aflk')
@@ -12493,6 +12992,7 @@ function AbilityDefinitionFlakCannon:setFullDamageAmount(level, value)
 end
 
 AbilityDefinitionPossessionChanneling = class('AbilityDefinitionPossessionChanneling', AbilityDefinition)
+_G.AbilityDefinitionPossessionChanneling = AbilityDefinitionPossessionChanneling
 
 function AbilityDefinitionPossessionChanneling:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aps2')
@@ -12523,6 +13023,7 @@ function AbilityDefinitionPossessionChanneling:setTargetIsInvulnerable(level, va
 end
 
 AbilityDefinitionRocketAttack = class('AbilityDefinitionRocketAttack', AbilityDefinition)
+_G.AbilityDefinitionRocketAttack = AbilityDefinitionRocketAttack
 
 function AbilityDefinitionRocketAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aroc')
@@ -12547,6 +13048,7 @@ function AbilityDefinitionRocketAttack:setMaximumTotalDamage(level, value)
 end
 
 AbilityDefinitionBrewmasterStormEarthandFire = class('AbilityDefinitionBrewmasterStormEarthandFire', AbilityDefinition)
+_G.AbilityDefinitionBrewmasterStormEarthandFire = AbilityDefinitionBrewmasterStormEarthandFire
 
 function AbilityDefinitionBrewmasterStormEarthandFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANef')
@@ -12559,6 +13061,7 @@ function AbilityDefinitionBrewmasterStormEarthandFire:setSummonedUnitTypes(level
 end
 
 AbilityDefinitionTinkererEngineeringUpgrade = class('AbilityDefinitionTinkererEngineeringUpgrade', AbilityDefinition)
+_G.AbilityDefinitionTinkererEngineeringUpgrade = AbilityDefinitionTinkererEngineeringUpgrade
 
 function AbilityDefinitionTinkererEngineeringUpgrade:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANeg')
@@ -12601,6 +13104,7 @@ function AbilityDefinitionTinkererEngineeringUpgrade:setAbilityUpgrade3(level, v
 end
 
 AbilityDefinitionMine = class('AbilityDefinitionMine', AbilityDefinition)
+_G.AbilityDefinitionMine = AbilityDefinitionMine
 
 function AbilityDefinitionMine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amin')
@@ -12619,6 +13123,7 @@ function AbilityDefinitionMine:setInvisibilityTransitionTime(level, value)
 end
 
 AbilityDefinitionMagicImmunity = class('AbilityDefinitionMagicImmunity', AbilityDefinition)
+_G.AbilityDefinitionMagicImmunity = AbilityDefinitionMagicImmunity
 
 function AbilityDefinitionMagicImmunity:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amim')
@@ -12631,6 +13136,7 @@ function AbilityDefinitionMagicImmunity:setMagicDamageFactor(level, value)
 end
 
 AbilityDefinitionLichFrostNova = class('AbilityDefinitionLichFrostNova', AbilityDefinition)
+_G.AbilityDefinitionLichFrostNova = AbilityDefinitionLichFrostNova
 
 function AbilityDefinitionLichFrostNova:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUfn')
@@ -12649,6 +13155,7 @@ function AbilityDefinitionLichFrostNova:setSpecificTargetDamage(level, value)
 end
 
 AbilityDefinitionRoar = class('AbilityDefinitionRoar', AbilityDefinition)
+_G.AbilityDefinitionRoar = AbilityDefinitionRoar
 
 function AbilityDefinitionRoar:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aroa')
@@ -12697,6 +13204,7 @@ function AbilityDefinitionRoar:setMaxUnits(level, value)
 end
 
 AbilityDefinitionRunedBracers = class('AbilityDefinitionRunedBracers', AbilityDefinition)
+_G.AbilityDefinitionRunedBracers = AbilityDefinitionRunedBracers
 
 function AbilityDefinitionRunedBracers:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsr')
@@ -12715,6 +13223,7 @@ function AbilityDefinitionRunedBracers:setDamageReduction(level, value)
 end
 
 AbilityDefinitionLichDarkRitual = class('AbilityDefinitionLichDarkRitual', AbilityDefinition)
+_G.AbilityDefinitionLichDarkRitual = AbilityDefinitionLichDarkRitual
 
 function AbilityDefinitionLichDarkRitual:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUdr')
@@ -12751,6 +13260,7 @@ function AbilityDefinitionLichDarkRitual:setManaConversionAsPercent(level, value
 end
 
 AbilityDefinitionTichondriusDarkSummoning = class('AbilityDefinitionTichondriusDarkSummoning', AbilityDefinition)
+_G.AbilityDefinitionTichondriusDarkSummoning = AbilityDefinitionTichondriusDarkSummoning
 
 function AbilityDefinitionTichondriusDarkSummoning:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUds')
@@ -12775,6 +13285,7 @@ function AbilityDefinitionTichondriusDarkSummoning:setCastingDelayseconds(level,
 end
 
 AbilityDefinitionItemSpeed = class('AbilityDefinitionItemSpeed', AbilityDefinition)
+_G.AbilityDefinitionItemSpeed = AbilityDefinitionItemSpeed
 
 function AbilityDefinitionItemSpeed:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsp')
@@ -12787,6 +13298,7 @@ function AbilityDefinitionItemSpeed:setMovementSpeedIncrease(level, value)
 end
 
 AbilityDefinitionBloodlust = class('AbilityDefinitionBloodlust', AbilityDefinition)
+_G.AbilityDefinitionBloodlust = AbilityDefinitionBloodlust
 
 function AbilityDefinitionBloodlust:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ablo')
@@ -12811,6 +13323,7 @@ function AbilityDefinitionBloodlust:setScalingFactor(level, value)
 end
 
 AbilityDefinitionDeathKnightDeathPact = class('AbilityDefinitionDeathKnightDeathPact', AbilityDefinition)
+_G.AbilityDefinitionDeathKnightDeathPact = AbilityDefinitionDeathKnightDeathPact
 
 function AbilityDefinitionDeathKnightDeathPact:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AUdp')
@@ -12847,6 +13360,7 @@ function AbilityDefinitionDeathKnightDeathPact:setManaConversionAsPercent(level,
 end
 
 AbilityDefinitionBlightPlacement = class('AbilityDefinitionBlightPlacement', AbilityDefinition)
+_G.AbilityDefinitionBlightPlacement = AbilityDefinitionBlightPlacement
 
 function AbilityDefinitionBlightPlacement:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ablp')
@@ -12865,6 +13379,7 @@ function AbilityDefinitionBlightPlacement:setExpansionAmount(level, value)
 end
 
 AbilityDefinitionSeaWitchForkedLightning = class('AbilityDefinitionSeaWitchForkedLightning', AbilityDefinition)
+_G.AbilityDefinitionSeaWitchForkedLightning = AbilityDefinitionSeaWitchForkedLightning
 
 function AbilityDefinitionSeaWitchForkedLightning:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANfl')
@@ -12895,6 +13410,7 @@ function AbilityDefinitionSeaWitchForkedLightning:setDistance(level, value)
 end
 
 AbilityDefinitionStrengthMod = class('AbilityDefinitionStrengthMod', AbilityDefinition)
+_G.AbilityDefinitionStrengthMod = AbilityDefinitionStrengthMod
 
 function AbilityDefinitionStrengthMod:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsm')
@@ -12925,6 +13441,7 @@ function AbilityDefinitionStrengthMod:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionScrollofLifeRegen = class('AbilityDefinitionScrollofLifeRegen', AbilityDefinition)
+_G.AbilityDefinitionScrollofLifeRegen = AbilityDefinitionScrollofLifeRegen
 
 function AbilityDefinitionScrollofLifeRegen:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsl')
@@ -12961,6 +13478,7 @@ function AbilityDefinitionScrollofLifeRegen:setLifeRegenerated(level, value)
 end
 
 AbilityDefinitionHealCreepNormalAnhe = class('AbilityDefinitionHealCreepNormalAnhe', AbilityDefinition)
+_G.AbilityDefinitionHealCreepNormalAnhe = AbilityDefinitionHealCreepNormalAnhe
 
 function AbilityDefinitionHealCreepNormalAnhe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Anhe')
@@ -12973,6 +13491,7 @@ function AbilityDefinitionHealCreepNormalAnhe:setHitPointsGained(level, value)
 end
 
 AbilityDefinitionAttackSpeedIncrease = class('AbilityDefinitionAttackSpeedIncrease', AbilityDefinition)
+_G.AbilityDefinitionAttackSpeedIncrease = AbilityDefinitionAttackSpeedIncrease
 
 function AbilityDefinitionAttackSpeedIncrease:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsx')
@@ -12985,6 +13504,7 @@ function AbilityDefinitionAttackSpeedIncrease:setAttackSpeedIncrease(level, valu
 end
 
 AbilityDefinitionDefend = class('AbilityDefinitionDefend', AbilityDefinition)
+_G.AbilityDefinitionDefend = AbilityDefinitionDefend
 
 function AbilityDefinitionDefend:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adef')
@@ -13039,6 +13559,7 @@ function AbilityDefinitionDefend:setMagicDamageReduction(level, value)
 end
 
 AbilityDefinitionSentryWardAIsw = class('AbilityDefinitionSentryWardAIsw', AbilityDefinition)
+_G.AbilityDefinitionSentryWardAIsw = AbilityDefinitionSentryWardAIsw
 
 function AbilityDefinitionSentryWardAIsw:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIsw')
@@ -13051,6 +13572,7 @@ function AbilityDefinitionSentryWardAIsw:setWardUnitType(level, value)
 end
 
 AbilityDefinitionGrabTree = class('AbilityDefinitionGrabTree', AbilityDefinition)
+_G.AbilityDefinitionGrabTree = AbilityDefinitionGrabTree
 
 function AbilityDefinitionGrabTree:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Agra')
@@ -13087,6 +13609,7 @@ function AbilityDefinitionGrabTree:setRemoveDelay(level, value)
 end
 
 AbilityDefinitionDecouple = class('AbilityDefinitionDecouple', AbilityDefinition)
+_G.AbilityDefinitionDecouple = AbilityDefinitionDecouple
 
 function AbilityDefinitionDecouple:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adec')
@@ -13105,6 +13628,7 @@ function AbilityDefinitionDecouple:setPartnerUnitTypeTwo(level, value)
 end
 
 AbilityDefinitionDustofAppearance = class('AbilityDefinitionDustofAppearance', AbilityDefinition)
+_G.AbilityDefinitionDustofAppearance = AbilityDefinitionDustofAppearance
 
 function AbilityDefinitionDustofAppearance:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItb')
@@ -13117,6 +13641,7 @@ function AbilityDefinitionDustofAppearance:setDetectionType(level, value)
 end
 
 AbilityDefinitionAttackBonusAItc = class('AbilityDefinitionAttackBonusAItc', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusAItc = AbilityDefinitionAttackBonusAItc
 
 function AbilityDefinitionAttackBonusAItc:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItc')
@@ -13129,6 +13654,7 @@ function AbilityDefinitionAttackBonusAItc:setAttackBonus(level, value)
 end
 
 AbilityDefinitionItemDetectAoe = class('AbilityDefinitionItemDetectAoe', AbilityDefinition)
+_G.AbilityDefinitionItemDetectAoe = AbilityDefinitionItemDetectAoe
 
 function AbilityDefinitionItemDetectAoe:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIta')
@@ -13141,6 +13667,7 @@ function AbilityDefinitionItemDetectAoe:setDetectionRadius(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus5 = class('AbilityDefinitionAttackBonusPlus5', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus5 = AbilityDefinitionAttackBonusPlus5
 
 function AbilityDefinitionAttackBonusPlus5:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItj')
@@ -13153,6 +13680,7 @@ function AbilityDefinitionAttackBonusPlus5:setAttackBonus(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus7 = class('AbilityDefinitionAttackBonusPlus7', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus7 = AbilityDefinitionAttackBonusPlus7
 
 function AbilityDefinitionAttackBonusPlus7:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItk')
@@ -13165,6 +13693,7 @@ function AbilityDefinitionAttackBonusPlus7:setAttackBonus(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus2 = class('AbilityDefinitionAttackBonusPlus2', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus2 = AbilityDefinitionAttackBonusPlus2
 
 function AbilityDefinitionAttackBonusPlus2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIth')
@@ -13177,6 +13706,7 @@ function AbilityDefinitionAttackBonusPlus2:setAttackBonus(level, value)
 end
 
 AbilityDefinitionDevour = class('AbilityDefinitionDevour', AbilityDefinition)
+_G.AbilityDefinitionDevour = AbilityDefinitionDevour
 
 function AbilityDefinitionDevour:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adev')
@@ -13189,6 +13719,7 @@ function AbilityDefinitionDevour:setMaxCreepLevel(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus4 = class('AbilityDefinitionAttackBonusPlus4', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus4 = AbilityDefinitionAttackBonusPlus4
 
 function AbilityDefinitionAttackBonusPlus4:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIti')
@@ -13201,6 +13732,7 @@ function AbilityDefinitionAttackBonusPlus4:setAttackBonus(level, value)
 end
 
 AbilityDefinitionMountainKingThunderClap = class('AbilityDefinitionMountainKingThunderClap', AbilityDefinition)
+_G.AbilityDefinitionMountainKingThunderClap = AbilityDefinitionMountainKingThunderClap
 
 function AbilityDefinitionMountainKingThunderClap:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHtc')
@@ -13231,6 +13763,7 @@ function AbilityDefinitionMountainKingThunderClap:setMovementSpeedReduction(leve
 end
 
 AbilityDefinitionAttackBonusAItf = class('AbilityDefinitionAttackBonusAItf', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusAItf = AbilityDefinitionAttackBonusAItf
 
 function AbilityDefinitionAttackBonusAItf:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItf')
@@ -13243,6 +13776,7 @@ function AbilityDefinitionAttackBonusAItf:setAttackBonus(level, value)
 end
 
 AbilityDefinitionAdet = class('AbilityDefinitionAdet', AbilityDefinition)
+_G.AbilityDefinitionAdet = AbilityDefinitionAdet
 
 function AbilityDefinitionAdet:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adet')
@@ -13255,6 +13789,7 @@ function AbilityDefinitionAdet:setDetectionType(level, value)
 end
 
 AbilityDefinitionFingerofDeath = class('AbilityDefinitionFingerofDeath', AbilityDefinition)
+_G.AbilityDefinitionFingerofDeath = AbilityDefinitionFingerofDeath
 
 function AbilityDefinitionFingerofDeath:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANfd')
@@ -13279,6 +13814,7 @@ function AbilityDefinitionFingerofDeath:setGraphicDuration(level, value)
 end
 
 AbilityDefinitionAttackBonusPlus1 = class('AbilityDefinitionAttackBonusPlus1', AbilityDefinition)
+_G.AbilityDefinitionAttackBonusPlus1 = AbilityDefinitionAttackBonusPlus1
 
 function AbilityDefinitionAttackBonusPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AItg')
@@ -13291,6 +13827,7 @@ function AbilityDefinitionAttackBonusPlus1:setAttackBonus(level, value)
 end
 
 AbilityDefinitionSeaWitchFrostArrows = class('AbilityDefinitionSeaWitchFrostArrows', AbilityDefinition)
+_G.AbilityDefinitionSeaWitchFrostArrows = AbilityDefinitionSeaWitchFrostArrows
 
 function AbilityDefinitionSeaWitchFrostArrows:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANfa')
@@ -13321,6 +13858,7 @@ function AbilityDefinitionSeaWitchFrostArrows:setMovementSpeedFactor(level, valu
 end
 
 AbilityDefinitionFireBolt = class('AbilityDefinitionFireBolt', AbilityDefinition)
+_G.AbilityDefinitionFireBolt = AbilityDefinitionFireBolt
 
 function AbilityDefinitionFireBolt:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANfb')
@@ -13333,6 +13871,7 @@ function AbilityDefinitionFireBolt:setDamage(level, value)
 end
 
 AbilityDefinitionMountainKingThunderBolt = class('AbilityDefinitionMountainKingThunderBolt', AbilityDefinition)
+_G.AbilityDefinitionMountainKingThunderBolt = AbilityDefinitionMountainKingThunderBolt
 
 function AbilityDefinitionMountainKingThunderBolt:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHtb')
@@ -13345,6 +13884,7 @@ function AbilityDefinitionMountainKingThunderBolt:setDamage(level, value)
 end
 
 AbilityDefinitionSentinel = class('AbilityDefinitionSentinel', AbilityDefinition)
+_G.AbilityDefinitionSentinel = AbilityDefinitionSentinel
 
 function AbilityDefinitionSentinel:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aesn')
@@ -13375,6 +13915,7 @@ function AbilityDefinitionSentinel:setHoveringHeight(level, value)
 end
 
 AbilityDefinitionArchMageSummonWaterElemental = class('AbilityDefinitionArchMageSummonWaterElemental', AbilityDefinition)
+_G.AbilityDefinitionArchMageSummonWaterElemental = AbilityDefinitionArchMageSummonWaterElemental
 
 function AbilityDefinitionArchMageSummonWaterElemental:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AHwe')
@@ -13393,6 +13934,7 @@ function AbilityDefinitionArchMageSummonWaterElemental:setSummonedUnitType(level
 end
 
 AbilityDefinitionLoadBurrow = class('AbilityDefinitionLoadBurrow', AbilityDefinition)
+_G.AbilityDefinitionLoadBurrow = AbilityDefinitionLoadBurrow
 
 function AbilityDefinitionLoadBurrow:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Sloa')
@@ -13405,6 +13947,7 @@ function AbilityDefinitionLoadBurrow:setAllowedUnitType(level, value)
 end
 
 AbilityDefinitionDispelMagiccreep = class('AbilityDefinitionDispelMagiccreep', AbilityDefinition)
+_G.AbilityDefinitionDispelMagiccreep = AbilityDefinitionDispelMagiccreep
 
 function AbilityDefinitionDispelMagiccreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adsm')
@@ -13423,6 +13966,7 @@ function AbilityDefinitionDispelMagiccreep:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionFragShards = class('AbilityDefinitionFragShards', AbilityDefinition)
+_G.AbilityDefinitionFragShards = AbilityDefinitionFragShards
 
 function AbilityDefinitionFragShards:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Afsh')
@@ -13459,6 +14003,7 @@ function AbilityDefinitionFragShards:setFullDamageAmount(level, value)
 end
 
 AbilityDefinitionDetectSentryWard = class('AbilityDefinitionDetectSentryWard', AbilityDefinition)
+_G.AbilityDefinitionDetectSentryWard = AbilityDefinitionDetectSentryWard
 
 function AbilityDefinitionDetectSentryWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adt1')
@@ -13471,6 +14016,7 @@ function AbilityDefinitionDetectSentryWard:setDetectionType(level, value)
 end
 
 AbilityDefinitionPhoenixFire = class('AbilityDefinitionPhoenixFire', AbilityDefinition)
+_G.AbilityDefinitionPhoenixFire = AbilityDefinitionPhoenixFire
 
 function AbilityDefinitionPhoenixFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apxf')
@@ -13489,6 +14035,7 @@ function AbilityDefinitionPhoenixFire:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionRaiseDead = class('AbilityDefinitionRaiseDead', AbilityDefinition)
+_G.AbilityDefinitionRaiseDead = AbilityDefinitionRaiseDead
 
 function AbilityDefinitionRaiseDead:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arai')
@@ -13525,6 +14072,7 @@ function AbilityDefinitionRaiseDead:setUnitTypeOne(level, value)
 end
 
 AbilityDefinitionAnwm = class('AbilityDefinitionAnwm', AbilityDefinition)
+_G.AbilityDefinitionAnwm = AbilityDefinitionAnwm
 
 function AbilityDefinitionAnwm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Anwm')
@@ -13543,6 +14091,7 @@ function AbilityDefinitionAnwm:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionShadowMeld = class('AbilityDefinitionShadowMeld', AbilityDefinition)
+_G.AbilityDefinitionShadowMeld = AbilityDefinitionShadowMeld
 
 function AbilityDefinitionShadowMeld:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ashm')
@@ -13567,6 +14116,7 @@ function AbilityDefinitionShadowMeld:setFadeDuration(level, value)
 end
 
 AbilityDefinitionRoarAra2 = class('AbilityDefinitionRoarAra2', AbilityDefinition)
+_G.AbilityDefinitionRoarAra2 = AbilityDefinitionRoarAra2
 
 function AbilityDefinitionRoarAra2:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ara2')
@@ -13615,6 +14165,7 @@ function AbilityDefinitionRoarAra2:setMaxUnits(level, value)
 end
 
 AbilityDefinitionGhostVisible = class('AbilityDefinitionGhostVisible', AbilityDefinition)
+_G.AbilityDefinitionGhostVisible = AbilityDefinitionGhostVisible
 
 function AbilityDefinitionGhostVisible:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aeth')
@@ -13633,6 +14184,7 @@ function AbilityDefinitionGhostVisible:setImmunetoMorphEffects(level, value)
 end
 
 AbilityDefinitionDetectgeneral = class('AbilityDefinitionDetectgeneral', AbilityDefinition)
+_G.AbilityDefinitionDetectgeneral = AbilityDefinitionDetectgeneral
 
 function AbilityDefinitionDetectgeneral:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adtg')
@@ -13645,6 +14197,7 @@ function AbilityDefinitionDetectgeneral:setDetectionType(level, value)
 end
 
 AbilityDefinitionPIlotTankRifleman = class('AbilityDefinitionPIlotTankRifleman', AbilityDefinition)
+_G.AbilityDefinitionPIlotTankRifleman = AbilityDefinitionPIlotTankRifleman
 
 function AbilityDefinitionPIlotTankRifleman:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Stpr')
@@ -13663,6 +14216,7 @@ function AbilityDefinitionPIlotTankRifleman:setRequiredUnitType(level, value)
 end
 
 AbilityDefinitionFreezeDamageBonus = class('AbilityDefinitionFreezeDamageBonus', AbilityDefinition)
+_G.AbilityDefinitionFreezeDamageBonus = AbilityDefinitionFreezeDamageBonus
 
 function AbilityDefinitionFreezeDamageBonus:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIzb')
@@ -13681,6 +14235,7 @@ function AbilityDefinitionFreezeDamageBonus:setDamageBonus(level, value)
 end
 
 AbilityDefinitionEtherealForm = class('AbilityDefinitionEtherealForm', AbilityDefinition)
+_G.AbilityDefinitionEtherealForm = AbilityDefinitionEtherealForm
 
 function AbilityDefinitionEtherealForm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aetf')
@@ -13717,6 +14272,7 @@ function AbilityDefinitionEtherealForm:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionDetonate = class('AbilityDefinitionDetonate', AbilityDefinition)
+_G.AbilityDefinitionDetonate = AbilityDefinitionDetonate
 
 function AbilityDefinitionDetonate:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Adtn')
@@ -13735,6 +14291,7 @@ function AbilityDefinitionDetonate:setManaLossperunit(level, value)
 end
 
 AbilityDefinitionRavenFormMedivh = class('AbilityDefinitionRavenFormMedivh', AbilityDefinition)
+_G.AbilityDefinitionRavenFormMedivh = AbilityDefinitionRavenFormMedivh
 
 function AbilityDefinitionRavenFormMedivh:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amrf')
@@ -13771,6 +14328,7 @@ function AbilityDefinitionRavenFormMedivh:setAlternateFormUnit(level, value)
 end
 
 AbilityDefinitionAOwd = class('AbilityDefinitionAOwd', AbilityDefinition)
+_G.AbilityDefinitionAOwd = AbilityDefinitionAOwd
 
 function AbilityDefinitionAOwd:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOwd')
@@ -13789,6 +14347,7 @@ function AbilityDefinitionAOwd:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionAbsorbMana = class('AbilityDefinitionAbsorbMana', AbilityDefinition)
+_G.AbilityDefinitionAbsorbMana = AbilityDefinitionAbsorbMana
 
 function AbilityDefinitionAbsorbMana:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aabs')
@@ -13807,6 +14366,7 @@ function AbilityDefinitionAbsorbMana:setMaximumLifeAbsorbed(level, value)
 end
 
 AbilityDefinitionAuraRegenerationStatue = class('AbilityDefinitionAuraRegenerationStatue', AbilityDefinition)
+_G.AbilityDefinitionAuraRegenerationStatue = AbilityDefinitionAuraRegenerationStatue
 
 function AbilityDefinitionAuraRegenerationStatue:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aabr')
@@ -13825,6 +14385,7 @@ function AbilityDefinitionAuraRegenerationStatue:setAmountofHitPointsRegenerated
 end
 
 AbilityDefinitionUnsummon = class('AbilityDefinitionUnsummon', AbilityDefinition)
+_G.AbilityDefinitionUnsummon = AbilityDefinitionUnsummon
 
 function AbilityDefinitionUnsummon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Auns')
@@ -13843,6 +14404,7 @@ function AbilityDefinitionUnsummon:setSalvageCostRatio(level, value)
 end
 
 AbilityDefinitionTaurenChieftainShockWave = class('AbilityDefinitionTaurenChieftainShockWave', AbilityDefinition)
+_G.AbilityDefinitionTaurenChieftainShockWave = AbilityDefinitionTaurenChieftainShockWave
 
 function AbilityDefinitionTaurenChieftainShockWave:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOsh')
@@ -13873,6 +14435,7 @@ function AbilityDefinitionTaurenChieftainShockWave:setMaximumDamage(level, value
 end
 
 AbilityDefinitionCrippleWarlock = class('AbilityDefinitionCrippleWarlock', AbilityDefinition)
+_G.AbilityDefinitionCrippleWarlock = AbilityDefinitionCrippleWarlock
 
 function AbilityDefinitionCrippleWarlock:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Scri')
@@ -13897,6 +14460,7 @@ function AbilityDefinitionCrippleWarlock:setMovementSpeedReduction(level, value)
 end
 
 AbilityDefinitionFarseerSpiritWolf = class('AbilityDefinitionFarseerSpiritWolf', AbilityDefinition)
+_G.AbilityDefinitionFarseerSpiritWolf = AbilityDefinitionFarseerSpiritWolf
 
 function AbilityDefinitionFarseerSpiritWolf:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOsf')
@@ -13915,6 +14479,7 @@ function AbilityDefinitionFarseerSpiritWolf:setNumberofSummonedUnits(level, valu
 end
 
 AbilityDefinitionPilotTankMortarTeam = class('AbilityDefinitionPilotTankMortarTeam', AbilityDefinition)
+_G.AbilityDefinitionPilotTankMortarTeam = AbilityDefinitionPilotTankMortarTeam
 
 function AbilityDefinitionPilotTankMortarTeam:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Stpm')
@@ -13933,6 +14498,7 @@ function AbilityDefinitionPilotTankMortarTeam:setRequiredUnitType(level, value)
 end
 
 AbilityDefinitionShadowHunterSerpentWard = class('AbilityDefinitionShadowHunterSerpentWard', AbilityDefinition)
+_G.AbilityDefinitionShadowHunterSerpentWard = AbilityDefinitionShadowHunterSerpentWard
 
 function AbilityDefinitionShadowHunterSerpentWard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOsw')
@@ -13951,6 +14517,7 @@ function AbilityDefinitionShadowHunterSerpentWard:setSummonedUnitType(level, val
 end
 
 AbilityDefinitionAntimagicShieldAIxs = class('AbilityDefinitionAntimagicShieldAIxs', AbilityDefinition)
+_G.AbilityDefinitionAntimagicShieldAIxs = AbilityDefinitionAntimagicShieldAIxs
 
 function AbilityDefinitionAntimagicShieldAIxs:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIxs')
@@ -13981,6 +14548,7 @@ function AbilityDefinitionAntimagicShieldAIxs:setShieldLife(level, value)
 end
 
 AbilityDefinitionPermanentAllPlus1 = class('AbilityDefinitionPermanentAllPlus1', AbilityDefinition)
+_G.AbilityDefinitionPermanentAllPlus1 = AbilityDefinitionPermanentAllPlus1
 
 function AbilityDefinitionPermanentAllPlus1:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AIxm')
@@ -14011,6 +14579,7 @@ function AbilityDefinitionPermanentAllPlus1:setStrengthBonus(level, value)
 end
 
 AbilityDefinitionAbolishMagic = class('AbilityDefinitionAbolishMagic', AbilityDefinition)
+_G.AbilityDefinitionAbolishMagic = AbilityDefinitionAbolishMagic
 
 function AbilityDefinitionAbolishMagic:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aadm')
@@ -14029,6 +14598,7 @@ function AbilityDefinitionAbolishMagic:setSummonedUnitDamage(level, value)
 end
 
 AbilityDefinitionRavenFormDruidoftheTalon = class('AbilityDefinitionRavenFormDruidoftheTalon', AbilityDefinition)
+_G.AbilityDefinitionRavenFormDruidoftheTalon = AbilityDefinitionRavenFormDruidoftheTalon
 
 function AbilityDefinitionRavenFormDruidoftheTalon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arav')
@@ -14065,6 +14635,7 @@ function AbilityDefinitionRavenFormDruidoftheTalon:setAlternateFormUnit(level, v
 end
 
 AbilityDefinitionPlagueToss = class('AbilityDefinitionPlagueToss', AbilityDefinition)
+_G.AbilityDefinitionPlagueToss = AbilityDefinitionPlagueToss
 
 function AbilityDefinitionPlagueToss:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Apts')
@@ -14077,6 +14648,7 @@ function AbilityDefinitionPlagueToss:setWardUnitType(level, value)
 end
 
 AbilityDefinitionVampiricattack = class('AbilityDefinitionVampiricattack', AbilityDefinition)
+_G.AbilityDefinitionVampiricattack = AbilityDefinitionVampiricattack
 
 function AbilityDefinitionVampiricattack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'SCva')
@@ -14089,6 +14661,7 @@ function AbilityDefinitionVampiricattack:setLifeStolenPerAttack(level, value)
 end
 
 AbilityDefinitionCargoHoldDeath = class('AbilityDefinitionCargoHoldDeath', AbilityDefinition)
+_G.AbilityDefinitionCargoHoldDeath = AbilityDefinitionCargoHoldDeath
 
 function AbilityDefinitionCargoHoldDeath:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Achd')
@@ -14113,6 +14686,7 @@ function AbilityDefinitionCargoHoldDeath:setAttackUpdateFrequency(level, value)
 end
 
 AbilityDefinitionAcha = class('AbilityDefinitionAcha', AbilityDefinition)
+_G.AbilityDefinitionAcha = AbilityDefinitionAcha
 
 function AbilityDefinitionAcha:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Acha')
@@ -14125,6 +14699,7 @@ function AbilityDefinitionAcha:setNewUnitType(level, value)
 end
 
 AbilityDefinitionUnholyFrenzycreep = class('AbilityDefinitionUnholyFrenzycreep', AbilityDefinition)
+_G.AbilityDefinitionUnholyFrenzycreep = AbilityDefinitionUnholyFrenzycreep
 
 function AbilityDefinitionUnholyFrenzycreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACuf')
@@ -14143,6 +14718,7 @@ function AbilityDefinitionUnholyFrenzycreep:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionRenew = class('AbilityDefinitionRenew', AbilityDefinition)
+_G.AbilityDefinitionRenew = AbilityDefinitionRenew
 
 function AbilityDefinitionRenew:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aren')
@@ -14179,6 +14755,7 @@ function AbilityDefinitionRenew:setPowerbuildCost(level, value)
 end
 
 AbilityDefinitionRegenLife = class('AbilityDefinitionRegenLife', AbilityDefinition)
+_G.AbilityDefinitionRegenLife = AbilityDefinitionRegenLife
 
 function AbilityDefinitionRegenLife:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arel')
@@ -14191,6 +14768,7 @@ function AbilityDefinitionRegenLife:setHitPointsRegeneratedPerSecond(level, valu
 end
 
 AbilityDefinitionBlightGrowthLarge = class('AbilityDefinitionBlightGrowthLarge', AbilityDefinition)
+_G.AbilityDefinitionBlightGrowthLarge = AbilityDefinitionBlightGrowthLarge
 
 function AbilityDefinitionBlightGrowthLarge:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abgl')
@@ -14209,6 +14787,7 @@ function AbilityDefinitionBlightGrowthLarge:setExpansionAmount(level, value)
 end
 
 AbilityDefinitionBlightedGoldmine = class('AbilityDefinitionBlightedGoldmine', AbilityDefinition)
+_G.AbilityDefinitionBlightedGoldmine = AbilityDefinitionBlightedGoldmine
 
 function AbilityDefinitionBlightedGoldmine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abgm')
@@ -14239,6 +14818,7 @@ function AbilityDefinitionBlightedGoldmine:setMaxNumberofMiners(level, value)
 end
 
 AbilityDefinitionUnholyAuracreep = class('AbilityDefinitionUnholyAuracreep', AbilityDefinition)
+_G.AbilityDefinitionUnholyAuracreep = AbilityDefinitionUnholyAuracreep
 
 function AbilityDefinitionUnholyAuracreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACua')
@@ -14263,6 +14843,7 @@ function AbilityDefinitionUnholyAuracreep:setMovementSpeedIncrease(level, value)
 end
 
 AbilityDefinitionRepairOrc = class('AbilityDefinitionRepairOrc', AbilityDefinition)
+_G.AbilityDefinitionRepairOrc = AbilityDefinitionRepairOrc
 
 function AbilityDefinitionRepairOrc:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arep')
@@ -14299,6 +14880,7 @@ function AbilityDefinitionRepairOrc:setPowerbuildCost(level, value)
 end
 
 AbilityDefinitionEntanglingSeaweed = class('AbilityDefinitionEntanglingSeaweed', AbilityDefinition)
+_G.AbilityDefinitionEntanglingSeaweed = AbilityDefinitionEntanglingSeaweed
 
 function AbilityDefinitionEntanglingSeaweed:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aenw')
@@ -14311,6 +14893,7 @@ function AbilityDefinitionEntanglingSeaweed:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionNeutralSpies = class('AbilityDefinitionNeutralSpies', AbilityDefinition)
+_G.AbilityDefinitionNeutralSpies = AbilityDefinitionNeutralSpies
 
 function AbilityDefinitionNeutralSpies:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Ansp')
@@ -14335,6 +14918,7 @@ function AbilityDefinitionNeutralSpies:setDetectionType(level, value)
 end
 
 AbilityDefinitionEntangle = class('AbilityDefinitionEntangle', AbilityDefinition)
+_G.AbilityDefinitionEntangle = AbilityDefinitionEntangle
 
 function AbilityDefinitionEntangle:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aent')
@@ -14347,6 +14931,7 @@ function AbilityDefinitionEntangle:setResultingUnitType(level, value)
 end
 
 AbilityDefinitionRejuvination = class('AbilityDefinitionRejuvination', AbilityDefinition)
+_G.AbilityDefinitionRejuvination = AbilityDefinitionRejuvination
 
 function AbilityDefinitionRejuvination:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Arej')
@@ -14377,6 +14962,7 @@ function AbilityDefinitionRejuvination:setAllowWhenFull(level, value)
 end
 
 AbilityDefinitionEntanglingRootscreep = class('AbilityDefinitionEntanglingRootscreep', AbilityDefinition)
+_G.AbilityDefinitionEntanglingRootscreep = AbilityDefinitionEntanglingRootscreep
 
 function AbilityDefinitionEntanglingRootscreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aenr')
@@ -14389,6 +14975,7 @@ function AbilityDefinitionEntanglingRootscreep:setDamageperSecond(level, value)
 end
 
 AbilityDefinitionSelfDestruct = class('AbilityDefinitionSelfDestruct', AbilityDefinition)
+_G.AbilityDefinitionSelfDestruct = AbilityDefinitionSelfDestruct
 
 function AbilityDefinitionSelfDestruct:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asds')
@@ -14431,6 +15018,7 @@ function AbilityDefinitionSelfDestruct:setPartialDamageRadius(level, value)
 end
 
 AbilityDefinitionBlightGrowthSmall = class('AbilityDefinitionBlightGrowthSmall', AbilityDefinition)
+_G.AbilityDefinitionBlightGrowthSmall = AbilityDefinitionBlightGrowthSmall
 
 function AbilityDefinitionBlightGrowthSmall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abgs')
@@ -14449,6 +15037,7 @@ function AbilityDefinitionBlightGrowthSmall:setExpansionAmount(level, value)
 end
 
 AbilityDefinitionEnsnare = class('AbilityDefinitionEnsnare', AbilityDefinition)
+_G.AbilityDefinitionEnsnare = AbilityDefinitionEnsnare
 
 function AbilityDefinitionEnsnare:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aens')
@@ -14473,6 +15062,7 @@ function AbilityDefinitionEnsnare:setMeleeAttackRange(level, value)
 end
 
 AbilityDefinitionDeathDamageAOEmineBIG = class('AbilityDefinitionDeathDamageAOEmineBIG', AbilityDefinition)
+_G.AbilityDefinitionDeathDamageAOEmineBIG = AbilityDefinitionDeathDamageAOEmineBIG
 
 function AbilityDefinitionDeathDamageAOEmineBIG:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amnz')
@@ -14503,6 +15093,7 @@ function AbilityDefinitionDeathDamageAOEmineBIG:setPartialDamageRadius(level, va
 end
 
 AbilityDefinitionSerpentWardtentacleForgottenone = class('AbilityDefinitionSerpentWardtentacleForgottenone', AbilityDefinition)
+_G.AbilityDefinitionSerpentWardtentacleForgottenone = AbilityDefinitionSerpentWardtentacleForgottenone
 
 function AbilityDefinitionSerpentWardtentacleForgottenone:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACtn')
@@ -14521,6 +15112,7 @@ function AbilityDefinitionSerpentWardtentacleForgottenone:setSummonedUnitType(le
 end
 
 AbilityDefinitionTornadoDamage = class('AbilityDefinitionTornadoDamage', AbilityDefinition)
+_G.AbilityDefinitionTornadoDamage = AbilityDefinitionTornadoDamage
 
 function AbilityDefinitionTornadoDamage:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Atdg')
@@ -14557,6 +15149,7 @@ function AbilityDefinitionTornadoDamage:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionThunderBoltCreep = class('AbilityDefinitionThunderBoltCreep', AbilityDefinition)
+_G.AbilityDefinitionThunderBoltCreep = AbilityDefinitionThunderBoltCreep
 
 function AbilityDefinitionThunderBoltCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACtb')
@@ -14569,6 +15162,7 @@ function AbilityDefinitionThunderBoltCreep:setDamage(level, value)
 end
 
 AbilityDefinitionThunderClapCreep = class('AbilityDefinitionThunderClapCreep', AbilityDefinition)
+_G.AbilityDefinitionThunderClapCreep = AbilityDefinitionThunderClapCreep
 
 function AbilityDefinitionThunderClapCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACtc')
@@ -14599,6 +15193,7 @@ function AbilityDefinitionThunderClapCreep:setMovementSpeedReduction(level, valu
 end
 
 AbilityDefinitionSelfDestructClockwerkGoblins = class('AbilityDefinitionSelfDestructClockwerkGoblins', AbilityDefinition)
+_G.AbilityDefinitionSelfDestructClockwerkGoblins = AbilityDefinitionSelfDestructClockwerkGoblins
 
 function AbilityDefinitionSelfDestructClockwerkGoblins:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asdg')
@@ -14611,6 +15206,7 @@ function AbilityDefinitionSelfDestructClockwerkGoblins:setExplodesonDeath(level,
 end
 
 AbilityDefinitionDeathDamageAOEmine = class('AbilityDefinitionDeathDamageAOEmine', AbilityDefinition)
+_G.AbilityDefinitionDeathDamageAOEmine = AbilityDefinitionDeathDamageAOEmine
 
 function AbilityDefinitionDeathDamageAOEmine:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amnx')
@@ -14641,6 +15237,7 @@ function AbilityDefinitionDeathDamageAOEmine:setPartialDamageRadius(level, value
 end
 
 AbilityDefinitionManaBurndemon = class('AbilityDefinitionManaBurndemon', AbilityDefinition)
+_G.AbilityDefinitionManaBurndemon = AbilityDefinitionManaBurndemon
 
 function AbilityDefinitionManaBurndemon:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Amnb')
@@ -14665,6 +15262,7 @@ function AbilityDefinitionManaBurndemon:setBoltDelay(level, value)
 end
 
 AbilityDefinitionShockwaveTrap = class('AbilityDefinitionShockwaveTrap', AbilityDefinition)
+_G.AbilityDefinitionShockwaveTrap = AbilityDefinitionShockwaveTrap
 
 function AbilityDefinitionShockwaveTrap:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACst')
@@ -14695,6 +15293,7 @@ function AbilityDefinitionShockwaveTrap:setMaximumDamage(level, value)
 end
 
 AbilityDefinitionShadowStrikeCreep = class('AbilityDefinitionShadowStrikeCreep', AbilityDefinition)
+_G.AbilityDefinitionShadowStrikeCreep = AbilityDefinitionShadowStrikeCreep
 
 function AbilityDefinitionShadowStrikeCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACss')
@@ -14731,6 +15330,7 @@ function AbilityDefinitionShadowStrikeCreep:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionBashmaulSPBearlevel3 = class('AbilityDefinitionBashmaulSPBearlevel3', AbilityDefinition)
+_G.AbilityDefinitionBashmaulSPBearlevel3 = AbilityDefinitionBashmaulSPBearlevel3
 
 function AbilityDefinitionBashmaulSPBearlevel3:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ANb2')
@@ -14743,6 +15343,7 @@ function AbilityDefinitionBashmaulSPBearlevel3:setNeverMiss(level, value)
 end
 
 AbilityDefinitionSlowCreep = class('AbilityDefinitionSlowCreep', AbilityDefinition)
+_G.AbilityDefinitionSlowCreep = AbilityDefinitionSlowCreep
 
 function AbilityDefinitionSlowCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACsw')
@@ -14767,6 +15368,7 @@ function AbilityDefinitionSlowCreep:setAttackSpeedFactor(level, value)
 end
 
 AbilityDefinitionReturnGold = class('AbilityDefinitionReturnGold', AbilityDefinition)
+_G.AbilityDefinitionReturnGold = AbilityDefinitionReturnGold
 
 function AbilityDefinitionReturnGold:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Argd')
@@ -14785,6 +15387,7 @@ function AbilityDefinitionReturnGold:setAcceptsLumber(level, value)
 end
 
 AbilityDefinitionWarStompseagiant = class('AbilityDefinitionWarStompseagiant', AbilityDefinition)
+_G.AbilityDefinitionWarStompseagiant = AbilityDefinitionWarStompseagiant
 
 function AbilityDefinitionWarStompseagiant:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awrg')
@@ -14809,6 +15412,7 @@ function AbilityDefinitionWarStompseagiant:setDamage(level, value)
 end
 
 AbilityDefinitionBladeMasterBladestorm = class('AbilityDefinitionBladeMasterBladestorm', AbilityDefinition)
+_G.AbilityDefinitionBladeMasterBladestorm = AbilityDefinitionBladeMasterBladestorm
 
 function AbilityDefinitionBladeMasterBladestorm:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOww')
@@ -14827,6 +15431,7 @@ function AbilityDefinitionBladeMasterBladestorm:setDamagePerSecond(level, value)
 end
 
 AbilityDefinitionTaurenChieftainWarStomp = class('AbilityDefinitionTaurenChieftainWarStomp', AbilityDefinition)
+_G.AbilityDefinitionTaurenChieftainWarStomp = AbilityDefinitionTaurenChieftainWarStomp
 
 function AbilityDefinitionTaurenChieftainWarStomp:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOws')
@@ -14839,6 +15444,7 @@ function AbilityDefinitionTaurenChieftainWarStomp:setDamage(level, value)
 end
 
 AbilityDefinitionWarStomphydra = class('AbilityDefinitionWarStomphydra', AbilityDefinition)
+_G.AbilityDefinitionWarStomphydra = AbilityDefinitionWarStomphydra
 
 function AbilityDefinitionWarStomphydra:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awrh')
@@ -14863,6 +15469,7 @@ function AbilityDefinitionWarStomphydra:setDamage(level, value)
 end
 
 AbilityDefinitionBladeMasterWindWalk = class('AbilityDefinitionBladeMasterWindWalk', AbilityDefinition)
+_G.AbilityDefinitionBladeMasterWindWalk = AbilityDefinitionBladeMasterWindWalk
 
 function AbilityDefinitionBladeMasterWindWalk:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'AOwk')
@@ -14893,6 +15500,7 @@ function AbilityDefinitionBladeMasterWindWalk:setBackstabDamage1(level, value)
 end
 
 AbilityDefinitionSummonSeaElemental = class('AbilityDefinitionSummonSeaElemental', AbilityDefinition)
+_G.AbilityDefinitionSummonSeaElemental = AbilityDefinitionSummonSeaElemental
 
 function AbilityDefinitionSummonSeaElemental:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACwe')
@@ -14911,6 +15519,7 @@ function AbilityDefinitionSummonSeaElemental:setSummonedUnitType(level, value)
 end
 
 AbilityDefinitionWebcreep = class('AbilityDefinitionWebcreep', AbilityDefinition)
+_G.AbilityDefinitionWebcreep = AbilityDefinitionWebcreep
 
 function AbilityDefinitionWebcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACwb')
@@ -14935,6 +15544,7 @@ function AbilityDefinitionWebcreep:setMeleeAttackRange(level, value)
 end
 
 AbilityDefinitionReturnGoldLumber = class('AbilityDefinitionReturnGoldLumber', AbilityDefinition)
+_G.AbilityDefinitionReturnGoldLumber = AbilityDefinitionReturnGoldLumber
 
 function AbilityDefinitionReturnGoldLumber:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Argl')
@@ -14953,6 +15563,7 @@ function AbilityDefinitionReturnGoldLumber:setAcceptsLumber(level, value)
 end
 
 AbilityDefinitionSelfDestruct3ClockwerkGoblins = class('AbilityDefinitionSelfDestruct3ClockwerkGoblins', AbilityDefinition)
+_G.AbilityDefinitionSelfDestruct3ClockwerkGoblins = AbilityDefinitionSelfDestruct3ClockwerkGoblins
 
 function AbilityDefinitionSelfDestruct3ClockwerkGoblins:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asd3')
@@ -14965,6 +15576,7 @@ function AbilityDefinitionSelfDestruct3ClockwerkGoblins:setExplodesonDeath(level
 end
 
 AbilityDefinitionSelfDestruct2ClockwerkGoblins = class('AbilityDefinitionSelfDestruct2ClockwerkGoblins', AbilityDefinition)
+_G.AbilityDefinitionSelfDestruct2ClockwerkGoblins = AbilityDefinitionSelfDestruct2ClockwerkGoblins
 
 function AbilityDefinitionSelfDestruct2ClockwerkGoblins:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Asd2')
@@ -14977,6 +15589,7 @@ function AbilityDefinitionSelfDestruct2ClockwerkGoblins:setExplodesonDeath(level
 end
 
 AbilityDefinitionGraveyard = class('AbilityDefinitionGraveyard', AbilityDefinition)
+_G.AbilityDefinitionGraveyard = AbilityDefinitionGraveyard
 
 function AbilityDefinitionGraveyard:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Agyd')
@@ -15007,6 +15620,7 @@ function AbilityDefinitionGraveyard:setCorpseUnitType(level, value)
 end
 
 AbilityDefinitionWarStompcreep = class('AbilityDefinitionWarStompcreep', AbilityDefinition)
+_G.AbilityDefinitionWarStompcreep = AbilityDefinitionWarStompcreep
 
 function AbilityDefinitionWarStompcreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awrs')
@@ -15031,6 +15645,7 @@ function AbilityDefinitionWarStompcreep:setDamage(level, value)
 end
 
 AbilityDefinitionWarp = class('AbilityDefinitionWarp', AbilityDefinition)
+_G.AbilityDefinitionWarp = AbilityDefinitionWarp
 
 function AbilityDefinitionWarp:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Awrp')
@@ -15049,6 +15664,7 @@ function AbilityDefinitionWarp:setTeleportAreaHeight(level, value)
 end
 
 AbilityDefinitionVampiricAuracreep = class('AbilityDefinitionVampiricAuracreep', AbilityDefinition)
+_G.AbilityDefinitionVampiricAuracreep = AbilityDefinitionVampiricAuracreep
 
 function AbilityDefinitionVampiricAuracreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACvp')
@@ -15061,6 +15677,7 @@ function AbilityDefinitionVampiricAuracreep:setAttackDamageStolen(level, value)
 end
 
 AbilityDefinitionVenomSpearsCreep = class('AbilityDefinitionVenomSpearsCreep', AbilityDefinition)
+_G.AbilityDefinitionVenomSpearsCreep = AbilityDefinitionVenomSpearsCreep
 
 function AbilityDefinitionVenomSpearsCreep:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'ACvs')
@@ -15091,6 +15708,7 @@ function AbilityDefinitionVenomSpearsCreep:setMovementSpeedFactor(level, value)
 end
 
 AbilityDefinitionBurrowDetectionFlyers = class('AbilityDefinitionBurrowDetectionFlyers', AbilityDefinition)
+_G.AbilityDefinitionBurrowDetectionFlyers = AbilityDefinitionBurrowDetectionFlyers
 
 function AbilityDefinitionBurrowDetectionFlyers:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abdt')
@@ -15103,6 +15721,7 @@ function AbilityDefinitionBurrowDetectionFlyers:setDetectionType(level, value)
 end
 
 AbilityDefinitionBlightDispelSmall = class('AbilityDefinitionBlightDispelSmall', AbilityDefinition)
+_G.AbilityDefinitionBlightDispelSmall = AbilityDefinitionBlightDispelSmall
 
 function AbilityDefinitionBlightDispelSmall:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abds')
@@ -15121,6 +15740,7 @@ function AbilityDefinitionBlightDispelSmall:setExpansionAmount(level, value)
 end
 
 AbilityDefinitionLiquidFire = class('AbilityDefinitionLiquidFire', AbilityDefinition)
+_G.AbilityDefinitionLiquidFire = AbilityDefinitionLiquidFire
 
 function AbilityDefinitionLiquidFire:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Aliq')
@@ -15151,6 +15771,7 @@ function AbilityDefinitionLiquidFire:setExtraDamagePerSecond(level, value)
 end
 
 AbilityDefinitionDetectGyrocopter = class('AbilityDefinitionDetectGyrocopter', AbilityDefinition)
+_G.AbilityDefinitionDetectGyrocopter = AbilityDefinitionDetectGyrocopter
 
 function AbilityDefinitionDetectGyrocopter:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Agyv')
@@ -15163,6 +15784,7 @@ function AbilityDefinitionDetectGyrocopter:setDetectionType(level, value)
 end
 
 AbilityDefinitionLightningAttack = class('AbilityDefinitionLightningAttack', AbilityDefinition)
+_G.AbilityDefinitionLightningAttack = AbilityDefinitionLightningAttack
 
 function AbilityDefinitionLightningAttack:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Alit')
@@ -15181,6 +15803,7 @@ function AbilityDefinitionLightningAttack:setGraphicDelay(level, value)
 end
 
 AbilityDefinitionBlightDispelLarge = class('AbilityDefinitionBlightDispelLarge', AbilityDefinition)
+_G.AbilityDefinitionBlightDispelLarge = AbilityDefinitionBlightDispelLarge
 
 function AbilityDefinitionBlightDispelLarge:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Abdl')
@@ -15199,6 +15822,7 @@ function AbilityDefinitionBlightDispelLarge:setExpansionAmount(level, value)
 end
 
 AbilityDefinitionChaosCargoLoad = class('AbilityDefinitionChaosCargoLoad', AbilityDefinition)
+_G.AbilityDefinitionChaosCargoLoad = AbilityDefinitionChaosCargoLoad
 
 function AbilityDefinitionChaosCargoLoad:constructor(id)
     self.def = createDefinition(DefinitionType.Ability, id, 'Achl')

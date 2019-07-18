@@ -137,3 +137,4 @@ function W3QDefinition:setEffectCode(effectIndex, value)
 end
 
 UpgradeDefinition = class('UpgradeDefinition', W3QDefinition)
+_G.UpgradeDefinition = UpgradeDefinition

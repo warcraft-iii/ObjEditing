@@ -5,6 +5,7 @@ function W3BDefinition:constructor(id, superId)
 end
 
 DestructableDefinition = class('DestructableDefinition', W3BDefinition)
+_G.DestructableDefinition = DestructableDefinition
 
 function DestructableDefinition:setTexture(data)
     checktype(data, 'string', 'setTexture', 1)
