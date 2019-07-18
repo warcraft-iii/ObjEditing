@@ -7,7 +7,7 @@ before_deploy:
 
 deploy:
 - provider: script
-  script: msbuild .build\ObjEditing.vcxproj
+  script: msbuild.exe .build\ObjEditing.vcxproj
   skip_cleanup: true
   on:
     branch: master
