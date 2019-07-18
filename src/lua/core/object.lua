@@ -189,12 +189,13 @@ local CREATED_DEFINITIONS = {}
 ---@param superId string
 function createDefinition(defType, id, superId)
     if CREATED_DEFINITIONS[id] then
-        error('', 2)
+        error(string.format('%s already exists', id), 2)
     end
 
     local def = DEFINITIONS[id]
     if def and (def.superId ~= superId or def.type ~= defType) then
-        error('', 2)
+        error(string.format([[%s's super id and define type must same as war3map object]], def.superId, superId,
+                            def.type, defType), 2)
     end
 
     CREATED_DEFINITIONS[id] = true

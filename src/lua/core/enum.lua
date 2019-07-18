@@ -16,6 +16,7 @@ Race = {
     Undead = 'undead',
     Unknown = 'unknown',
 }
+_G.Race = Race
 
 AllowWhenFull = {
     Never = 0, --
@@ -23,6 +24,7 @@ AllowWhenFull = {
     ManaOnly = 2, --
     Always = 3, --
 }
+_G.AllowWhenFull = AllowWhenFull
 
 StackingType = {
     Damage = 0, --
@@ -30,6 +32,7 @@ StackingType = {
     AttackRate = 2, --
     KillUnit = 3, --
 }
+_G.StackingType = StackingType
 
 ArmorType = {
     Normal = 'normal',
@@ -41,6 +44,7 @@ ArmorType = {
     Divine = 'divine',
     Unarmored = 'none',
 }
+_G.ArmorType = ArmorType
 
 MovementType = {
     Foot = 'foot', --
@@ -50,6 +54,7 @@ MovementType = {
     Float = 'float', --
     Amphipic = 'amph', --
 }
+_G.MovementType = MovementType
 
 WeaponType = {
     Normal = 'normal',
@@ -62,6 +67,7 @@ WeaponType = {
     MissileLine = 'mline',
     None = '_',
 }
+_G.WeaponType = WeaponType
 
 WeaponSound = {
     Nothing = 'Nothing',
@@ -79,6 +85,7 @@ WeaponSound = {
     WoodLightBash = 'WoodLightBash',
     WoodMediumBash = 'WoodMediumBash',
 }
+_G.WeaponSound = WeaponSound
 
 AttackType = {
     Unknown = 'unknown',
@@ -90,6 +97,7 @@ AttackType = {
     Magic = 'magic',
     Hero = 'hero',
 }
+_G.AttackType = AttackType
 
 ArmorSoundType = {
     Ethereal = 'Ethereal', --
@@ -98,6 +106,7 @@ ArmorSoundType = {
     Stone = 'Stone', --
     Metal = 'Metal', --
 }
+_G.ArmorSoundType = ArmorSoundType
 
 UpgradeClass = {
     None = '',
@@ -107,6 +116,7 @@ UpgradeClass = {
     Ranged = 'ranged',
     Caster = 'caster',
 }
+_G.UpgradeClass = UpgradeClass
 
 UpgradeEffectType = {
     None = '',
@@ -144,6 +154,7 @@ UpgradeEffectType = {
     SpikedBarricades = 'rspi',
     UnitAvailabilityChange = 'rtma',
 }
+_G.UpgradeEffectType = UpgradeEffectType
 
 AttacksEnabled = {
     None = 0, --
@@ -151,3 +162,4 @@ AttacksEnabled = {
     AttackTwoOnly = 2, --
     Both = 3, --
 }
+_G.AttacksEnabled = AttacksEnabled

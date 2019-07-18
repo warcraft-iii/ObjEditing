@@ -33,6 +33,7 @@ project 'ALL_BUILD'
 
     files {
         'premake5.lua',
+        'bin/build.lua',
     }
 
     filter 'files:premake5.lua'
