@@ -6,13 +6,11 @@
 workspace 'ObjEditing'
     configurations { 'Debug', 'Release' }
     location '.build'
-    toolset 'v142'
+    toolset 'v141'
     symbols 'Full'
     architecture 'x86'
     characterset 'MBCS'
     staticruntime 'On'
-    dependson { 'ALL_BUILD' }
-
     startproject 'ObjEditing'
 
     flags {
@@ -27,20 +25,6 @@ workspace 'ObjEditing'
     filter 'configurations:Release'
         defines { 'NDEBUG' }
         optimize 'On'
-
-project 'ALL_BUILD'
-    kind 'Utility'
-
-    files {
-        'premake5.lua',
-        'bin/build.lua',
-    }
-
-    filter 'files:premake5.lua'
-        buildmessage 'Premaking'
-        buildinputs { 'init.bat' }
-        buildcommands { '../init.bat' }
-        buildoutputs { '.build/ALL_BUILD.vcxproj' }
 
 project 'ObjEditing'
     kind 'ConsoleApp'
@@ -85,11 +69,8 @@ project 'ObjEditing'
     filter 'system:Windows'
         defines { 'PLATFORM_WINDOWS' }
 
-    filter 'configurations:Release'
-        postbuildcommands { [[{COPY} "%{cfg.buildtarget.abspath}" "%{path.join(_MAIN_SCRIPT_DIR, '../warcraft-vscode/bin/')}"]] }
-
     filter 'files:**.lua'
-        buildmessage 'Compiling %{file.abspath}'
+        buildmessage 'Compiling %{file.name}'
         buildinputs { 'bin/build.lua' }
         buildcommands { [[%{ generateBuildLuaCommand(_ENV) }]] }
         buildoutputs {
