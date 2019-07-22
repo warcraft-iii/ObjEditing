@@ -6,9 +6,6 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'vs2017-win2016'
-
 strategy:
   matrix:
     x86_debug:
@@ -17,16 +14,17 @@ strategy:
       configuration: 'release'
   maxParallel: 2
 
+pool:
+  vmImage: 'vs2017-win2016'
+
 steps:
 - checkout: self
   submodules: true
-  
+
 - script: init.bat
-  displayName: 'Build workspace'
+  displayName: 'Build solution'
 
 - task: MSBuild@1
   inputs:
     solution: '.build/*.sln'
     configuration: $(configuration)
-
-    

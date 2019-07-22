@@ -6,20 +6,20 @@
 workspace 'ObjEditing'
     configurations { 'Debug', 'Release' }
     location '.build'
-    toolset 'v141'
     symbols 'Full'
     architecture 'x86'
-    characterset 'MBCS'
-    staticruntime 'On'
     startproject 'ObjEditing'
-
     flags {
         'MultiProcessorCompile',
         'Maps',
     }
 
-    defines { 'WIN32', '_WINDOWS' }
-
+    filter 'system:Windows'
+        toolset 'v141'
+        systemversion 'latest'
+        characterset 'MBCS'
+        staticruntime 'On'
+        defines { 'WIN32', '_WINDOWS' }
     filter 'configurations:Debug'
         defines { '_DEBUG' }
     filter 'configurations:Release'
@@ -43,7 +43,6 @@ project 'ObjEditing'
     removefiles {
         'src/lua/**/main.lua',
         'src/lua/**/init.lua',
-        'src/lua/test/**',
     }
 
     vpaths {
