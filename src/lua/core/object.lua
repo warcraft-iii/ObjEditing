@@ -90,7 +90,7 @@ end
 ---@param id string
 ---@param value number
 ---@return void
-function ObjectDefinition:setUnread(id, value)
+function ObjectDefinition:setUnreal(id, value)
     return self:setRaw(id, FieldType.Unreal, value)
 end
 

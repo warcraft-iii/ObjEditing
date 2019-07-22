@@ -38,7 +38,7 @@ function checkenum(value, enum, api, index)
     if not e then
         return
     end
-    if value == enumCache[e][value] then
+    if enumCache[e][value] then
         return
     end
 
