@@ -132,7 +132,10 @@ end
 ---@param column integer
 ---@param value string
 function ObjectDefinition:setLvlDataInt(id, level, column, value)
-    return self:setRaw(id, FieldType.Int, level, column)
+    if type(value) == 'boolean' then
+       value = value and 1 or 0
+    end
+    return self:setRaw(id, FieldType.Int, value, level, column)
 end
 
 ---setLvlDataString
@@ -141,7 +144,7 @@ end
 ---@param column integer
 ---@param value integer
 function ObjectDefinition:setLvlDataString(id, level, column, value)
-    return self:setRaw(id, FieldType.String, level, column)
+    return self:setRaw(id, FieldType.String, value, level, column)
 end
 
 ---setLvlDataReal
@@ -150,7 +153,7 @@ end
 ---@param column integer
 ---@param value float
 function ObjectDefinition:setLvlDataReal(id, level, column, value)
-    return self:setRaw(id, FieldType.Real, level, column)
+    return self:setRaw(id, FieldType.Real, value, level, column)
 end
 
 ---setLvlDataUnreal
@@ -159,7 +162,7 @@ end
 ---@param column integer
 ---@param value float
 function ObjectDefinition:setLvlDataUnreal(id, level, column, value)
-    return self:setRaw(id, FieldType.Unreal, level, column)
+    return self:setRaw(id, FieldType.Unreal, value, level, column)
 end
 
 ---setLvlDataBoolean

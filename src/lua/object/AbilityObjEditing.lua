@@ -395,8 +395,8 @@ end
 
 function AbilityDefinitionPoisonArrows:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Poa5', level, 5, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Poa5', level, 4, value)
 end
 
 function AbilityDefinitionPoisonArrows:setExtraDamage(level, value)
@@ -426,8 +426,8 @@ end
 
 function AbilityDefinitionRangerColdArrows:setStackFlags(level, value)
     checktype(level, 'integer', 'setStackFlags', 1)
-    checktype(value, 'string', 'setStackFlags', 2)
-    self.def:setLvlDataString('Hca4', level, 4, value)
+    checktype(value, 'integer', 'setStackFlags', 2)
+    self.def:setLvlDataInt('Hca4', level, 4, value)
 end
 
 function AbilityDefinitionRangerColdArrows:setExtraDamage(level, value)
@@ -1689,8 +1689,8 @@ end
 
 function AbilityDefinitionTinkererRoboGoblinLevel0:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionTinkererRoboGoblinLevel0:setDefenseBonus(level, value)
@@ -3371,8 +3371,8 @@ end
 
 function AbilityDefinitionEvilIllidanMetamorphosis:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionEvilIllidanMetamorphosis:setAlternateFormHitPointBonus(level, value)
@@ -3490,7 +3490,7 @@ AbilityDefinitionEvasion = class('AbilityDefinitionEvasion', AbilityDefinition)
 _G.AbilityDefinitionEvasion = AbilityDefinitionEvasion
 
 function AbilityDefinitionEvasion:constructor(id)
-    self.def = createDefinition(DefinitionType.Ability, id, 'AIev')
+    self.def = createDefinition(DefinitionType.Ability, id, 'ACev')
 end
 
 function AbilityDefinitionEvasion:setChancetoEvade(level, value)
@@ -4022,8 +4022,8 @@ end
 
 function AbilityDefinitionSubmergeMyrmidon:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionSubmergeMyrmidon:setAlternateFormUnit(level, value)
@@ -4053,8 +4053,8 @@ end
 
 function AbilityDefinitionSubmergeRoyalGuard:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionSubmergeRoyalGuard:setAlternateFormUnit(level, value)
@@ -4115,8 +4115,8 @@ end
 
 function AbilityDefinitionSubmergeSnapDragon:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionSubmergeSnapDragon:setAlternateFormUnit(level, value)
@@ -4235,8 +4235,8 @@ end
 
 function AbilityDefinitionBurrowscarablvl2:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionBurrowscarablvl2:setAlternateFormUnit(level, value)
@@ -4352,8 +4352,8 @@ end
 
 function AbilityDefinitionBurrowscarablvl3:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionBurrowscarablvl3:setAlternateFormUnit(level, value)
@@ -4902,8 +4902,8 @@ end
 
 function AbilityDefinitionIllidanMetamorphosis:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionIllidanMetamorphosis:setAlternateFormHitPointBonus(level, value)
@@ -5514,8 +5514,8 @@ end
 
 function AbilityDefinitionAvengerForm:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionAvengerForm:setLifeRegenerationRatepersecond(level, value)
@@ -5575,6 +5575,37 @@ function AbilityDefinitionNeutralBuilding:setShowSelectUnitButton(level, value)
 end
 
 function AbilityDefinitionNeutralBuilding:setInteractionType(level, value)
+    checktype(level, 'integer', 'setInteractionType', 1)
+    checktype(value, 'string', 'setInteractionType', 2)
+    self.def:setLvlDataString('Neu2', level, 2, value)
+end
+
+AbilityDefinitionShopSharing = class('AbilityDefinitionShopSharing', AbilityDefinition)
+_G.AbilityDefinitionShopSharing = AbilityDefinitionShopSharing
+
+function AbilityDefinitionShopSharing:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'Aall')
+end
+
+function AbilityDefinitionShopSharing:setShowUnitIndicator(level, value)
+    checktype(level, 'integer', 'setShowUnitIndicator', 1)
+    checktype(value, 'boolean', 'setShowUnitIndicator', 2)
+    self.def:setLvlDataBoolean('Neu4', level, 4, value)
+end
+
+function AbilityDefinitionShopSharing:setActivationRadius(level, value)
+    checktype(level, 'integer', 'setActivationRadius', 1)
+    checktype(value, 'float', 'setActivationRadius', 2)
+    self.def:setLvlDataUnreal('Neu1', level, 1, value)
+end
+
+function AbilityDefinitionShopSharing:setShowSelectUnitButton(level, value)
+    checktype(level, 'integer', 'setShowSelectUnitButton', 1)
+    checktype(value, 'boolean', 'setShowSelectUnitButton', 2)
+    self.def:setLvlDataBoolean('Neu3', level, 3, value)
+end
+
+function AbilityDefinitionShopSharing:setInteractionType(level, value)
     checktype(level, 'integer', 'setInteractionType', 1)
     checktype(value, 'string', 'setInteractionType', 2)
     self.def:setLvlDataString('Neu2', level, 2, value)
@@ -5712,8 +5743,8 @@ end
 
 function AbilityDefinitionBearform:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionBearform:setAlternateFormUnit(level, value)
@@ -6193,8 +6224,8 @@ end
 
 function AbilityDefinitionColdArrowscreep:setStackFlags(level, value)
     checktype(level, 'integer', 'setStackFlags', 1)
-    checktype(value, 'string', 'setStackFlags', 2)
-    self.def:setLvlDataString('Hca4', level, 4, value)
+    checktype(value, 'integer', 'setStackFlags', 2)
+    self.def:setLvlDataInt('Hca4', level, 4, value)
 end
 
 function AbilityDefinitionColdArrowscreep:setExtraDamage(level, value)
@@ -6438,8 +6469,8 @@ end
 
 function AbilityDefinitionStoneForm:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionStoneForm:setLifeRegenerationRatepersecond(level, value)
@@ -7083,8 +7114,8 @@ end
 
 function AbilityDefinitionParasite:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Poi4', level, 4, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Poi4', level, 4, value)
 end
 
 function AbilityDefinitionParasite:setSummonedUnitDuration(level, value)
@@ -7150,8 +7181,8 @@ end
 
 function AbilityDefinitionDemonHunterMetamorphosis:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionDemonHunterMetamorphosis:setAlternateFormHitPointBonus(level, value)
@@ -7377,8 +7408,8 @@ end
 
 function AbilityDefinitionVenomSpears:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Poi4', level, 4, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Poi4', level, 4, value)
 end
 
 function AbilityDefinitionVenomSpears:setDamageperSecond(level, value)
@@ -7397,7 +7428,7 @@ AbilityDefinitionEvasioncreep = class('AbilityDefinitionEvasioncreep', AbilityDe
 _G.AbilityDefinitionEvasioncreep = AbilityDefinitionEvasioncreep
 
 function AbilityDefinitionEvasioncreep:constructor(id)
-    self.def = createDefinition(DefinitionType.Ability, id, 'ACev')
+    self.def = createDefinition(DefinitionType.Ability, id, 'AIev')
 end
 
 function AbilityDefinitionEvasioncreep:setChancetoEvade(level, value)
@@ -7459,8 +7490,8 @@ end
 
 function AbilityDefinitionBurrow:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionBurrow:setAlternateFormUnit(level, value)
@@ -7585,8 +7616,8 @@ end
 
 function AbilityDefinitionPhoenix:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionPhoenix:setAlternateFormUnit(level, value)
@@ -8885,8 +8916,8 @@ end
 
 function AbilityDefinitionAlchemistChemicalRage:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionAlchemistChemicalRage:setAlternateFormUnit(level, value)
@@ -10301,8 +10332,8 @@ end
 
 function AbilityDefinitionSlowPoison:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Spo4', level, 4, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Spo4', level, 4, value)
 end
 
 function AbilityDefinitionSlowPoison:setAttackSpeedFactor(level, value)
@@ -10470,8 +10501,8 @@ end
 
 function AbilityDefinitionAspx:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionAspx:setAlternateFormUnit(level, value)
@@ -10644,8 +10675,8 @@ end
 
 function AbilityDefinitionOrbofVenomPoisonAttack:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Poi4', level, 4, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Poi4', level, 4, value)
 end
 
 function AbilityDefinitionOrbofVenomPoisonAttack:setDamageperSecond(level, value)
@@ -11914,8 +11945,8 @@ end
 
 function AbilityDefinitionCorporealForm:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionCorporealForm:setAlternateFormUnit(level, value)
@@ -12034,13 +12065,19 @@ end
 function AbilityDefinitionElunesGrace:setMagicDamageReduction(level, value)
     checktype(level, 'integer', 'setMagicDamageReduction', 1)
     checktype(value, 'float', 'setMagicDamageReduction', 2)
-    self.def:setLvlDataUnreal('Def1', level, 1, value)
+    self.def:setLvlDataUnreal('Def5', level, 5, value)
 end
 
 function AbilityDefinitionElunesGrace:setDamageTaken(level, value)
     checktype(level, 'integer', 'setDamageTaken', 1)
     checktype(value, 'float', 'setDamageTaken', 2)
-    self.def:setLvlDataUnreal('Def5', level, 5, value)
+    self.def:setLvlDataUnreal('Def1', level, 1, value)
+end
+
+function AbilityDefinitionElunesGrace:setDamageDealt(level, value)
+    checktype(level, 'integer', 'setDamageDealt', 1)
+    checktype(value, 'float', 'setDamageDealt', 2)
+    self.def:setLvlDataUnreal('Def2', level, 2, value)
 end
 
 AbilityDefinitionReturnLumber = class('AbilityDefinitionReturnLumber', AbilityDefinition)
@@ -12596,8 +12633,8 @@ end
 
 function AbilityDefinitionTinkererRoboGoblinLevel1:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionTinkererRoboGoblinLevel1:setDefenseBonus(level, value)
@@ -12770,8 +12807,8 @@ end
 
 function AbilityDefinitionTinkererRoboGoblinLevel3:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionTinkererRoboGoblinLevel3:setDefenseBonus(level, value)
@@ -12881,8 +12918,8 @@ end
 
 function AbilityDefinitionTinkererRoboGoblinLevel2:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionTinkererRoboGoblinLevel2:setDefenseBonus(level, value)
@@ -13835,8 +13872,8 @@ end
 
 function AbilityDefinitionSeaWitchFrostArrows:setStackFlags(level, value)
     checktype(level, 'integer', 'setStackFlags', 1)
-    checktype(value, 'string', 'setStackFlags', 2)
-    self.def:setLvlDataString('Hca4', level, 4, value)
+    checktype(value, 'integer', 'setStackFlags', 2)
+    self.def:setLvlDataInt('Hca4', level, 4, value)
 end
 
 function AbilityDefinitionSeaWitchFrostArrows:setExtraDamage(level, value)
@@ -14261,8 +14298,8 @@ end
 
 function AbilityDefinitionEtherealForm:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionEtherealForm:setAlternateFormUnit(level, value)
@@ -14317,8 +14354,8 @@ end
 
 function AbilityDefinitionRavenFormMedivh:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionRavenFormMedivh:setAlternateFormUnit(level, value)
@@ -14327,20 +14364,20 @@ function AbilityDefinitionRavenFormMedivh:setAlternateFormUnit(level, value)
     self.def:setLvlDataString('Emeu', level, 0, value)
 end
 
-AbilityDefinitionAOwd = class('AbilityDefinitionAOwd', AbilityDefinition)
-_G.AbilityDefinitionAOwd = AbilityDefinitionAOwd
+AbilityDefinitionShadowHunterSerpentWard = class('AbilityDefinitionShadowHunterSerpentWard', AbilityDefinition)
+_G.AbilityDefinitionShadowHunterSerpentWard = AbilityDefinitionShadowHunterSerpentWard
 
-function AbilityDefinitionAOwd:constructor(id)
-    self.def = createDefinition(DefinitionType.Ability, id, 'AOwd')
+function AbilityDefinitionShadowHunterSerpentWard:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'AOsw')
 end
 
-function AbilityDefinitionAOwd:setSummonedUnitCount(level, value)
+function AbilityDefinitionShadowHunterSerpentWard:setSummonedUnitCount(level, value)
     checktype(level, 'integer', 'setSummonedUnitCount', 1)
     checktype(value, 'integer', 'setSummonedUnitCount', 2)
     self.def:setLvlDataInt('Hwe2', level, 1, value)
 end
 
-function AbilityDefinitionAOwd:setSummonedUnitType(level, value)
+function AbilityDefinitionShadowHunterSerpentWard:setSummonedUnitType(level, value)
     checktype(level, 'integer', 'setSummonedUnitType', 1)
     checktype(value, 'string', 'setSummonedUnitType', 2)
     self.def:setLvlDataString('Hwe1', level, 0, value)
@@ -14497,25 +14534,6 @@ function AbilityDefinitionPilotTankMortarTeam:setRequiredUnitType(level, value)
     self.def:setLvlDataString('tpi1', level, 1, value)
 end
 
-AbilityDefinitionShadowHunterSerpentWard = class('AbilityDefinitionShadowHunterSerpentWard', AbilityDefinition)
-_G.AbilityDefinitionShadowHunterSerpentWard = AbilityDefinitionShadowHunterSerpentWard
-
-function AbilityDefinitionShadowHunterSerpentWard:constructor(id)
-    self.def = createDefinition(DefinitionType.Ability, id, 'AOsw')
-end
-
-function AbilityDefinitionShadowHunterSerpentWard:setSummonedUnitCount(level, value)
-    checktype(level, 'integer', 'setSummonedUnitCount', 1)
-    checktype(value, 'integer', 'setSummonedUnitCount', 2)
-    self.def:setLvlDataInt('Hwe2', level, 1, value)
-end
-
-function AbilityDefinitionShadowHunterSerpentWard:setSummonedUnitType(level, value)
-    checktype(level, 'integer', 'setSummonedUnitType', 1)
-    checktype(value, 'string', 'setSummonedUnitType', 2)
-    self.def:setLvlDataString('Hwe1', level, 0, value)
-end
-
 AbilityDefinitionAntimagicShieldAIxs = class('AbilityDefinitionAntimagicShieldAIxs', AbilityDefinition)
 _G.AbilityDefinitionAntimagicShieldAIxs = AbilityDefinitionAntimagicShieldAIxs
 
@@ -14624,8 +14642,8 @@ end
 
 function AbilityDefinitionRavenFormDruidoftheTalon:setMorphingFlags(level, value)
     checktype(level, 'integer', 'setMorphingFlags', 1)
-    checktype(value, 'string', 'setMorphingFlags', 2)
-    self.def:setLvlDataString('Eme2', level, 2, value)
+    checktype(value, 'integer', 'setMorphingFlags', 2)
+    self.def:setLvlDataInt('Eme2', level, 2, value)
 end
 
 function AbilityDefinitionRavenFormDruidoftheTalon:setAlternateFormUnit(level, value)
@@ -15691,8 +15709,8 @@ end
 
 function AbilityDefinitionVenomSpearsCreep:setStackingType(level, value)
     checktype(level, 'integer', 'setStackingType', 1)
-    checktype(value, 'string', 'setStackingType', 2)
-    self.def:setLvlDataString('Poi4', level, 4, value)
+    checktype(value, 'integer', 'setStackingType', 2)
+    self.def:setLvlDataInt('Poi4', level, 4, value)
 end
 
 function AbilityDefinitionVenomSpearsCreep:setDamageperSecond(level, value)
@@ -15832,4 +15850,29 @@ function AbilityDefinitionChaosCargoLoad:setUnitTypeAllowed(level, value)
     checktype(level, 'integer', 'setUnitTypeAllowed', 1)
     checktype(value, 'string', 'setUnitTypeAllowed', 2)
     self.def:setLvlDataString('Chl1', level, 0, value)
+end
+
+AbilityDefinitionSunderingBlades = class('AbilityDefinitionSunderingBlades', AbilityDefinition)
+_G.AbilityDefinitionSunderingBlades = AbilityDefinitionSunderingBlades
+
+function AbilityDefinitionSunderingBlades:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'Ahsb')
+end
+
+function AbilityDefinitionSunderingBlades:setBonusDamageFlat(level, value)
+    checktype(level, 'integer', 'setBonusDamageFlat', 1)
+    checktype(value, 'float', 'setBonusDamageFlat', 2)
+    self.def:setLvlDataUnreal('Hsb1', level, 1, value)
+end
+
+function AbilityDefinitionSunderingBlades:setBonusDamagePercent(level, value)
+    checktype(level, 'integer', 'setBonusDamagePercent', 1)
+    checktype(value, 'float', 'setBonusDamagePercent', 2)
+    self.def:setLvlDataUnreal('Hsb2', level, 2, value)
+end
+
+function AbilityDefinitionSunderingBlades:setDefenseTypeAffected(level, types)
+    checktype(level, 'integer', 'setDefenseTypeAffected', 1)
+    checktype(types, 'integer', 'setDefenseTypeAffected', 2)
+    self.def:setLvlDataInt('Hsb3', level, 3, types)
 end

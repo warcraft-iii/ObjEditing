@@ -27,6 +27,7 @@ function BuffDefinition:setIconNormal(level, value)
     checktype(level, 'integer', 'setIconNormal', 1)
     checktype(value, 'string', 'setIconNormal', 2)
     self.def:setLvlDataString('fart', level, 0, value)
+    --[[ Sets the icon's path for the buff obj, add "@!!" as prefix of the icon name to overide the default path by a custom path ]]--
 end
 
 function BuffDefinition:setCaster(level, value)
@@ -35,10 +36,22 @@ function BuffDefinition:setCaster(level, value)
     self.def:setLvlDataString('fcat', level, 0, value)
 end
 
+function BuffDefinition:setTarget(level, value)
+    checktype(level, 'integer', 'setTarget', 1)
+    checktype(value, 'string', 'setTarget', 2)
+    self.def:setLvlDataString('ftat', level, 0, value)
+end
+
 function BuffDefinition:setArtTarget(level, value)
     checktype(level, 'integer', 'setArtTarget', 1)
     checktype(value, 'string', 'setArtTarget', 2)
     self.def:setLvlDataString('ftat', level, 0, value)
+end
+
+function BuffDefinition:setSpecial(level, value)
+    checktype(level, 'integer', 'setSpecial', 1)
+    checktype(value, 'string', 'setSpecial', 2)
+    self.def:setLvlDataString('fsat', level, 0, value)
 end
 
 function BuffDefinition:setArtSpecial(level, value)

@@ -1,4 +1,5 @@
 W3TDefinition = class('W3TDefinition')
+_G.W3TDefinition = W3TDefinition
 
 function W3TDefinition:constructor(id, superId)
     self.def = createDefinition(DefinitionType.Item, id, superId)
@@ -200,4 +201,9 @@ end
 function ItemDefinition:setInterfaceIcon(data)
     checktype(data, 'string', 'setInterfaceIcon', 1)
     self.def:setString('iico', data)
+end
+
+function ItemDefinition:setMaxStack(data)
+    checktype(data, 'integer', 'setMaxStack', 1)
+    self.def:setInt('ista', data)
 end

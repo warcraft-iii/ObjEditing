@@ -1,4 +1,5 @@
 W3UDefinition = class('W3UDefinition')
+_G.W3UDefinition = W3UDefinition
 
 function W3UDefinition:constructor(id, superId)
     self.def = createDefinition(DefinitionType.Unit, id, superId)
@@ -132,6 +133,11 @@ function UnitOrBuildingOrHeroDefinition:setTargetedAs(data)
     self.def:setString('utar', data)
 end
 
+function UnitOrBuildingOrHeroDefinition:setTarget(data)
+    checktype(data, 'string', 'setTarget', 1)
+    self.def:setString('utaa', data)
+end
+
 function UnitOrBuildingOrHeroDefinition:setArtTarget(data)
     checktype(data, 'string', 'setArtTarget', 1)
     self.def:setString('utaa', data)
@@ -165,6 +171,11 @@ end
 function UnitOrBuildingOrHeroDefinition:setSpeedBase(data)
     checktype(data, 'integer', 'setSpeedBase', 1)
     self.def:setInt('umvs', data)
+end
+
+function UnitOrBuildingOrHeroDefinition:setSpecial(data)
+    checktype(data, 'string', 'setSpecial', 1)
+    self.def:setString('uspa', data)
 end
 
 function UnitOrBuildingOrHeroDefinition:setArtSpecial(data)
@@ -932,6 +943,11 @@ function UnitOrBuildingOrHeroDefinition:setAcquisitionRange(data)
     self.def:setUnreal('uacq', data)
 end
 
+function UnitOrBuildingOrHeroDefinition:setStructuresBuilt(data)
+    checktype(data, 'string', 'setStructuresBuilt', 1)
+    self.def:setString('ubui', data)
+end
+
 UnitOrHeroDefinition = class('UnitOrHeroDefinition', UnitOrBuildingOrHeroDefinition)
 _G.UnitOrHeroDefinition = UnitOrHeroDefinition
 
@@ -968,11 +984,6 @@ end
 function UnitOrHeroDefinition:setFormationRank(data)
     checktype(data, 'integer', 'setFormationRank', 1)
     self.def:setInt('ufor', data)
-end
-
-function UnitOrHeroDefinition:setStructuresBuilt(data)
-    checktype(data, 'string', 'setStructuresBuilt', 1)
-    self.def:setString('ubui', data)
 end
 
 HeroDefinition = class('HeroDefinition', UnitOrHeroDefinition)
@@ -1056,6 +1067,9 @@ end
 function HeroDefinition:setAgilityPerLevel(data)
     checktype(data, 'float', 'setAgilityPerLevel', 1)
     self.def:setUnreal('uagp', data)
+    --[[ sets the techtree requirements for a specific tier
+    for example use setRequierements
+    ]]--
 end
 
 function HeroDefinition:setRequierementsForTier(tier, data)

@@ -1,4 +1,5 @@
 W3QDefinition = class('W3QDefinition')
+_G.W3QDefinition = W3QDefinition
 
 function W3QDefinition:constructor(id, superId)
     self.def = createDefinition(DefinitionType.Upgrade, id, superId)
@@ -61,19 +62,22 @@ end
 
 function W3QDefinition:setTransferWithUnitOwnership(value)
     checktype(value, 'boolean', 'setTransferWithUnitOwnership', 1)
-    self.def:setLvlDataBoolean('ginh', 0, 0, value)
+    self.def:setLvlDataInt('ginh', 0, 0, value)
 end
 
 function W3QDefinition:setIcon(level, value)
     checktype(level, 'integer', 'setIcon', 1)
     checktype(value, 'string', 'setIcon', 2)
     self.def:setLvlDataString('gar1', level, 0, value)
+    --[[ Comma separated list of ids for tech requirements. ]]--
 end
 
 function W3QDefinition:setRequirements(level, value)
     checktype(level, 'integer', 'setRequirements', 1)
     checktype(value, 'string', 'setRequirements', 2)
     self.def:setLvlDataString('greq', level, 0, value)
+    --[[ Comma separated list of ints corresponding to list of tech requirements
+    provided by setRequirements. ]]--
 end
 
 function W3QDefinition:setRequirementsLevels(level, value)
