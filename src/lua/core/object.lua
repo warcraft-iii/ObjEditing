@@ -51,7 +51,7 @@ end
 ---@param column integer
 ---@return void
 function ObjectDefinition:setRaw(id, type, value, level, column)
-    self.def.fields[id] = {id = id, type = type, value = value, level = level, column = column}
+    self.def.fields[id .. (level or 'NONE') .. (column or 'NONE')] = {id = id, type = type, value = value, level = level, column = column}
 end
 
 ---setInt
