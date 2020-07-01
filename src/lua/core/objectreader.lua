@@ -66,7 +66,7 @@ function ObjectReader:readDefinitions()
 
             self.buffer:readInt()
 
-            def.fields[field.id] = field
+            def.fields[field.id .. (field.level or 'NONE') .. (field.column or 'NONE')] = field
         end
 
         self.definitions[def.id] = def
