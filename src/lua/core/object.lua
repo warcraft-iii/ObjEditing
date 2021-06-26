@@ -191,6 +191,10 @@ local CREATED_DEFINITIONS = {}
 ---@param id string
 ---@param superId string
 function createDefinition(defType, id, superId)
+    if type(id) == 'number' then
+        id = string.pack('>I', id)
+    end
+    
     if CREATED_DEFINITIONS[id] then
         error(string.format('%s already exists', id), 2)
     end

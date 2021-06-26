@@ -15,7 +15,6 @@ workspace 'ObjEditing'
     }
 
     filter 'system:Windows'
-        toolset 'v141'
         systemversion 'latest'
         characterset 'MBCS'
         staticruntime 'On'
