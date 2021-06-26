@@ -42,3 +42,8 @@ function DestructableDefinition:setSoundOnDestroy(data)
     checktype(data, 'string', 'setSoundOnDestroy', 1)
     self.def:setString('bdsn', data)
 end
+
+function DestructableDefinition:setNumModelVariable(data)
+    checktype(data, 'integer', 'setTextureId', 1)
+    self.def:setString('bvar', data)
+end

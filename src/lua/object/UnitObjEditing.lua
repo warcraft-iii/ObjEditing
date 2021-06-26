@@ -1180,6 +1180,16 @@ function BuildingDefinition:setConstructionSound(data)
     self.def:setString('ubsl', data)
 end
 
+function BuildingDefinition:setCanBuildOn(data)
+    checktype(data, 'boolean', 'setCanBuildOn', 1)
+	self.def:setBoolean('ucbo', data)
+end
+
+function BuildingDefinition:setIsBuildOn(data)
+    checktype(data, 'boolean', 'setCanBuildOn', 1)
+	self.def:setBoolean('uibo', data)
+end
+
 BuildingAndHeroDefinition = class('BuildingAndHeroDefinition', UnitOrBuildingOrHeroDefinition)
 _G.BuildingAndHeroDefinition = BuildingAndHeroDefinition
 

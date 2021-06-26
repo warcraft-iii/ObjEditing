@@ -207,3 +207,8 @@ function ItemDefinition:setMaxStack(data)
     checktype(data, 'integer', 'setMaxStack', 1)
     self.def:setInt('ista', data)
 end
+
+function ItemDefinition:setSelectCircleSize(data)
+    checktype(data, 'float', 'setSelectCircleSize', 1)
+    self.def:setReal('issc', data)
+end
