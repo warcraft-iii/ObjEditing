@@ -8,6 +8,7 @@
 #include "lua/core/object.lua.h"
 #include "lua/core/readbuffer.lua.h"
 #include "lua/core/writebuffer.lua.h"
+#include "lua/core/dummper.lua.h"
 #include "lua/core/objectreader.lua.h"
 #include "lua/core/objectwriter.lua.h"
 #include "lua/object/AbilityObjEditing.lua.h"

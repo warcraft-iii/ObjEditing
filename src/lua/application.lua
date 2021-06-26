@@ -26,6 +26,11 @@ function Application:initDefinitions()
                 DEFINITIONS[id] = def
                 TYPED_DEFINITIONS[defType][id] = def
             end
+
+            if args.dump then
+                local dummper = Dummper:new(defType)
+                dummper:exec(defs)
+            end
         end
     end
 end

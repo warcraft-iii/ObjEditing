@@ -5,6 +5,7 @@
 
 constexpr char* CMDLINE_MAP = "map";
 constexpr char* CMDLINE_OUTPUT = "output";
+constexpr char* CMDLINE_DUMP_TO_SCRIPT = "dump";
 
 static void RegisterTo(lua_State* L, lua_CFunction f, const char* table, const char* name)
 {
@@ -20,6 +21,7 @@ int main(int argc, const char** argv)
     parser.set_program_name("ObjEditing");
     parser.add<std::string>(CMDLINE_MAP, 'm', "The origin map directory");
     parser.add<std::string>(CMDLINE_OUTPUT, 'o', "The output directory");
+    parser.add(CMDLINE_DUMP_TO_SCRIPT, 'd', "Dump built-in objects to lua script");
 
     if (!parser.parse(argc, argv))
     {
@@ -39,6 +41,12 @@ int main(int argc, const char** argv)
     {
         lua_newtable(L); // _ENV
         {
+            // lua codes
+            lua_newtable(L);
+            {
+                lua_setfield(L, -2, "sourcecode");
+            }
+
             lua_newtable(L); // args
             {
                 for (auto arg : {CMDLINE_MAP, CMDLINE_OUTPUT})
@@ -46,6 +54,9 @@ int main(int argc, const char** argv)
                     lua_pushstring(L, parser.get<std::string>(arg).c_str());
                     lua_setfield(L, -2, arg);
                 }
+
+                lua_pushboolean(L, parser.exist(CMDLINE_DUMP_TO_SCRIPT));
+                lua_setfield(L, -2, CMDLINE_DUMP_TO_SCRIPT);
 
                 lua_newtable(L);
                 {
@@ -83,6 +94,7 @@ int main(int argc, const char** argv)
             InitCoreObject,
             InitCoreReadbuffer,
             InitCoreWritebuffer,
+            InitCoreDummper,
             InitCoreObjectreader,
             InitCoreObjectwriter,
             InitObjectAbilityObjEditing,

@@ -36,7 +36,8 @@ project 'ObjEditing'
         'src/*.cpp',
         'src/*.h',
         'src/*.hpp',
-        'src/**.lua'
+        'src/**.lua',
+        'src/*.natvis',
     }
 
     removefiles {
@@ -54,7 +55,10 @@ project 'ObjEditing'
         },
         ['Lua Files/*'] = {
             'src/lua/**.lua',
-        }
+        },
+        [''] = {
+            '**.natvis'
+        },
     }
 
     includedirs {
