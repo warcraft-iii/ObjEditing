@@ -21,6 +21,10 @@ function checktype(value, checkType, api, index)
         return
     end
 
+    if checkType == 'boolean' and (value == 0 or value == 1) then
+        return
+    end
+
     error(string.format([[bad argument #%s to '%s' (%s expected, got %s)]], index, api, checkType, t), 3)
 end
 
