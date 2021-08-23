@@ -34,11 +34,11 @@ function WriteBuffer:addChar(value)
 end
 
 function WriteBuffer:addInt(value)
-    self:add(string.pack('I4<', value))
+    self:add(string.pack('i4<', value))
 end
 
 function WriteBuffer:addShort(value)
-    self:add(string.pack('I2<', value))
+    self:add(string.pack('i2<', value))
 end
 
 function WriteBuffer:addFloat(value)

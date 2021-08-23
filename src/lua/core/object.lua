@@ -194,6 +194,9 @@ function createDefinition(defType, id, superId)
     if type(id) == 'number' then
         id = string.pack('>I', id)
     end
+    if type(superId) == 'number' then
+        superId = string.pack('>I', superId)
+    end
     
     if CREATED_DEFINITIONS[id] then
         error(string.format('%s already exists', id), 2)
