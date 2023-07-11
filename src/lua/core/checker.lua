@@ -17,7 +17,7 @@ function checktype(value, checkType, api, index)
         return
     end
 
-    if checkType == 'float' and t == 'integer' then
+    if checkType == 'float' and t == 'integer' or checkType == 'integer' and t == 'float' then
         return
     end
 
@@ -42,9 +42,9 @@ function checkenum(value, enum, api, index)
     if not e then
         return
     end
-    if enumCache[e][value] then
+    if enumCache[e][value] or value == '' then
         return
     end
 
-    error(string.format([[bad argument #%s to '%s' (%s expected, got %s)]], index, api, enum, type(value)))
+    error(string.format([[bad argument #%s to '%s' (%s expected, got %s, value %s)]], index, api, enum, type(value), value))
 end

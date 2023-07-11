@@ -13,7 +13,7 @@ function Dummper:prepareAPIs(defType)
         return
     end
 
-    self.file = io.open(string.format([[dump.%s.lua]], defType), 'w')
+    self.file = io.open(string.format([[%s.lua]], defType), 'w')
 
 end
 
@@ -25,13 +25,14 @@ function Dummper:exec(defs)
         return
     end
 
-    local info = {}
+    local info = {'local u'}
     for id, def in pairs(defs) do
         local index = #info + 1
-        local cls
+        local sub = {}
         for k, v in pairs(def.fields) do
-            if not sourcecode[self.defType][v.id] then
-                print('Miss API with', self.defType, def.id, v.id, v.value)
+            local api = sourcecode[self.defType][v.id]
+            if not api then
+                -- print('Miss API with', self.defType, def.id, v.id, v.value)
             else
                 local value = v.value
                 if type(value) == 'string' then
@@ -41,20 +42,23 @@ function Dummper:exec(defs)
                         value = '""'
                     end
                 end
-                if v.level then
-                    table.insert(info, string.format('u%s:%s(%s, %s)', def.id, sourcecode[self.defType][v.id].func,
+                if v.level and v.level > 0 then
+                    table.insert(sub, string.format('u:%s(%s, %s)', api.func,
                                                      v.level, value))
                 else
-                    table.insert(info, string.format('u%s:%s(%s)', def.id, sourcecode[self.defType][v.id].func, value))
+                    table.insert(sub, string.format('u:%s(%s)', api.func, value))
                 end
-                cls = sourcecode[self.defType][v.id].cls
             end
         end
-
-        if def.superId then
-            table.insert(info, index, string.format('\nlocal u%s=%s:new("%s", "%s")', def.id, cls, def.id, def.superId))
+        local cls = sourcecode[self.defType].super[def.superId or def.id]
+        if cls then
+            table.insert(info, index, string.format('\nu=%s:new("%s")', cls, def.id))
         else
-            table.insert(info, index, string.format('\nlocal u%s=%s:new("%s")', def.id, cls, def.id))
+            cls = sourcecode[self.defType].super["0"]
+            table.insert(info, index, string.format('\nu=%s:new("%s", "%s")', cls, def.id, def.superId or def.id))
+        end
+        if #sub > 0 then
+            table.insert(info, table.concat(sub, '\n'))
         end
     end
 

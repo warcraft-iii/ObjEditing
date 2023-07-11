@@ -83,16 +83,28 @@ local function generateAPI(file, name)
     o:close()
 
     local apis = {}
+    local super = {}
 
-    local lastfunc
-    local lastClass
+    local lastfunc, lastClass, lastSuperClass
     for i, line in ipairs(string.split(lua, '\n')) do
-        if string.startswith(line, '_G.') then
-            lastClass = line:split(' ')[3]
-        elseif string.find(line, 'function') then
+        local cls = string.gmatch(line, "= class%('(%w+)'.*%)")()
+        if cls then
+            lastClass = cls
+            lastSuperClass = nil
+        elseif string.find(line, '^function ') then
             lastfunc = string.gsub(string.gsub(line, 'function %w+:', ''), '%(.*%)', '')
         elseif string.find(line, '^end') then
+            if lastSuperClass then
+                super[lastSuperClass] = lastClass
+            else
+                super[0] = lastClass
+            end
             lastfunc = nil
+        elseif string.find(line, 'self.def = ') then
+            local s, i = string.gsub(line, ".*'(%w+)'.*", '%1')
+            if i > 0 then
+                lastSuperClass = s
+            end
         elseif string.find(line, 'self.def:') then
             local k = string.gsub(line, '.*%(\'(%w+).*', '%1')
             apis[k] = {cls = lastClass, func = lastfunc}
@@ -103,8 +115,16 @@ local function generateAPI(file, name)
     for key, value in pairs(apis) do
         table.insert(lines, string.format('["%s"]={cls="%s", func="%s"},', key, value.cls, value.func))
     end
+    table.insert(lines, '["super"] = {')
+    for key, value in pairs(super) do
+        table.insert(lines, string.format('["%s"]="%s",', key, value))
+    end
+    table.insert(lines, '},')
     table.insert(lines, '}')
     local ret = table.concat(lines, '\n')
+    local f = io.open(file .. '.txt', 'w')
+    f:write(ret)
+    f:close()
     return files[name], ret
 end
 

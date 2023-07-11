@@ -18,11 +18,11 @@ function ReadBuffer:readRaw(n)
 end
 
 function ReadBuffer:readInt()
-    return string.unpack('I4<', self:readRaw(4))
+    return string.unpack('i4<', self:readRaw(4))
 end
 
 function ReadBuffer:readShort()
-    return string.unpack('I2<', self:readRaw(2))
+    return string.unpack('i2<', self:readRaw(2))
 end
 
 function ReadBuffer:readFloat()

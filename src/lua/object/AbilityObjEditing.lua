@@ -1,6 +1,12 @@
 AbilityDefinition = class('AbilityDefinition')
 _G.AbilityDefinition = AbilityDefinition
 
+function AbilityDefinition:constructor(id, superId)
+    if superId then
+        self.def = createDefinition(DefinitionType.Ability, id, superId)
+    end
+end
+
 function AbilityDefinition:setName(value)
     checktype(value, 'string', 'setName', 1)
     self.def:setLvlDataString('anam', 0, 0, value)
@@ -231,6 +237,7 @@ function AbilityDefinition:setHotkeyTurnOff(value)
 end
 
 function AbilityDefinition:setRequirements(value)
+    checktype(self.def, 'table', 'setRequirements', 0)
     checktype(value, 'string', 'setRequirements', 1)
     self.def:setLvlDataString('areq', 0, 0, value)
 end
@@ -5576,8 +5583,8 @@ end
 
 function AbilityDefinitionNeutralBuilding:setInteractionType(level, value)
     checktype(level, 'integer', 'setInteractionType', 1)
-    checktype(value, 'string', 'setInteractionType', 2)
-    self.def:setLvlDataString('Neu2', level, 2, value)
+    checktype(value, 'integer', 'setInteractionType', 2)
+    self.def:setLvlDataInt('Neu2', level, 2, value)
 end
 
 AbilityDefinitionShopSharing = class('AbilityDefinitionShopSharing', AbilityDefinition)
@@ -5607,8 +5614,8 @@ end
 
 function AbilityDefinitionShopSharing:setInteractionType(level, value)
     checktype(level, 'integer', 'setInteractionType', 1)
-    checktype(value, 'string', 'setInteractionType', 2)
-    self.def:setLvlDataString('Neu2', level, 2, value)
+    checktype(value, 'integer', 'setInteractionType', 2)
+    self.def:setLvlDataInt('Neu2', level, 2, value)
 end
 
 AbilityDefinitionRepairHuman = class('AbilityDefinitionRepairHuman', AbilityDefinition)
@@ -5711,6 +5718,49 @@ function AbilityDefinitionFirelordIncinerate:setDeathDamageDelay(level, value)
 end
 
 function AbilityDefinitionFirelordIncinerate:setDeathDamageHalfArea(level, value)
+    checktype(level, 'integer', 'setDeathDamageHalfArea', 1)
+    checktype(value, 'float', 'setDeathDamageHalfArea', 2)
+    self.def:setLvlDataUnreal('Nic5', level, 5, value)
+end
+
+AbilityDefinitionFirelordIncinerateArrow = class('AbilityDefinitionFirelordIncinerateArrow', AbilityDefinition)
+_G.AbilityDefinitionFirelordIncinerateArrow = AbilityDefinitionFirelordIncinerateArrow
+
+function AbilityDefinitionFirelordIncinerateArrow:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'ANia')
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setDeathDamageHalfAmount(level, value)
+    checktype(level, 'integer', 'setDeathDamageHalfAmount', 1)
+    checktype(value, 'float', 'setDeathDamageHalfAmount', 2)
+    self.def:setLvlDataUnreal('Nic4', level, 4, value)
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setDeathDamageFullArea(level, value)
+    checktype(level, 'integer', 'setDeathDamageFullArea', 1)
+    checktype(value, 'float', 'setDeathDamageFullArea', 2)
+    self.def:setLvlDataUnreal('Nic3', level, 3, value)
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setBonusDamageMultiplier(level, value)
+    checktype(level, 'integer', 'setBonusDamageMultiplier', 1)
+    checktype(value, 'float', 'setBonusDamageMultiplier', 2)
+    self.def:setLvlDataUnreal('Nic1', level, 1, value)
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setDeathDamageFullAmount(level, value)
+    checktype(level, 'integer', 'setDeathDamageFullAmount', 1)
+    checktype(value, 'float', 'setDeathDamageFullAmount', 2)
+    self.def:setLvlDataUnreal('Nic2', level, 2, value)
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setDeathDamageDelay(level, value)
+    checktype(level, 'integer', 'setDeathDamageDelay', 1)
+    checktype(value, 'float', 'setDeathDamageDelay', 2)
+    self.def:setLvlDataUnreal('Nic6', level, 6, value)
+end
+
+function AbilityDefinitionFirelordIncinerateArrow:setDeathDamageHalfArea(level, value)
     checktype(level, 'integer', 'setDeathDamageHalfArea', 1)
     checktype(value, 'float', 'setDeathDamageHalfArea', 2)
     self.def:setLvlDataUnreal('Nic5', level, 5, value)
@@ -6837,8 +6887,8 @@ end
 
 function AbilityDefinitionNeutralBuildinganyunit:setInteractionType(level, value)
     checktype(level, 'integer', 'setInteractionType', 1)
-    checktype(value, 'string', 'setInteractionType', 2)
-    self.def:setLvlDataString('Neu2', level, 2, value)
+    checktype(value, 'integer', 'setInteractionType', 2)
+    self.def:setLvlDataInt('Neu2', level, 2, value)
 end
 
 AbilityDefinitionGhost = class('AbilityDefinitionGhost', AbilityDefinition)
@@ -11552,8 +11602,8 @@ end
 
 function AbilityDefinitionAlliedBuilding:setInteractionType(level, value)
     checktype(level, 'integer', 'setInteractionType', 1)
-    checktype(value, 'string', 'setInteractionType', 2)
-    self.def:setLvlDataString('Neu2', level, 2, value)
+    checktype(value, 'integer', 'setInteractionType', 2)
+    self.def:setLvlDataInt('Neu2', level, 2, value)
 end
 
 AbilityDefinitionControlMagic = class('AbilityDefinitionControlMagic', AbilityDefinition)
@@ -11669,6 +11719,37 @@ function AbilityDefinitionAllPlus2:setAgilityBonus(level, value)
 end
 
 function AbilityDefinitionAllPlus2:setStrengthBonus(level, value)
+    checktype(level, 'integer', 'setStrengthBonus', 1)
+    checktype(value, 'integer', 'setStrengthBonus', 2)
+    self.def:setLvlDataInt('Istr', level, 3, value)
+end
+
+AbilityDefinitionAllPlus3 = class('AbilityDefinitionAllPlus3', AbilityDefinition)
+_G.AbilityDefinitionAllPlus3 = AbilityDefinitionAllPlus3
+
+function AbilityDefinitionAllPlus3:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'AIx3')
+end
+
+function AbilityDefinitionAllPlus3:setHideButton(level, value)
+    checktype(level, 'integer', 'setHideButton', 1)
+    checktype(value, 'boolean', 'setHideButton', 2)
+    self.def:setLvlDataBoolean('Ihid', level, 4, value)
+end
+
+function AbilityDefinitionAllPlus3:setIntelligenceBonus(level, value)
+    checktype(level, 'integer', 'setIntelligenceBonus', 1)
+    checktype(value, 'integer', 'setIntelligenceBonus', 2)
+    self.def:setLvlDataInt('Iint', level, 2, value)
+end
+
+function AbilityDefinitionAllPlus3:setAgilityBonus(level, value)
+    checktype(level, 'integer', 'setAgilityBonus', 1)
+    checktype(value, 'integer', 'setAgilityBonus', 2)
+    self.def:setLvlDataInt('Iagi', level, 1, value)
+end
+
+function AbilityDefinitionAllPlus3:setStrengthBonus(level, value)
     checktype(level, 'integer', 'setStrengthBonus', 1)
     checktype(value, 'integer', 'setStrengthBonus', 2)
     self.def:setLvlDataInt('Istr', level, 3, value)
@@ -13441,6 +13522,37 @@ function AbilityDefinitionSeaWitchForkedLightning:setFinalArea(level, value)
 end
 
 function AbilityDefinitionSeaWitchForkedLightning:setDistance(level, value)
+    checktype(level, 'integer', 'setDistance', 1)
+    checktype(value, 'float', 'setDistance', 2)
+    self.def:setLvlDataUnreal('Ucs3', level, 3, value)
+end
+
+AbilityDefinitionLightning = class('AbilityDefinitionLightning', AbilityDefinition)
+_G.AbilityDefinitionLightning = AbilityDefinitionLightning
+
+function AbilityDefinitionLightning:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'ACfl')
+end
+
+function AbilityDefinitionLightning:setNumberofTargetsHit(level, value)
+    checktype(level, 'integer', 'setNumberofTargetsHit', 1)
+    checktype(value, 'integer', 'setNumberofTargetsHit', 2)
+    self.def:setLvlDataInt('Ocl2', level, 2, value)
+end
+
+function AbilityDefinitionLightning:setDamageperTarget(level, value)
+    checktype(level, 'integer', 'setDamageperTarget', 1)
+    checktype(value, 'float', 'setDamageperTarget', 2)
+    self.def:setLvlDataUnreal('Ocl1', level, 1, value)
+end
+
+function AbilityDefinitionLightning:setFinalArea(level, value)
+    checktype(level, 'integer', 'setFinalArea', 1)
+    checktype(value, 'float', 'setFinalArea', 2)
+    self.def:setLvlDataUnreal('Ucs4', level, 4, value)
+end
+
+function AbilityDefinitionLightning:setDistance(level, value)
     checktype(level, 'integer', 'setDistance', 1)
     checktype(value, 'float', 'setDistance', 2)
     self.def:setLvlDataUnreal('Ucs3', level, 3, value)
@@ -15875,4 +15987,11 @@ function AbilityDefinitionSunderingBlades:setDefenseTypeAffected(level, types)
     checktype(level, 'integer', 'setDefenseTypeAffected', 1)
     checktype(types, 'integer', 'setDefenseTypeAffected', 2)
     self.def:setLvlDataInt('Hsb3', level, 3, types)
+end
+
+AbilityDefinitionOrb = class('AbilityDefinitionOrb', AbilityDefinition)
+_G.AbilityDefinitionOrb = AbilityDefinitionOrb
+
+function AbilityDefinitionOrb:constructor(id)
+    self.def = createDefinition(DefinitionType.Ability, id, 'Asph')
 end
