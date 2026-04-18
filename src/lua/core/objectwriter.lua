@@ -8,12 +8,14 @@
 ObjectWriter = class('ObjectWriter')
 
 ---@param type DefinitionType
-function ObjectWriter:constructor(type)
+---@param version integer|nil
+function ObjectWriter:constructor(type, version)
     self.type = type
+    self.version = version or 2
     self.buffer = WriteBuffer:new()
 
     -- file version
-    self.buffer:addInt(2)
+    self.buffer:addInt(self.version)
 end
 
 ---@return string
@@ -58,6 +60,13 @@ function ObjectWriter:writeDefinition(def)
         self.buffer:addString(def.id)
     else
         self.buffer:addString(def.id)
+        self.buffer:addInt(0)
+    end
+
+    -- Reforged (file version >= 3) writes two extra ints in each object header
+    -- between the IDs and the field count.
+    if self.version >= 3 then
+        self.buffer:addInt(1)
         self.buffer:addInt(0)
     end
 

@@ -6,6 +6,9 @@
 ---@class Application
 Application = {}
 
+---@type table<DefinitionType, integer>
+local FILE_VERSIONS = {}
+
 function Application:init()
     self:initDefinitions()
     self:execute()
@@ -21,6 +24,7 @@ function Application:initDefinitions()
             file:close()
             local reader = ObjectReader:new(defType, data)
             local defs = reader:read()
+            FILE_VERSIONS[defType] = reader.version
 
             for id, def in pairs(defs) do
                 DEFINITIONS[id] = def
@@ -45,7 +49,7 @@ end
 
 function Application:saveDefinitions()
     for defType, defs in pairs(TYPED_DEFINITIONS) do
-        local writer = ObjectWriter:new(defType)
+        local writer = ObjectWriter:new(defType, FILE_VERSIONS[defType])
         writer:write(defs)
         local buf = writer:getBuffer()
 

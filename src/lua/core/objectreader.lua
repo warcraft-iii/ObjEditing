@@ -15,7 +15,7 @@ end
 ---@return table<string, Definition>
 function ObjectReader:read()
     -- file version
-    self.buffer:readInt()
+    self.version = self.buffer:readInt()
     self:readDefinitions()
     self:readDefinitions()
     return self.definitions
@@ -37,6 +37,14 @@ function ObjectReader:readDefinitions()
         else
             def.id = id
             def.superId = superId
+        end
+
+        -- Reforged (file version >= 3) adds two extra ints in each object header:
+        -- a "set count" (usually 1) and a reserved/zero int. Skip them so the
+        -- field count and subsequent fields don't get misaligned.
+        if self.version and self.version >= 3 then
+            self.buffer:readInt()
+            self.buffer:readInt()
         end
 
         local fieldCount = self.buffer:readInt()
