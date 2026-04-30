@@ -10,7 +10,6 @@ workspace 'ObjEditing'
     startproject 'ObjEditing'
     flags {
         'MultiProcessorCompile',
-        'Maps',
     }
 
     filter 'system:Windows'
@@ -19,6 +18,7 @@ workspace 'ObjEditing'
         characterset 'MBCS'
         staticruntime 'On'
         defines { 'WIN32', '_WINDOWS' }
+        flags { 'Maps' }
     filter 'configurations:Debug'
         defines { '_DEBUG' }
     filter 'configurations:Release'
