@@ -7,7 +7,6 @@ workspace 'ObjEditing'
     configurations { 'Debug', 'Release' }
     location '.build'
     symbols 'Full'
-    architecture 'x86'
     startproject 'ObjEditing'
     flags {
         'MultiProcessorCompile',
@@ -15,6 +14,7 @@ workspace 'ObjEditing'
     }
 
     filter 'system:Windows'
+        architecture 'x86'
         systemversion 'latest'
         characterset 'MBCS'
         staticruntime 'On'
@@ -70,6 +70,10 @@ project 'ObjEditing'
 
     filter 'system:Windows'
         defines { 'PLATFORM_WINDOWS' }
+    filter 'system:macosx'
+        defines { 'PLATFORM_MACOS' }
+    filter 'system:linux'
+        defines { 'PLATFORM_LINUX' }
 
     filter 'files:**.lua'
         buildmessage 'Compiling %{file.name}'
@@ -136,7 +140,8 @@ do -- for lua
     end
 
     function generateBuildLuaCommand(_ENV)
-        local lua = path.join(cfg.buildtarget.directory, 'Lua.exe')
+        local luaExe = os.target() == 'windows' and 'Lua.exe' or 'Lua'
+        local lua = path.join(cfg.buildtarget.directory, luaExe)
         local script = path.join(_MAIN_SCRIPT_DIR, 'bin/build.lua')
         local out = getGeneratedDir(_ENV)
 
