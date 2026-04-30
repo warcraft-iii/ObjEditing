@@ -3,9 +3,9 @@
 #include "luaapi.h"
 #include "luasource.h"
 
-constexpr char* CMDLINE_MAP = "map";
-constexpr char* CMDLINE_OUTPUT = "output";
-constexpr char* CMDLINE_DUMP_TO_SCRIPT = "dump";
+constexpr const char* CMDLINE_MAP = "map";
+constexpr const char* CMDLINE_OUTPUT = "output";
+constexpr const char* CMDLINE_DUMP_TO_SCRIPT = "dump";
 
 static void RegisterTo(lua_State* L, lua_CFunction f, const char* table, const char* name)
 {
