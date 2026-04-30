@@ -129,6 +129,12 @@ local function generateAPI(file, name)
 end
 
 local function main(input, output)
+    if package.config:sub(1, 1) == '\\' then
+        os.execute('if not exist "' .. output:gsub('/', '\\') .. '" mkdir "' .. output:gsub('/', '\\') .. '"')
+    else
+        os.execute('mkdir -p "' .. output .. '"')
+    end
+
     local filePath = input:match('src/lua/(.+)$')
     local fileName = input:match('/([^/]+)$')
     local funcName = generateFuncName(filePath)

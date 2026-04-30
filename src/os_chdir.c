@@ -11,6 +11,8 @@
 #if PLATFORM_WINDOWS
 #include "Windows.h"
 #define PATH_MAX 4096
+#else
+#include <unistd.h>
 #endif
 
 int do_chdir(lua_State* L, const char* path)
